@@ -31,7 +31,7 @@ Partial Class StraightColumnForm
         Me.EaveWidth = New Telerik.WinControls.UI.RadTextBox()
         Me.StiffenerThickness = New Telerik.WinControls.UI.RadTextBox()
         Me.StiffenerWidth = New Telerik.WinControls.UI.RadTextBox()
-        Me.OuterFlangeThickenss = New Telerik.WinControls.UI.RadTextBox()
+        Me.OuterFlangeThickness = New Telerik.WinControls.UI.RadTextBox()
         Me.OuterFlangeWidth = New Telerik.WinControls.UI.RadTextBox()
         Me.WebThickness = New Telerik.WinControls.UI.RadTextBox()
         Me.WebDepth = New Telerik.WinControls.UI.RadTextBox()
@@ -79,7 +79,7 @@ Partial Class StraightColumnForm
         Me.BraceGirt1 = New Telerik.WinControls.UI.RadToggleButton()
         Me.ElevGirt5 = New Telerik.WinControls.UI.RadTextBox()
         Me.ComboGirt5 = New System.Windows.Forms.ComboBox()
-        Me.AddGit5 = New Telerik.WinControls.UI.RadToggleButton()
+        Me.AddGirt5 = New Telerik.WinControls.UI.RadToggleButton()
         Me.ElevGirt4 = New Telerik.WinControls.UI.RadTextBox()
         Me.ComboGirt4 = New System.Windows.Forms.ComboBox()
         Me.AddGirt4 = New Telerik.WinControls.UI.RadToggleButton()
@@ -101,11 +101,11 @@ Partial Class StraightColumnForm
         Me.CableFromFlange = New Telerik.WinControls.UI.RadTextBox()
         Me.RadLabel3 = New Telerik.WinControls.UI.RadLabel()
         Me.RadLabel1 = New Telerik.WinControls.UI.RadLabel()
-        Me.SidewallCheck = New Telerik.WinControls.UI.RadCheckBox()
+        Me.CableCheck = New Telerik.WinControls.UI.RadCheckBox()
         Me.RadGroupBox3 = New Telerik.WinControls.UI.RadGroupBox()
         Me.Flush = New Telerik.WinControls.UI.RadToggleButton()
         Me.Bypass = New Telerik.WinControls.UI.RadToggleButton()
-        Me.CreateButton = New Telerik.WinControls.UI.RadButton()
+        Me.Create = New Telerik.WinControls.UI.RadButton()
         Me.Copy = New Telerik.WinControls.UI.RadButton()
         Me.Add = New Telerik.WinControls.UI.RadButton()
         Me.MarkCombo = New System.Windows.Forms.ComboBox()
@@ -115,7 +115,7 @@ Partial Class StraightColumnForm
         CType(Me.EaveWidth, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StiffenerThickness, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StiffenerWidth, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.OuterFlangeThickenss, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.OuterFlangeThickness, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OuterFlangeWidth, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.WebThickness, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.WebDepth, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -166,7 +166,7 @@ Partial Class StraightColumnForm
         CType(Me.BraceGirt2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BraceGirt1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ElevGirt5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AddGit5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AddGirt5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ElevGirt4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AddGirt4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ElevGirt3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -184,12 +184,12 @@ Partial Class StraightColumnForm
         CType(Me.CableFromFlange, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SidewallCheck, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CableCheck, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGroupBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadGroupBox3.SuspendLayout()
         CType(Me.Flush, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Bypass, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CreateButton, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Create, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Add, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel23, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -223,6 +223,7 @@ Partial Class StraightColumnForm
         Me.EaveThickness.Name = "EaveThickness"
         Me.EaveThickness.Size = New System.Drawing.Size(100, 21)
         Me.EaveThickness.TabIndex = 3
+        Me.EaveThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.EaveThickness.ThemeName = "VisualStudio2012Dark"
         '
         'EaveWidth
@@ -231,6 +232,7 @@ Partial Class StraightColumnForm
         Me.EaveWidth.Name = "EaveWidth"
         Me.EaveWidth.Size = New System.Drawing.Size(100, 21)
         Me.EaveWidth.TabIndex = 4
+        Me.EaveWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.EaveWidth.ThemeName = "VisualStudio2012Dark"
         '
         'StiffenerThickness
@@ -239,6 +241,7 @@ Partial Class StraightColumnForm
         Me.StiffenerThickness.Name = "StiffenerThickness"
         Me.StiffenerThickness.Size = New System.Drawing.Size(100, 21)
         Me.StiffenerThickness.TabIndex = 5
+        Me.StiffenerThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.StiffenerThickness.ThemeName = "VisualStudio2012Dark"
         '
         'StiffenerWidth
@@ -247,15 +250,17 @@ Partial Class StraightColumnForm
         Me.StiffenerWidth.Name = "StiffenerWidth"
         Me.StiffenerWidth.Size = New System.Drawing.Size(100, 21)
         Me.StiffenerWidth.TabIndex = 4
+        Me.StiffenerWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.StiffenerWidth.ThemeName = "VisualStudio2012Dark"
         '
-        'OuterFlangeThickenss
+        'OuterFlangeThickness
         '
-        Me.OuterFlangeThickenss.Location = New System.Drawing.Point(65, 304)
-        Me.OuterFlangeThickenss.Name = "OuterFlangeThickenss"
-        Me.OuterFlangeThickenss.Size = New System.Drawing.Size(100, 21)
-        Me.OuterFlangeThickenss.TabIndex = 6
-        Me.OuterFlangeThickenss.ThemeName = "VisualStudio2012Dark"
+        Me.OuterFlangeThickness.Location = New System.Drawing.Point(65, 304)
+        Me.OuterFlangeThickness.Name = "OuterFlangeThickness"
+        Me.OuterFlangeThickness.Size = New System.Drawing.Size(100, 21)
+        Me.OuterFlangeThickness.TabIndex = 6
+        Me.OuterFlangeThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.OuterFlangeThickness.ThemeName = "VisualStudio2012Dark"
         '
         'OuterFlangeWidth
         '
@@ -263,6 +268,7 @@ Partial Class StraightColumnForm
         Me.OuterFlangeWidth.Name = "OuterFlangeWidth"
         Me.OuterFlangeWidth.Size = New System.Drawing.Size(100, 21)
         Me.OuterFlangeWidth.TabIndex = 7
+        Me.OuterFlangeWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.OuterFlangeWidth.ThemeName = "VisualStudio2012Dark"
         '
         'WebThickness
@@ -271,6 +277,8 @@ Partial Class StraightColumnForm
         Me.WebThickness.Name = "WebThickness"
         Me.WebThickness.Size = New System.Drawing.Size(100, 21)
         Me.WebThickness.TabIndex = 8
+        Me.WebThickness.Text = "0.1345"""
+        Me.WebThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.WebThickness.ThemeName = "VisualStudio2012Dark"
         '
         'WebDepth
@@ -279,6 +287,7 @@ Partial Class StraightColumnForm
         Me.WebDepth.Name = "WebDepth"
         Me.WebDepth.Size = New System.Drawing.Size(100, 21)
         Me.WebDepth.TabIndex = 9
+        Me.WebDepth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.WebDepth.ThemeName = "VisualStudio2012Dark"
         '
         'HaunchThickness
@@ -287,6 +296,7 @@ Partial Class StraightColumnForm
         Me.HaunchThickness.Name = "HaunchThickness"
         Me.HaunchThickness.Size = New System.Drawing.Size(100, 21)
         Me.HaunchThickness.TabIndex = 10
+        Me.HaunchThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.HaunchThickness.ThemeName = "VisualStudio2012Dark"
         '
         'HaunchWidth
@@ -295,6 +305,7 @@ Partial Class StraightColumnForm
         Me.HaunchWidth.Name = "HaunchWidth"
         Me.HaunchWidth.Size = New System.Drawing.Size(100, 21)
         Me.HaunchWidth.TabIndex = 11
+        Me.HaunchWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.HaunchWidth.ThemeName = "VisualStudio2012Dark"
         '
         'HaunchLength
@@ -303,6 +314,7 @@ Partial Class StraightColumnForm
         Me.HaunchLength.Name = "HaunchLength"
         Me.HaunchLength.Size = New System.Drawing.Size(100, 21)
         Me.HaunchLength.TabIndex = 12
+        Me.HaunchLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.HaunchLength.ThemeName = "VisualStudio2012Dark"
         '
         'InnerFlangeThickness
@@ -311,6 +323,7 @@ Partial Class StraightColumnForm
         Me.InnerFlangeThickness.Name = "InnerFlangeThickness"
         Me.InnerFlangeThickness.Size = New System.Drawing.Size(100, 21)
         Me.InnerFlangeThickness.TabIndex = 13
+        Me.InnerFlangeThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.InnerFlangeThickness.ThemeName = "VisualStudio2012Dark"
         '
         'InnerFlangeWidth
@@ -319,6 +332,7 @@ Partial Class StraightColumnForm
         Me.InnerFlangeWidth.Name = "InnerFlangeWidth"
         Me.InnerFlangeWidth.Size = New System.Drawing.Size(100, 21)
         Me.InnerFlangeWidth.TabIndex = 14
+        Me.InnerFlangeWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.InnerFlangeWidth.ThemeName = "VisualStudio2012Dark"
         '
         'BaseThickness
@@ -327,6 +341,8 @@ Partial Class StraightColumnForm
         Me.BaseThickness.Name = "BaseThickness"
         Me.BaseThickness.Size = New System.Drawing.Size(100, 21)
         Me.BaseThickness.TabIndex = 15
+        Me.BaseThickness.Text = "1/2"""
+        Me.BaseThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.BaseThickness.ThemeName = "VisualStudio2012Dark"
         '
         'BaseWidth
@@ -335,6 +351,8 @@ Partial Class StraightColumnForm
         Me.BaseWidth.Name = "BaseWidth"
         Me.BaseWidth.Size = New System.Drawing.Size(100, 21)
         Me.BaseWidth.TabIndex = 16
+        Me.BaseWidth.Text = "8"""
+        Me.BaseWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.BaseWidth.ThemeName = "VisualStudio2012Dark"
         '
         'RadGroupBox1
@@ -364,7 +382,7 @@ Partial Class StraightColumnForm
         Me.RadGroupBox1.Controls.Add(Me.InnerFlangeThickness)
         Me.RadGroupBox1.Controls.Add(Me.StiffenerWidth)
         Me.RadGroupBox1.Controls.Add(Me.HaunchLength)
-        Me.RadGroupBox1.Controls.Add(Me.OuterFlangeThickenss)
+        Me.RadGroupBox1.Controls.Add(Me.OuterFlangeThickness)
         Me.RadGroupBox1.Controls.Add(Me.HaunchWidth)
         Me.RadGroupBox1.Controls.Add(Me.OuterFlangeWidth)
         Me.RadGroupBox1.Controls.Add(Me.HaunchThickness)
@@ -605,6 +623,8 @@ Partial Class StraightColumnForm
         Me.AnchorBetween.Name = "AnchorBetween"
         Me.AnchorBetween.Size = New System.Drawing.Size(76, 21)
         Me.AnchorBetween.TabIndex = 26
+        Me.AnchorBetween.Text = "4"""
+        Me.AnchorBetween.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.AnchorBetween.ThemeName = "VisualStudio2012Dark"
         '
         'RadLabel8
@@ -622,6 +642,8 @@ Partial Class StraightColumnForm
         Me.AnchorFromFlange.Name = "AnchorFromFlange"
         Me.AnchorFromFlange.Size = New System.Drawing.Size(76, 21)
         Me.AnchorFromFlange.TabIndex = 24
+        Me.AnchorFromFlange.Text = "4"""
+        Me.AnchorFromFlange.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.AnchorFromFlange.ThemeName = "VisualStudio2012Dark"
         '
         'RadLabel7
@@ -638,7 +660,7 @@ Partial Class StraightColumnForm
         Me.AnchorCombo.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.AnchorCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.AnchorCombo.FormattingEnabled = True
-        Me.AnchorCombo.Items.AddRange(New Object() {"1/4""", "3/8""", "1/2"""})
+        Me.AnchorCombo.Items.AddRange(New Object() {"1/2"" x 8""", "5/8"" x 12""", "3/4"" x 15""", "5/8"" x 6"" Titen HD", "5/8"" x 8"" Titen HD"})
         Me.AnchorCombo.Location = New System.Drawing.Point(76, 19)
         Me.AnchorCombo.Name = "AnchorCombo"
         Me.AnchorCombo.Size = New System.Drawing.Size(157, 21)
@@ -663,7 +685,7 @@ Partial Class StraightColumnForm
         Me.RadGroupBox4.Controls.Add(Me.BraceGirt1)
         Me.RadGroupBox4.Controls.Add(Me.ElevGirt5)
         Me.RadGroupBox4.Controls.Add(Me.ComboGirt5)
-        Me.RadGroupBox4.Controls.Add(Me.AddGit5)
+        Me.RadGroupBox4.Controls.Add(Me.AddGirt5)
         Me.RadGroupBox4.Controls.Add(Me.ElevGirt4)
         Me.RadGroupBox4.Controls.Add(Me.ComboGirt4)
         Me.RadGroupBox4.Controls.Add(Me.AddGirt4)
@@ -686,6 +708,7 @@ Partial Class StraightColumnForm
         '
         'BraceGirt5
         '
+        Me.BraceGirt5.Enabled = False
         Me.BraceGirt5.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.BraceGirt5.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.BraceGirt5.Location = New System.Drawing.Point(262, 130)
@@ -696,6 +719,7 @@ Partial Class StraightColumnForm
         '
         'BraceGirt4
         '
+        Me.BraceGirt4.Enabled = False
         Me.BraceGirt4.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.BraceGirt4.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.BraceGirt4.Location = New System.Drawing.Point(262, 104)
@@ -706,6 +730,7 @@ Partial Class StraightColumnForm
         '
         'BraceGirt3
         '
+        Me.BraceGirt3.Enabled = False
         Me.BraceGirt3.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.BraceGirt3.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.BraceGirt3.Location = New System.Drawing.Point(262, 77)
@@ -716,6 +741,7 @@ Partial Class StraightColumnForm
         '
         'BraceGirt2
         '
+        Me.BraceGirt2.Enabled = False
         Me.BraceGirt2.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.BraceGirt2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.BraceGirt2.Location = New System.Drawing.Point(262, 50)
@@ -726,6 +752,7 @@ Partial Class StraightColumnForm
         '
         'BraceGirt1
         '
+        Me.BraceGirt1.Enabled = False
         Me.BraceGirt1.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.BraceGirt1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.BraceGirt1.Location = New System.Drawing.Point(262, 23)
@@ -736,16 +763,19 @@ Partial Class StraightColumnForm
         '
         'ElevGirt5
         '
+        Me.ElevGirt5.Enabled = False
         Me.ElevGirt5.Location = New System.Drawing.Point(156, 131)
         Me.ElevGirt5.Name = "ElevGirt5"
         Me.ElevGirt5.Size = New System.Drawing.Size(100, 21)
         Me.ElevGirt5.TabIndex = 35
+        Me.ElevGirt5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ElevGirt5.ThemeName = "VisualStudio2012Dark"
         '
         'ComboGirt5
         '
         Me.ComboGirt5.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.ComboGirt5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboGirt5.Enabled = False
         Me.ComboGirt5.FormattingEnabled = True
         Me.ComboGirt5.Items.AddRange(New Object() {"8"" Zee Girt", "10"" Zee Girt", "8"" Cee Girt", "10"" Cee Girt"})
         Me.ComboGirt5.Location = New System.Drawing.Point(49, 131)
@@ -753,27 +783,30 @@ Partial Class StraightColumnForm
         Me.ComboGirt5.Size = New System.Drawing.Size(100, 21)
         Me.ComboGirt5.TabIndex = 34
         '
-        'AddGit5
+        'AddGirt5
         '
-        Me.AddGit5.Location = New System.Drawing.Point(6, 128)
-        Me.AddGit5.Name = "AddGit5"
-        Me.AddGit5.Size = New System.Drawing.Size(37, 24)
-        Me.AddGit5.TabIndex = 33
-        Me.AddGit5.Text = "Add"
-        Me.AddGit5.ThemeName = "VisualStudio2012Dark"
+        Me.AddGirt5.Location = New System.Drawing.Point(6, 128)
+        Me.AddGirt5.Name = "AddGirt5"
+        Me.AddGirt5.Size = New System.Drawing.Size(37, 24)
+        Me.AddGirt5.TabIndex = 33
+        Me.AddGirt5.Text = "Add"
+        Me.AddGirt5.ThemeName = "VisualStudio2012Dark"
         '
         'ElevGirt4
         '
+        Me.ElevGirt4.Enabled = False
         Me.ElevGirt4.Location = New System.Drawing.Point(156, 104)
         Me.ElevGirt4.Name = "ElevGirt4"
         Me.ElevGirt4.Size = New System.Drawing.Size(100, 21)
         Me.ElevGirt4.TabIndex = 32
+        Me.ElevGirt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ElevGirt4.ThemeName = "VisualStudio2012Dark"
         '
         'ComboGirt4
         '
         Me.ComboGirt4.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.ComboGirt4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboGirt4.Enabled = False
         Me.ComboGirt4.FormattingEnabled = True
         Me.ComboGirt4.Items.AddRange(New Object() {"8"" Zee Girt", "10"" Zee Girt", "8"" Cee Girt", "10"" Cee Girt"})
         Me.ComboGirt4.Location = New System.Drawing.Point(49, 104)
@@ -792,16 +825,19 @@ Partial Class StraightColumnForm
         '
         'ElevGirt3
         '
+        Me.ElevGirt3.Enabled = False
         Me.ElevGirt3.Location = New System.Drawing.Point(156, 77)
         Me.ElevGirt3.Name = "ElevGirt3"
         Me.ElevGirt3.Size = New System.Drawing.Size(100, 21)
         Me.ElevGirt3.TabIndex = 29
+        Me.ElevGirt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ElevGirt3.ThemeName = "VisualStudio2012Dark"
         '
         'ComboGirt3
         '
         Me.ComboGirt3.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.ComboGirt3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboGirt3.Enabled = False
         Me.ComboGirt3.FormattingEnabled = True
         Me.ComboGirt3.Items.AddRange(New Object() {"8"" Zee Girt", "10"" Zee Girt", "8"" Cee Girt", "10"" Cee Girt"})
         Me.ComboGirt3.Location = New System.Drawing.Point(49, 77)
@@ -820,16 +856,19 @@ Partial Class StraightColumnForm
         '
         'ElevGirt2
         '
+        Me.ElevGirt2.Enabled = False
         Me.ElevGirt2.Location = New System.Drawing.Point(156, 50)
         Me.ElevGirt2.Name = "ElevGirt2"
         Me.ElevGirt2.Size = New System.Drawing.Size(100, 21)
         Me.ElevGirt2.TabIndex = 26
+        Me.ElevGirt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ElevGirt2.ThemeName = "VisualStudio2012Dark"
         '
         'ComboGirt2
         '
         Me.ComboGirt2.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.ComboGirt2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboGirt2.Enabled = False
         Me.ComboGirt2.FormattingEnabled = True
         Me.ComboGirt2.Items.AddRange(New Object() {"8"" Zee Girt", "10"" Zee Girt", "8"" Cee Girt", "10"" Cee Girt"})
         Me.ComboGirt2.Location = New System.Drawing.Point(49, 50)
@@ -848,16 +887,19 @@ Partial Class StraightColumnForm
         '
         'ElevGirt1
         '
+        Me.ElevGirt1.Enabled = False
         Me.ElevGirt1.Location = New System.Drawing.Point(156, 23)
         Me.ElevGirt1.Name = "ElevGirt1"
         Me.ElevGirt1.Size = New System.Drawing.Size(100, 21)
         Me.ElevGirt1.TabIndex = 23
+        Me.ElevGirt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ElevGirt1.ThemeName = "VisualStudio2012Dark"
         '
         'ComboGirt1
         '
         Me.ComboGirt1.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.ComboGirt1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboGirt1.Enabled = False
         Me.ComboGirt1.FormattingEnabled = True
         Me.ComboGirt1.Items.AddRange(New Object() {"8"" Zee Girt", "10"" Zee Girt", "8"" Cee Girt", "10"" Cee Girt"})
         Me.ComboGirt1.Location = New System.Drawing.Point(49, 23)
@@ -885,7 +927,7 @@ Partial Class StraightColumnForm
         Me.RadGroupBox5.Controls.Add(Me.CableFromFlange)
         Me.RadGroupBox5.Controls.Add(Me.RadLabel3)
         Me.RadGroupBox5.Controls.Add(Me.RadLabel1)
-        Me.RadGroupBox5.Controls.Add(Me.SidewallCheck)
+        Me.RadGroupBox5.Controls.Add(Me.CableCheck)
         Me.RadGroupBox5.HeaderText = "Cable Bracing"
         Me.RadGroupBox5.Location = New System.Drawing.Point(5, 246)
         Me.RadGroupBox5.Name = "RadGroupBox5"
@@ -898,6 +940,7 @@ Partial Class StraightColumnForm
         '
         Me.CableCombo.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.CableCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CableCombo.Enabled = False
         Me.CableCombo.FormattingEnabled = True
         Me.CableCombo.Items.AddRange(New Object() {"1/4""", "3/8""", "1/2"""})
         Me.CableCombo.Location = New System.Drawing.Point(133, 43)
@@ -925,26 +968,35 @@ Partial Class StraightColumnForm
         '
         'CableFromBottom
         '
+        Me.CableFromBottom.Enabled = False
         Me.CableFromBottom.Location = New System.Drawing.Point(133, 124)
         Me.CableFromBottom.Name = "CableFromBottom"
         Me.CableFromBottom.Size = New System.Drawing.Size(100, 21)
         Me.CableFromBottom.TabIndex = 19
+        Me.CableFromBottom.Text = "6"""
+        Me.CableFromBottom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.CableFromBottom.ThemeName = "VisualStudio2012Dark"
         '
         'CableFromTop
         '
+        Me.CableFromTop.Enabled = False
         Me.CableFromTop.Location = New System.Drawing.Point(133, 97)
         Me.CableFromTop.Name = "CableFromTop"
         Me.CableFromTop.Size = New System.Drawing.Size(100, 21)
         Me.CableFromTop.TabIndex = 18
+        Me.CableFromTop.Text = "6"""
+        Me.CableFromTop.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.CableFromTop.ThemeName = "VisualStudio2012Dark"
         '
         'CableFromFlange
         '
+        Me.CableFromFlange.Enabled = False
         Me.CableFromFlange.Location = New System.Drawing.Point(133, 70)
         Me.CableFromFlange.Name = "CableFromFlange"
         Me.CableFromFlange.Size = New System.Drawing.Size(100, 21)
         Me.CableFromFlange.TabIndex = 17
+        Me.CableFromFlange.Text = "3"""
+        Me.CableFromFlange.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.CableFromFlange.ThemeName = "VisualStudio2012Dark"
         '
         'RadLabel3
@@ -965,15 +1017,15 @@ Partial Class StraightColumnForm
         Me.RadLabel1.Text = "Distance From Flange"
         Me.RadLabel1.ThemeName = "VisualStudio2012Dark"
         '
-        'SidewallCheck
+        'CableCheck
         '
-        Me.SidewallCheck.CheckAlignment = System.Drawing.ContentAlignment.MiddleRight
-        Me.SidewallCheck.Location = New System.Drawing.Point(23, 21)
-        Me.SidewallCheck.Name = "SidewallCheck"
-        Me.SidewallCheck.Size = New System.Drawing.Size(129, 18)
-        Me.SidewallCheck.TabIndex = 0
-        Me.SidewallCheck.Text = "Sidewall Cable Slots  "
-        Me.SidewallCheck.ThemeName = "VisualStudio2012Dark"
+        Me.CableCheck.CheckAlignment = System.Drawing.ContentAlignment.MiddleRight
+        Me.CableCheck.Location = New System.Drawing.Point(23, 21)
+        Me.CableCheck.Name = "CableCheck"
+        Me.CableCheck.Size = New System.Drawing.Size(129, 18)
+        Me.CableCheck.TabIndex = 0
+        Me.CableCheck.Text = "Sidewall Cable Slots  "
+        Me.CableCheck.ThemeName = "VisualStudio2012Dark"
         '
         'RadGroupBox3
         '
@@ -1008,14 +1060,14 @@ Partial Class StraightColumnForm
         Me.Bypass.Text = "Bypass"
         Me.Bypass.ThemeName = "VisualStudio2012Dark"
         '
-        'CreateButton
+        'Create
         '
-        Me.CreateButton.Location = New System.Drawing.Point(12, 662)
-        Me.CreateButton.Name = "CreateButton"
-        Me.CreateButton.Size = New System.Drawing.Size(319, 24)
-        Me.CreateButton.TabIndex = 19
-        Me.CreateButton.Text = "Create"
-        Me.CreateButton.ThemeName = "VisualStudio2012Dark"
+        Me.Create.Location = New System.Drawing.Point(12, 662)
+        Me.Create.Name = "Create"
+        Me.Create.Size = New System.Drawing.Size(319, 24)
+        Me.Create.TabIndex = 19
+        Me.Create.Text = "Create"
+        Me.Create.ThemeName = "VisualStudio2012Dark"
         '
         'Copy
         '
@@ -1065,7 +1117,7 @@ Partial Class StraightColumnForm
         Me.ClientSize = New System.Drawing.Size(831, 695)
         Me.Controls.Add(Me.RadLabel23)
         Me.Controls.Add(Me.Copy)
-        Me.Controls.Add(Me.CreateButton)
+        Me.Controls.Add(Me.Create)
         Me.Controls.Add(Me.RadGroupBox2)
         Me.Controls.Add(Me.RadGroupBox1)
         Me.Controls.Add(Me.Add)
@@ -1080,7 +1132,7 @@ Partial Class StraightColumnForm
         CType(Me.EaveWidth, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StiffenerThickness, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StiffenerWidth, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.OuterFlangeThickenss, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.OuterFlangeThickness, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OuterFlangeWidth, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.WebThickness, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.WebDepth, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1134,7 +1186,7 @@ Partial Class StraightColumnForm
         CType(Me.BraceGirt2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BraceGirt1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ElevGirt5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AddGit5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AddGirt5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ElevGirt4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AddGirt4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ElevGirt3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1153,12 +1205,12 @@ Partial Class StraightColumnForm
         CType(Me.CableFromFlange, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SidewallCheck, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CableCheck, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadGroupBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadGroupBox3.ResumeLayout(False)
         CType(Me.Flush, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Bypass, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CreateButton, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Create, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Add, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel23, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1175,7 +1227,7 @@ Partial Class StraightColumnForm
     Friend WithEvents EaveWidth As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents StiffenerThickness As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents StiffenerWidth As Telerik.WinControls.UI.RadTextBox
-    Friend WithEvents OuterFlangeThickenss As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents OuterFlangeThickness As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents OuterFlangeWidth As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents WebThickness As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents WebDepth As Telerik.WinControls.UI.RadTextBox
@@ -1197,7 +1249,7 @@ Partial Class StraightColumnForm
     Friend WithEvents RadLabel3 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents RadLabel2 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents RadLabel1 As Telerik.WinControls.UI.RadLabel
-    Friend WithEvents SidewallCheck As Telerik.WinControls.UI.RadCheckBox
+    Friend WithEvents CableCheck As Telerik.WinControls.UI.RadCheckBox
     Friend WithEvents RadGroupBox3 As Telerik.WinControls.UI.RadGroupBox
     Friend WithEvents Flush As Telerik.WinControls.UI.RadToggleButton
     Friend WithEvents Bypass As Telerik.WinControls.UI.RadToggleButton
@@ -1205,7 +1257,7 @@ Partial Class StraightColumnForm
     Friend WithEvents BraceGirt1 As Telerik.WinControls.UI.RadToggleButton
     Friend WithEvents ElevGirt5 As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents ComboGirt5 As System.Windows.Forms.ComboBox
-    Friend WithEvents AddGit5 As Telerik.WinControls.UI.RadToggleButton
+    Friend WithEvents AddGirt5 As Telerik.WinControls.UI.RadToggleButton
     Friend WithEvents ElevGirt4 As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents ComboGirt4 As System.Windows.Forms.ComboBox
     Friend WithEvents AddGirt4 As Telerik.WinControls.UI.RadToggleButton
@@ -1247,7 +1299,7 @@ Partial Class StraightColumnForm
     Friend WithEvents BraceGirt4 As Telerik.WinControls.UI.RadToggleButton
     Friend WithEvents BraceGirt3 As Telerik.WinControls.UI.RadToggleButton
     Friend WithEvents BraceGirt2 As Telerik.WinControls.UI.RadToggleButton
-    Friend WithEvents CreateButton As Telerik.WinControls.UI.RadButton
+    Friend WithEvents Create As Telerik.WinControls.UI.RadButton
     Friend WithEvents Copy As Telerik.WinControls.UI.RadButton
     Friend WithEvents Add As Telerik.WinControls.UI.RadButton
     Friend WithEvents MarkCombo As System.Windows.Forms.ComboBox

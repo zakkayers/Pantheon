@@ -199,12 +199,12 @@ Public Class Design
     ' Creates The Column Tab
     Private Sub ColumnTab()
 
-        Dim straight As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Straight", "Creates A Straight Column", My.Resources.StraightCol_S, My.Resources.StraightCol_L, " ")
-        Dim taper As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Tapered", "Creates A Tapered Column", My.Resources.TaperCol_S, My.Resources.TaperCol_L, " ")
-        Dim portal As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Portal", "Creates A Portal Column", My.Resources.PortalCol_S, My.Resources.PortalCol_L, " ")
-        Dim support As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Support", "Creates A Support Column", My.Resources.SupportCol_S, My.Resources.SupportCol_L, " ")
-        Dim wind As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Wind", "Creates A Wind Column", My.Resources.WindCol_S, My.Resources.WindCol_L, " ")
-        Dim tube As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Tube", "Creates A Tube Column", My.Resources.TubeCol_S, My.Resources.TubeCol_L, " ")
+        Dim straight As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Straight", "Creates A Straight Column", My.Resources.StraightCol_S, My.Resources.StraightCol_L, "_column _straight ")
+        Dim taper As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Tapered", "Creates A Tapered Column", My.Resources.TaperCol_S, My.Resources.TaperCol_L, "_column _tapered ")
+        Dim portal As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Portal", "Creates A Portal Column", My.Resources.PortalCol_S, My.Resources.PortalCol_L, "_column _portal ")
+        Dim support As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Support", "Creates A Support Column", My.Resources.SupportCol_S, My.Resources.SupportCol_L, "_column _support ")
+        Dim wind As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Wind", "Creates A Wind Column", My.Resources.WindCol_S, My.Resources.WindCol_L, "_column _wind ")
+        Dim tube As RibbonButton = Sculpt.MakeButton("Vertical", "Large", "Tube", "Creates A Tube Column", My.Resources.TubeCol_S, My.Resources.TubeCol_L, "_column _tube ")
 
         Dim buttons As RibbonButton() = {straight, taper, portal, support, wind, tube}
 
