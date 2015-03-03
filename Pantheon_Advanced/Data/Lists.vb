@@ -9,4 +9,9 @@
     ' Foundation
 
     Public Shared StandardSlabList As List(Of StandardSlabObject) = New List(Of StandardSlabObject)()
+    Public Shared WallList As List(Of WallObject) = New List(Of WallObject)()
+
+    ' Columns
+
+    Public Shared StraightColumnList As List(Of StraightColumnObject) = New List(Of StraightColumnObject)()
 End Class
