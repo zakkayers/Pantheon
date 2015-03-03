@@ -24,6 +24,15 @@ Public Class StraightColumnForm
 
         End If
 
+        ComboGirt1.SelectedIndex = 0
+        ComboGirt2.SelectedIndex = 0
+        ComboGirt3.SelectedIndex = 0
+        ComboGirt4.SelectedIndex = 0
+        ComboGirt5.SelectedIndex = 0
+
+        CableCombo.SelectedIndex = 0
+        AnchorCombo.SelectedIndex = 0
+
         Application.ShowModelessDialog(Me)
     End Sub
 

@@ -1126,7 +1126,7 @@ Partial Class StraightColumnForm
         Me.MaximumSize = New System.Drawing.Size(831, 695)
         Me.MinimumSize = New System.Drawing.Size(831, 695)
         Me.Name = "StraightColumnForm"
-        Me.Text = "StraightColumnForm"
+        Me.Text = ""
         CType(Me.RadTitleBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EaveThickness, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.EaveWidth, System.ComponentModel.ISupportInitialize).EndInit()
