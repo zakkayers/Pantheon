@@ -16,7 +16,6 @@ Public Class StraightColumnObject
     Public AnchorObj As AnchorObject
 
     Public FlangeHoles As Boolean
-    Public Block As Boolean
 
     Public EaveThick As Double
     Public EaveWidth As Double
@@ -43,7 +42,7 @@ Public Class StraightColumnObject
 
     Public Sub New(ByVal mark As String, ByVal flush As Boolean, ByVal bypass As Boolean,
                    girtList As List(Of GirtObject), cableObj As CableObject, anchorObj As AnchorObject,
-                   ByVal flangeHoles As Boolean, ByVal block As Boolean,
+                   ByVal flangeHoles As Boolean,
                    ByVal eaveThick As Double, ByVal eaveWidth As Double, ByVal stiffThick As Double, ByVal stiffWidth As Double,
                    ByVal outerThick As Double, ByVal outerWidth As Double, ByVal innerThick As Double, ByVal innerWidth As Double,
                    ByVal webThick As Double, ByVal webDepth As Double, ByVal haunchThick As Double, ByVal haunchWidth As Double, ByVal haunchLength As Double,
@@ -57,7 +56,6 @@ Public Class StraightColumnObject
         Me.CableObj = cableObj
         Me.AnchorObj = anchorObj
         Me.FlangeHoles = flangeHoles
-        Me.Block = block
         Me.EaveThick = eaveThick
         Me.EaveWidth = eaveWidth
         Me.StiffThick = stiffThick
@@ -532,8 +530,8 @@ Public Class StraightColumnObject
                                                 topSlot.Center = topHolePoint
                                                 botSlot.Center = bottomHolePoint
 
-                                                topSlot.Diameter = CableObj.DiamDouble
-                                                botSlot.Diameter = CableObj.DiamDouble
+                                                topSlot.Diameter = 1
+                                                botSlot.Diameter = 1
 
                                                 btr.AppendEntity(topSlot)
                                                 btr.AppendEntity(botSlot)

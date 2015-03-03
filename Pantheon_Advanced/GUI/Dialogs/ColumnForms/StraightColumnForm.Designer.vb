@@ -63,7 +63,6 @@ Partial Class StraightColumnForm
         Me.RadGroupBox2 = New Telerik.WinControls.UI.RadGroupBox()
         Me.RadGroupBox7 = New Telerik.WinControls.UI.RadGroupBox()
         Me.LeanToHoles = New Telerik.WinControls.UI.RadToggleButton()
-        Me.LeanToBlock = New Telerik.WinControls.UI.RadToggleButton()
         Me.RadGroupBox6 = New Telerik.WinControls.UI.RadGroupBox()
         Me.AnchorBetween = New Telerik.WinControls.UI.RadTextBox()
         Me.RadLabel8 = New Telerik.WinControls.UI.RadLabel()
@@ -150,7 +149,6 @@ Partial Class StraightColumnForm
         CType(Me.RadGroupBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadGroupBox7.SuspendLayout()
         CType(Me.LeanToHoles, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.LeanToBlock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGroupBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadGroupBox6.SuspendLayout()
         CType(Me.AnchorBetween, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -214,7 +212,6 @@ Partial Class StraightColumnForm
         Me.RadTitleBar1.Size = New System.Drawing.Size(829, 23)
         Me.RadTitleBar1.TabIndex = 0
         Me.RadTitleBar1.TabStop = False
-        Me.RadTitleBar1.Text = "StraightColumnForm"
         Me.RadTitleBar1.ThemeName = "VisualStudio2012Dark"
         '
         'EaveThickness
@@ -240,7 +237,7 @@ Partial Class StraightColumnForm
         Me.StiffenerThickness.Location = New System.Drawing.Point(65, 193)
         Me.StiffenerThickness.Name = "StiffenerThickness"
         Me.StiffenerThickness.Size = New System.Drawing.Size(100, 21)
-        Me.StiffenerThickness.TabIndex = 5
+        Me.StiffenerThickness.TabIndex = 4
         Me.StiffenerThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.StiffenerThickness.ThemeName = "VisualStudio2012Dark"
         '
@@ -249,7 +246,7 @@ Partial Class StraightColumnForm
         Me.StiffenerWidth.Location = New System.Drawing.Point(65, 220)
         Me.StiffenerWidth.Name = "StiffenerWidth"
         Me.StiffenerWidth.Size = New System.Drawing.Size(100, 21)
-        Me.StiffenerWidth.TabIndex = 4
+        Me.StiffenerWidth.TabIndex = 5
         Me.StiffenerWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.StiffenerWidth.ThemeName = "VisualStudio2012Dark"
         '
@@ -573,7 +570,6 @@ Partial Class StraightColumnForm
         '
         Me.RadGroupBox7.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
         Me.RadGroupBox7.Controls.Add(Me.LeanToHoles)
-        Me.RadGroupBox7.Controls.Add(Me.LeanToBlock)
         Me.RadGroupBox7.HeaderText = "Lean To Connections"
         Me.RadGroupBox7.Location = New System.Drawing.Point(5, 510)
         Me.RadGroupBox7.Name = "RadGroupBox7"
@@ -586,19 +582,10 @@ Partial Class StraightColumnForm
         '
         Me.LeanToHoles.Location = New System.Drawing.Point(5, 21)
         Me.LeanToHoles.Name = "LeanToHoles"
-        Me.LeanToHoles.Size = New System.Drawing.Size(135, 24)
+        Me.LeanToHoles.Size = New System.Drawing.Size(278, 24)
         Me.LeanToHoles.TabIndex = 1
-        Me.LeanToHoles.Text = "Flange Holes"
+        Me.LeanToHoles.Text = "Add Lean To Flange Holes"
         Me.LeanToHoles.ThemeName = "VisualStudio2012Dark"
-        '
-        'LeanToBlock
-        '
-        Me.LeanToBlock.Location = New System.Drawing.Point(146, 21)
-        Me.LeanToBlock.Name = "LeanToBlock"
-        Me.LeanToBlock.Size = New System.Drawing.Size(135, 24)
-        Me.LeanToBlock.TabIndex = 2
-        Me.LeanToBlock.Text = "Block"
-        Me.LeanToBlock.ThemeName = "VisualStudio2012Dark"
         '
         'RadGroupBox6
         '
@@ -1168,7 +1155,6 @@ Partial Class StraightColumnForm
         CType(Me.RadGroupBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadGroupBox7.ResumeLayout(False)
         CType(Me.LeanToHoles, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LeanToBlock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadGroupBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadGroupBox6.ResumeLayout(False)
         Me.RadGroupBox6.PerformLayout()
@@ -1287,7 +1273,6 @@ Partial Class StraightColumnForm
     Friend WithEvents RadLabel5 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents RadGroupBox7 As Telerik.WinControls.UI.RadGroupBox
     Friend WithEvents LeanToHoles As Telerik.WinControls.UI.RadToggleButton
-    Friend WithEvents LeanToBlock As Telerik.WinControls.UI.RadToggleButton
     Friend WithEvents RadGroupBox6 As Telerik.WinControls.UI.RadGroupBox
     Friend WithEvents AnchorBetween As Telerik.WinControls.UI.RadTextBox
     Friend WithEvents RadLabel8 As Telerik.WinControls.UI.RadLabel

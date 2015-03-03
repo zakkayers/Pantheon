@@ -101,18 +101,6 @@ Public Class StraightColumnForm
         CableFromBottom.Enabled = toggle
     End Sub
 
-    Private Sub LeanToHoles_ToggleStateChanged(sender As Object, args As StateChangedEventArgs) Handles LeanToHoles.ToggleStateChanged
-        If LeanToHoles.IsChecked Then
-            LeanToBlock.IsChecked = False
-        End If
-    End Sub
-
-    Private Sub LeanToBlock_ToggleStateChanged(sender As Object, args As StateChangedEventArgs) Handles LeanToBlock.ToggleStateChanged
-        If LeanToBlock.IsChecked Then
-            LeanToHoles.IsChecked = False
-        End If
-    End Sub
-
     Private Sub Create_Click(sender As Object, e As EventArgs) Handles Create.Click
 
         Try
@@ -196,7 +184,6 @@ Public Class StraightColumnForm
                                                                               girtList, cableObj,
                                                                               anchorObj,
                                                                               LeanToHoles.IsChecked,
-                                                                              LeanToBlock.IsChecked,
                                                                               Converter.StringToDistance(EaveThickness.Text),
                                                                               Converter.StringToDistance(EaveWidth.Text),
                                                                               Converter.StringToDistance(StiffenerThickness.Text),
@@ -259,7 +246,6 @@ Public Class StraightColumnForm
                         Flush.IsChecked = True
                         Bypass.IsChecked = False
                         LeanToHoles.IsChecked = False
-                        LeanToBlock.IsChecked = False
 
                         ' Girt Group
                         AddGirt1.IsChecked = False
@@ -330,7 +316,6 @@ Public Class StraightColumnForm
                         Flush.IsChecked = Lists.StraightColumnList.Item(obj).Flush
                         Bypass.IsChecked = Lists.StraightColumnList.Item(obj).Bypass
                         LeanToHoles.IsChecked = Lists.StraightColumnList.Item(obj).FlangeHoles
-                        LeanToBlock.IsChecked = Lists.StraightColumnList.Item(obj).Block
 
                         ' Girt Group
                         AddGirt1.IsChecked = Lists.StraightColumnList.Item(obj).GirtList.Item(0).Add
