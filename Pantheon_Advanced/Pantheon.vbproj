@@ -9,8 +9,8 @@
     </SchemaVersion>
     <ProjectGuid>{ED84F25E-7C27-43CB-8CA1-F89283157E5B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Pantheon_Advanced</RootNamespace>
-    <AssemblyName>Pantheon_Advanced</AssemblyName>
+    <RootNamespace>Pantheon</RootNamespace>
+    <AssemblyName>Pantheon</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -40,7 +40,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Pantheon_Advanced.xml</DocumentationFile>
+    <DocumentationFile>Pantheon.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -50,7 +50,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Pantheon_Advanced.xml</DocumentationFile>
+    <DocumentationFile>Pantheon.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>

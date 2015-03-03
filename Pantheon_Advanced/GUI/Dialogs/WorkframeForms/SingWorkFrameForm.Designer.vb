@@ -281,7 +281,7 @@ Partial Class SingWorkFrameForm
         '
         'Add
         '
-        Me.Add.Image = Global.Pantheon_Advanced.My.Resources.Resources.Add
+        Me.Add.Image = Global.Pantheon.My.Resources.Resources.Add
         Me.Add.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Add.Location = New System.Drawing.Point(10, 54)
         Me.Add.Name = "Add"
@@ -320,7 +320,7 @@ Partial Class SingWorkFrameForm
         'Copy
         '
         Me.Copy.Enabled = False
-        Me.Copy.Image = Global.Pantheon_Advanced.My.Resources.Resources.EditName
+        Me.Copy.Image = Global.Pantheon.My.Resources.Resources.EditName
         Me.Copy.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Copy.Location = New System.Drawing.Point(41, 54)
         Me.Copy.Name = "Copy"

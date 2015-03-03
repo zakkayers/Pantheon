@@ -187,7 +187,7 @@ Partial Class Symbols
         '
         'DetailBubble
         '
-        Me.DetailBubble.Image = Global.Pantheon_Advanced.My.Resources.Resources.Detail
+        Me.DetailBubble.Image = Global.Pantheon.My.Resources.Resources.Detail
         Me.DetailBubble.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.DetailBubble.Location = New System.Drawing.Point(52, 167)
         Me.DetailBubble.Name = "DetailBubble"
@@ -219,7 +219,7 @@ Partial Class Symbols
         '
         'AnnoZ
         '
-        Me.AnnoZ.Image = Global.Pantheon_Advanced.My.Resources.Resources.Z
+        Me.AnnoZ.Image = Global.Pantheon.My.Resources.Resources.Z
         Me.AnnoZ.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoZ.Location = New System.Drawing.Point(6, 434)
         Me.AnnoZ.Name = "AnnoZ"
@@ -230,7 +230,7 @@ Partial Class Symbols
         '
         'AnnoY
         '
-        Me.AnnoY.Image = Global.Pantheon_Advanced.My.Resources.Resources.Y
+        Me.AnnoY.Image = Global.Pantheon.My.Resources.Resources.Y
         Me.AnnoY.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoY.Location = New System.Drawing.Point(110, 408)
         Me.AnnoY.Name = "AnnoY"
@@ -241,7 +241,7 @@ Partial Class Symbols
         '
         'AnnoX
         '
-        Me.AnnoX.Image = Global.Pantheon_Advanced.My.Resources.Resources.X
+        Me.AnnoX.Image = Global.Pantheon.My.Resources.Resources.X
         Me.AnnoX.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoX.Location = New System.Drawing.Point(84, 408)
         Me.AnnoX.Name = "AnnoX"
@@ -252,7 +252,7 @@ Partial Class Symbols
         '
         'AnnoW
         '
-        Me.AnnoW.Image = Global.Pantheon_Advanced.My.Resources.Resources.W
+        Me.AnnoW.Image = Global.Pantheon.My.Resources.Resources.W
         Me.AnnoW.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoW.Location = New System.Drawing.Point(58, 408)
         Me.AnnoW.Name = "AnnoW"
@@ -263,7 +263,7 @@ Partial Class Symbols
         '
         'AnnoV
         '
-        Me.AnnoV.Image = Global.Pantheon_Advanced.My.Resources.Resources.V
+        Me.AnnoV.Image = Global.Pantheon.My.Resources.Resources.V
         Me.AnnoV.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoV.Location = New System.Drawing.Point(32, 408)
         Me.AnnoV.Name = "AnnoV"
@@ -274,7 +274,7 @@ Partial Class Symbols
         '
         'AnnoU
         '
-        Me.AnnoU.Image = Global.Pantheon_Advanced.My.Resources.Resources.U
+        Me.AnnoU.Image = Global.Pantheon.My.Resources.Resources.U
         Me.AnnoU.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoU.Location = New System.Drawing.Point(6, 408)
         Me.AnnoU.Name = "AnnoU"
@@ -285,7 +285,7 @@ Partial Class Symbols
         '
         'AnnoT
         '
-        Me.AnnoT.Image = Global.Pantheon_Advanced.My.Resources.Resources.T
+        Me.AnnoT.Image = Global.Pantheon.My.Resources.Resources.T
         Me.AnnoT.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoT.Location = New System.Drawing.Point(110, 382)
         Me.AnnoT.Name = "AnnoT"
@@ -296,7 +296,7 @@ Partial Class Symbols
         '
         'AnnoS
         '
-        Me.AnnoS.Image = Global.Pantheon_Advanced.My.Resources.Resources.S
+        Me.AnnoS.Image = Global.Pantheon.My.Resources.Resources.S
         Me.AnnoS.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoS.Location = New System.Drawing.Point(84, 382)
         Me.AnnoS.Name = "AnnoS"
@@ -307,7 +307,7 @@ Partial Class Symbols
         '
         'AnnoR
         '
-        Me.AnnoR.Image = Global.Pantheon_Advanced.My.Resources.Resources.R
+        Me.AnnoR.Image = Global.Pantheon.My.Resources.Resources.R
         Me.AnnoR.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoR.Location = New System.Drawing.Point(58, 382)
         Me.AnnoR.Name = "AnnoR"
@@ -318,7 +318,7 @@ Partial Class Symbols
         '
         'AnnoQ
         '
-        Me.AnnoQ.Image = Global.Pantheon_Advanced.My.Resources.Resources.Q
+        Me.AnnoQ.Image = Global.Pantheon.My.Resources.Resources.Q
         Me.AnnoQ.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoQ.Location = New System.Drawing.Point(32, 382)
         Me.AnnoQ.Name = "AnnoQ"
@@ -329,7 +329,7 @@ Partial Class Symbols
         '
         'AnnoP
         '
-        Me.AnnoP.Image = Global.Pantheon_Advanced.My.Resources.Resources.P
+        Me.AnnoP.Image = Global.Pantheon.My.Resources.Resources.P
         Me.AnnoP.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoP.Location = New System.Drawing.Point(6, 382)
         Me.AnnoP.Name = "AnnoP"
@@ -340,7 +340,7 @@ Partial Class Symbols
         '
         'AnnoO
         '
-        Me.AnnoO.Image = Global.Pantheon_Advanced.My.Resources.Resources.O
+        Me.AnnoO.Image = Global.Pantheon.My.Resources.Resources.O
         Me.AnnoO.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoO.Location = New System.Drawing.Point(110, 356)
         Me.AnnoO.Name = "AnnoO"
@@ -351,7 +351,7 @@ Partial Class Symbols
         '
         'AnnoN
         '
-        Me.AnnoN.Image = Global.Pantheon_Advanced.My.Resources.Resources.N
+        Me.AnnoN.Image = Global.Pantheon.My.Resources.Resources.N
         Me.AnnoN.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoN.Location = New System.Drawing.Point(84, 356)
         Me.AnnoN.Name = "AnnoN"
@@ -362,7 +362,7 @@ Partial Class Symbols
         '
         'AnnoM
         '
-        Me.AnnoM.Image = Global.Pantheon_Advanced.My.Resources.Resources.M
+        Me.AnnoM.Image = Global.Pantheon.My.Resources.Resources.M
         Me.AnnoM.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoM.Location = New System.Drawing.Point(58, 356)
         Me.AnnoM.Name = "AnnoM"
@@ -373,7 +373,7 @@ Partial Class Symbols
         '
         'AnnoL
         '
-        Me.AnnoL.Image = Global.Pantheon_Advanced.My.Resources.Resources.L
+        Me.AnnoL.Image = Global.Pantheon.My.Resources.Resources.L
         Me.AnnoL.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoL.Location = New System.Drawing.Point(32, 356)
         Me.AnnoL.Name = "AnnoL"
@@ -384,7 +384,7 @@ Partial Class Symbols
         '
         'AnnoK
         '
-        Me.AnnoK.Image = Global.Pantheon_Advanced.My.Resources.Resources.K
+        Me.AnnoK.Image = Global.Pantheon.My.Resources.Resources.K
         Me.AnnoK.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoK.Location = New System.Drawing.Point(6, 356)
         Me.AnnoK.Name = "AnnoK"
@@ -395,7 +395,7 @@ Partial Class Symbols
         '
         'AnnoJ
         '
-        Me.AnnoJ.Image = Global.Pantheon_Advanced.My.Resources.Resources.J
+        Me.AnnoJ.Image = Global.Pantheon.My.Resources.Resources.J
         Me.AnnoJ.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoJ.Location = New System.Drawing.Point(110, 330)
         Me.AnnoJ.Name = "AnnoJ"
@@ -406,7 +406,7 @@ Partial Class Symbols
         '
         'AnnoI
         '
-        Me.AnnoI.Image = Global.Pantheon_Advanced.My.Resources.Resources.I
+        Me.AnnoI.Image = Global.Pantheon.My.Resources.Resources.I
         Me.AnnoI.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoI.Location = New System.Drawing.Point(84, 330)
         Me.AnnoI.Name = "AnnoI"
@@ -417,7 +417,7 @@ Partial Class Symbols
         '
         'AnnoH
         '
-        Me.AnnoH.Image = Global.Pantheon_Advanced.My.Resources.Resources.H
+        Me.AnnoH.Image = Global.Pantheon.My.Resources.Resources.H
         Me.AnnoH.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoH.Location = New System.Drawing.Point(58, 330)
         Me.AnnoH.Name = "AnnoH"
@@ -428,7 +428,7 @@ Partial Class Symbols
         '
         'AnnoG
         '
-        Me.AnnoG.Image = Global.Pantheon_Advanced.My.Resources.Resources.G
+        Me.AnnoG.Image = Global.Pantheon.My.Resources.Resources.G
         Me.AnnoG.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoG.Location = New System.Drawing.Point(32, 330)
         Me.AnnoG.Name = "AnnoG"
@@ -439,7 +439,7 @@ Partial Class Symbols
         '
         'AnnoF
         '
-        Me.AnnoF.Image = Global.Pantheon_Advanced.My.Resources.Resources.F
+        Me.AnnoF.Image = Global.Pantheon.My.Resources.Resources.F
         Me.AnnoF.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoF.Location = New System.Drawing.Point(6, 330)
         Me.AnnoF.Name = "AnnoF"
@@ -450,7 +450,7 @@ Partial Class Symbols
         '
         'AnnoE
         '
-        Me.AnnoE.Image = Global.Pantheon_Advanced.My.Resources.Resources.E
+        Me.AnnoE.Image = Global.Pantheon.My.Resources.Resources.E
         Me.AnnoE.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoE.Location = New System.Drawing.Point(110, 304)
         Me.AnnoE.Name = "AnnoE"
@@ -461,7 +461,7 @@ Partial Class Symbols
         '
         'AnnoD
         '
-        Me.AnnoD.Image = Global.Pantheon_Advanced.My.Resources.Resources.D
+        Me.AnnoD.Image = Global.Pantheon.My.Resources.Resources.D
         Me.AnnoD.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoD.Location = New System.Drawing.Point(84, 304)
         Me.AnnoD.Name = "AnnoD"
@@ -472,7 +472,7 @@ Partial Class Symbols
         '
         'AnnoC
         '
-        Me.AnnoC.Image = Global.Pantheon_Advanced.My.Resources.Resources.C
+        Me.AnnoC.Image = Global.Pantheon.My.Resources.Resources.C
         Me.AnnoC.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoC.Location = New System.Drawing.Point(58, 304)
         Me.AnnoC.Name = "AnnoC"
@@ -483,7 +483,7 @@ Partial Class Symbols
         '
         'AnnoB
         '
-        Me.AnnoB.Image = Global.Pantheon_Advanced.My.Resources.Resources.B
+        Me.AnnoB.Image = Global.Pantheon.My.Resources.Resources.B
         Me.AnnoB.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoB.Location = New System.Drawing.Point(32, 304)
         Me.AnnoB.Name = "AnnoB"
@@ -494,7 +494,7 @@ Partial Class Symbols
         '
         'AnnoA
         '
-        Me.AnnoA.Image = Global.Pantheon_Advanced.My.Resources.Resources.A
+        Me.AnnoA.Image = Global.Pantheon.My.Resources.Resources.A
         Me.AnnoA.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.AnnoA.Location = New System.Drawing.Point(6, 304)
         Me.AnnoA.Name = "AnnoA"
@@ -505,7 +505,7 @@ Partial Class Symbols
         '
         'Anno0
         '
-        Me.Anno0.Image = Global.Pantheon_Advanced.My.Resources.Resources._0
+        Me.Anno0.Image = Global.Pantheon.My.Resources.Resources._0
         Me.Anno0.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno0.Location = New System.Drawing.Point(110, 266)
         Me.Anno0.Name = "Anno0"
@@ -516,7 +516,7 @@ Partial Class Symbols
         '
         'Anno9
         '
-        Me.Anno9.Image = Global.Pantheon_Advanced.My.Resources.Resources._9
+        Me.Anno9.Image = Global.Pantheon.My.Resources.Resources._9
         Me.Anno9.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno9.Location = New System.Drawing.Point(84, 266)
         Me.Anno9.Name = "Anno9"
@@ -527,7 +527,7 @@ Partial Class Symbols
         '
         'Anno8
         '
-        Me.Anno8.Image = Global.Pantheon_Advanced.My.Resources.Resources._8
+        Me.Anno8.Image = Global.Pantheon.My.Resources.Resources._8
         Me.Anno8.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno8.Location = New System.Drawing.Point(58, 266)
         Me.Anno8.Name = "Anno8"
@@ -538,7 +538,7 @@ Partial Class Symbols
         '
         'Anno7
         '
-        Me.Anno7.Image = Global.Pantheon_Advanced.My.Resources.Resources._7
+        Me.Anno7.Image = Global.Pantheon.My.Resources.Resources._7
         Me.Anno7.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno7.Location = New System.Drawing.Point(32, 266)
         Me.Anno7.Name = "Anno7"
@@ -549,7 +549,7 @@ Partial Class Symbols
         '
         'Anno6
         '
-        Me.Anno6.Image = Global.Pantheon_Advanced.My.Resources.Resources._6
+        Me.Anno6.Image = Global.Pantheon.My.Resources.Resources._6
         Me.Anno6.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno6.Location = New System.Drawing.Point(6, 266)
         Me.Anno6.Name = "Anno6"
@@ -560,7 +560,7 @@ Partial Class Symbols
         '
         'Anno5
         '
-        Me.Anno5.Image = Global.Pantheon_Advanced.My.Resources.Resources._5
+        Me.Anno5.Image = Global.Pantheon.My.Resources.Resources._5
         Me.Anno5.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno5.Location = New System.Drawing.Point(110, 240)
         Me.Anno5.Name = "Anno5"
@@ -571,7 +571,7 @@ Partial Class Symbols
         '
         'Anno4
         '
-        Me.Anno4.Image = Global.Pantheon_Advanced.My.Resources.Resources._4
+        Me.Anno4.Image = Global.Pantheon.My.Resources.Resources._4
         Me.Anno4.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno4.Location = New System.Drawing.Point(84, 240)
         Me.Anno4.Name = "Anno4"
@@ -582,7 +582,7 @@ Partial Class Symbols
         '
         'Anno3
         '
-        Me.Anno3.Image = Global.Pantheon_Advanced.My.Resources.Resources._3
+        Me.Anno3.Image = Global.Pantheon.My.Resources.Resources._3
         Me.Anno3.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno3.Location = New System.Drawing.Point(58, 240)
         Me.Anno3.Name = "Anno3"
@@ -593,7 +593,7 @@ Partial Class Symbols
         '
         'Anno2
         '
-        Me.Anno2.Image = Global.Pantheon_Advanced.My.Resources.Resources._2
+        Me.Anno2.Image = Global.Pantheon.My.Resources.Resources._2
         Me.Anno2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno2.Location = New System.Drawing.Point(32, 240)
         Me.Anno2.Name = "Anno2"
@@ -604,7 +604,7 @@ Partial Class Symbols
         '
         'Anno1
         '
-        Me.Anno1.Image = Global.Pantheon_Advanced.My.Resources.Resources._1
+        Me.Anno1.Image = Global.Pantheon.My.Resources.Resources._1
         Me.Anno1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anno1.Location = New System.Drawing.Point(6, 240)
         Me.Anno1.Name = "Anno1"
@@ -625,7 +625,7 @@ Partial Class Symbols
         '
         'LetterSection
         '
-        Me.LetterSection.Image = Global.Pantheon_Advanced.My.Resources.Resources.SectionVert
+        Me.LetterSection.Image = Global.Pantheon.My.Resources.Resources.SectionVert
         Me.LetterSection.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.LetterSection.Location = New System.Drawing.Point(6, 167)
         Me.LetterSection.Name = "LetterSection"
@@ -637,7 +637,7 @@ Partial Class Symbols
         '
         'XDecPitch
         '
-        Me.XDecPitch.Image = Global.Pantheon_Advanced.My.Resources.Resources.xDeg
+        Me.XDecPitch.Image = Global.Pantheon.My.Resources.Resources.xDeg
         Me.XDecPitch.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.XDecPitch.Location = New System.Drawing.Point(52, 97)
         Me.XDecPitch.Name = "XDecPitch"
@@ -649,7 +649,7 @@ Partial Class Symbols
         '
         'X12Pitch
         '
-        Me.X12Pitch.Image = Global.Pantheon_Advanced.My.Resources.Resources.x12
+        Me.X12Pitch.Image = Global.Pantheon.My.Resources.Resources.x12
         Me.X12Pitch.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.X12Pitch.Location = New System.Drawing.Point(6, 97)
         Me.X12Pitch.Name = "X12Pitch"
@@ -661,7 +661,7 @@ Partial Class Symbols
         '
         'FloorDimension
         '
-        Me.FloorDimension.Image = Global.Pantheon_Advanced.My.Resources.Resources.Elevation2
+        Me.FloorDimension.Image = Global.Pantheon.My.Resources.Resources.Elevation2
         Me.FloorDimension.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.FloorDimension.Location = New System.Drawing.Point(52, 27)
         Me.FloorDimension.Name = "FloorDimension"
@@ -673,7 +673,7 @@ Partial Class Symbols
         '
         'ElevationSymbol
         '
-        Me.ElevationSymbol.Image = Global.Pantheon_Advanced.My.Resources.Resources.Elevation1
+        Me.ElevationSymbol.Image = Global.Pantheon.My.Resources.Resources.Elevation1
         Me.ElevationSymbol.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ElevationSymbol.Location = New System.Drawing.Point(6, 27)
         Me.ElevationSymbol.Name = "ElevationSymbol"

@@ -110,7 +110,7 @@ Partial Class Trim
         '
         'Gutters
         '
-        Me.Gutters.Image = Global.Pantheon_Advanced.My.Resources.Resources.Gutter
+        Me.Gutters.Image = Global.Pantheon.My.Resources.Resources.Gutter
         Me.Gutters.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.Gutters.Location = New System.Drawing.Point(4, 94)
         Me.Gutters.Name = "Gutters"
@@ -123,7 +123,7 @@ Partial Class Trim
         '
         'Downspouts
         '
-        Me.Downspouts.Image = Global.Pantheon_Advanced.My.Resources.Resources.Downspout
+        Me.Downspouts.Image = Global.Pantheon.My.Resources.Resources.Downspout
         Me.Downspouts.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.Downspouts.Location = New System.Drawing.Point(4, 120)
         Me.Downspouts.Name = "Downspouts"
@@ -136,7 +136,7 @@ Partial Class Trim
         '
         'CornerBoxes
         '
-        Me.CornerBoxes.Image = Global.Pantheon_Advanced.My.Resources.Resources.CornerBox
+        Me.CornerBoxes.Image = Global.Pantheon.My.Resources.Resources.CornerBox
         Me.CornerBoxes.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.CornerBoxes.Location = New System.Drawing.Point(4, 510)
         Me.CornerBoxes.Name = "CornerBoxes"
@@ -149,7 +149,7 @@ Partial Class Trim
         '
         'PeakBoxes
         '
-        Me.PeakBoxes.Image = Global.Pantheon_Advanced.My.Resources.Resources.PeakBox
+        Me.PeakBoxes.Image = Global.Pantheon.My.Resources.Resources.PeakBox
         Me.PeakBoxes.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.PeakBoxes.Location = New System.Drawing.Point(3, 484)
         Me.PeakBoxes.Name = "PeakBoxes"
@@ -162,7 +162,7 @@ Partial Class Trim
         '
         'Flashing
         '
-        Me.Flashing.Image = Global.Pantheon_Advanced.My.Resources.Resources.Flashing
+        Me.Flashing.Image = Global.Pantheon.My.Resources.Resources.Flashing
         Me.Flashing.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.Flashing.Location = New System.Drawing.Point(4, 458)
         Me.Flashing.Name = "Flashing"
@@ -175,7 +175,7 @@ Partial Class Trim
         '
         'BaseTrims
         '
-        Me.BaseTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.BaseTrim
+        Me.BaseTrims.Image = Global.Pantheon.My.Resources.Resources.BaseTrim
         Me.BaseTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.BaseTrims.Location = New System.Drawing.Point(4, 432)
         Me.BaseTrims.Name = "BaseTrims"
@@ -188,7 +188,7 @@ Partial Class Trim
         '
         'TermTrims
         '
-        Me.TermTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.TermTrim
+        Me.TermTrims.Image = Global.Pantheon.My.Resources.Resources.TermTrim
         Me.TermTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.TermTrims.Location = New System.Drawing.Point(4, 406)
         Me.TermTrims.Name = "TermTrims"
@@ -201,7 +201,7 @@ Partial Class Trim
         '
         'TransitionTrims
         '
-        Me.TransitionTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.TransitionTrim
+        Me.TransitionTrims.Image = Global.Pantheon.My.Resources.Resources.TransitionTrim
         Me.TransitionTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.TransitionTrims.Location = New System.Drawing.Point(4, 380)
         Me.TransitionTrims.Name = "TransitionTrims"
@@ -214,7 +214,7 @@ Partial Class Trim
         '
         'EaveTrims
         '
-        Me.EaveTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.EaveTrim
+        Me.EaveTrims.Image = Global.Pantheon.My.Resources.Resources.EaveTrim
         Me.EaveTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.EaveTrims.Location = New System.Drawing.Point(4, 146)
         Me.EaveTrims.Name = "EaveTrims"
@@ -227,7 +227,7 @@ Partial Class Trim
         '
         'PartitionTrims
         '
-        Me.PartitionTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.PartitioNTrim
+        Me.PartitionTrims.Image = Global.Pantheon.My.Resources.Resources.PartitioNTrim
         Me.PartitionTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.PartitionTrims.Location = New System.Drawing.Point(4, 354)
         Me.PartitionTrims.Name = "PartitionTrims"
@@ -240,7 +240,7 @@ Partial Class Trim
         '
         'CapTrims
         '
-        Me.CapTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.CapTrim
+        Me.CapTrims.Image = Global.Pantheon.My.Resources.Resources.CapTrim
         Me.CapTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.CapTrims.Location = New System.Drawing.Point(3, 250)
         Me.CapTrims.Name = "CapTrims"
@@ -253,7 +253,7 @@ Partial Class Trim
         '
         'SoffitTrims
         '
-        Me.SoffitTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.SoffitTrim
+        Me.SoffitTrims.Image = Global.Pantheon.My.Resources.Resources.SoffitTrim
         Me.SoffitTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.SoffitTrims.Location = New System.Drawing.Point(3, 328)
         Me.SoffitTrims.Name = "SoffitTrims"
@@ -266,7 +266,7 @@ Partial Class Trim
         '
         'WainsTrims
         '
-        Me.WainsTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.WainsTrim
+        Me.WainsTrims.Image = Global.Pantheon.My.Resources.Resources.WainsTrim
         Me.WainsTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.WainsTrims.Location = New System.Drawing.Point(3, 302)
         Me.WainsTrims.Name = "WainsTrims"
@@ -279,7 +279,7 @@ Partial Class Trim
         '
         'LinerTrims
         '
-        Me.LinerTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.LinerTrim
+        Me.LinerTrims.Image = Global.Pantheon.My.Resources.Resources.LinerTrim
         Me.LinerTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.LinerTrims.Location = New System.Drawing.Point(3, 276)
         Me.LinerTrims.Name = "LinerTrims"
@@ -292,7 +292,7 @@ Partial Class Trim
         '
         'JambTrims
         '
-        Me.JambTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.JambTrim
+        Me.JambTrims.Image = Global.Pantheon.My.Resources.Resources.JambTrim
         Me.JambTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.JambTrims.Location = New System.Drawing.Point(3, 224)
         Me.JambTrims.Name = "JambTrims"
@@ -305,7 +305,7 @@ Partial Class Trim
         '
         'CornerTrims
         '
-        Me.CornerTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.CornerTrim
+        Me.CornerTrims.Image = Global.Pantheon.My.Resources.Resources.CornerTrim
         Me.CornerTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.CornerTrims.Location = New System.Drawing.Point(3, 198)
         Me.CornerTrims.Name = "CornerTrims"
@@ -318,7 +318,7 @@ Partial Class Trim
         '
         'RakeTrims
         '
-        Me.RakeTrims.Image = Global.Pantheon_Advanced.My.Resources.Resources.RakeTrim
+        Me.RakeTrims.Image = Global.Pantheon.My.Resources.Resources.RakeTrim
         Me.RakeTrims.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.RakeTrims.Location = New System.Drawing.Point(3, 172)
         Me.RakeTrims.Name = "RakeTrims"
@@ -331,7 +331,7 @@ Partial Class Trim
         '
         'TrimStudio
         '
-        Me.TrimStudio.Image = Global.Pantheon_Advanced.My.Resources.Resources.TrimStudio
+        Me.TrimStudio.Image = Global.Pantheon.My.Resources.Resources.TrimStudio
         Me.TrimStudio.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.TrimStudio.Location = New System.Drawing.Point(4, 28)
         Me.TrimStudio.Name = "TrimStudio"

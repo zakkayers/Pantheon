@@ -75,7 +75,7 @@ Partial Class Angles
         '
         'A6
         '
-        Me.A6.Image = Global.Pantheon_Advanced.My.Resources.Resources.A6
+        Me.A6.Image = Global.Pantheon.My.Resources.Resources.A6
         Me.A6.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.A6.Location = New System.Drawing.Point(3, 457)
         Me.A6.Name = "A6"
@@ -87,7 +87,7 @@ Partial Class Angles
         '
         'A5
         '
-        Me.A5.Image = Global.Pantheon_Advanced.My.Resources.Resources.A5
+        Me.A5.Image = Global.Pantheon.My.Resources.Resources.A5
         Me.A5.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.A5.Location = New System.Drawing.Point(3, 371)
         Me.A5.Name = "A5"
@@ -99,7 +99,7 @@ Partial Class Angles
         '
         'A4
         '
-        Me.A4.Image = Global.Pantheon_Advanced.My.Resources.Resources.A4
+        Me.A4.Image = Global.Pantheon.My.Resources.Resources.A4
         Me.A4.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.A4.Location = New System.Drawing.Point(3, 285)
         Me.A4.Name = "A4"
@@ -111,7 +111,7 @@ Partial Class Angles
         '
         'A3
         '
-        Me.A3.Image = Global.Pantheon_Advanced.My.Resources.Resources.A3
+        Me.A3.Image = Global.Pantheon.My.Resources.Resources.A3
         Me.A3.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.A3.Location = New System.Drawing.Point(3, 199)
         Me.A3.Name = "A3"
@@ -123,7 +123,7 @@ Partial Class Angles
         '
         'A2
         '
-        Me.A2.Image = Global.Pantheon_Advanced.My.Resources.Resources.A2
+        Me.A2.Image = Global.Pantheon.My.Resources.Resources.A2
         Me.A2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.A2.Location = New System.Drawing.Point(3, 113)
         Me.A2.Name = "A2"
@@ -135,7 +135,7 @@ Partial Class Angles
         '
         'A1
         '
-        Me.A1.Image = Global.Pantheon_Advanced.My.Resources.Resources.A1
+        Me.A1.Image = Global.Pantheon.My.Resources.Resources.A1
         Me.A1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.A1.Location = New System.Drawing.Point(3, 27)
         Me.A1.Name = "A1"

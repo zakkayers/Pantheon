@@ -42,7 +42,7 @@ Friend Class myCommands
     Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
         Get
             If Object.ReferenceEquals(resourceMan, Nothing) Then
-                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Pantheon_Advanced.myCommands", GetType(myCommands).Assembly)
+                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Pantheon.myCommands", GetType(myCommands).Assembly)
                 resourceMan = temp
             End If
             Return resourceMan

@@ -112,7 +112,7 @@ Partial Class WallForm
         'Copy
         '
         Me.Copy.Enabled = False
-        Me.Copy.Image = Global.Pantheon_Advanced.My.Resources.Resources.EditName
+        Me.Copy.Image = Global.Pantheon.My.Resources.Resources.EditName
         Me.Copy.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Copy.Location = New System.Drawing.Point(43, 54)
         Me.Copy.Name = "Copy"
@@ -142,7 +142,7 @@ Partial Class WallForm
         '
         'Add
         '
-        Me.Add.Image = Global.Pantheon_Advanced.My.Resources.Resources.Add
+        Me.Add.Image = Global.Pantheon.My.Resources.Resources.Add
         Me.Add.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Add.Location = New System.Drawing.Point(12, 54)
         Me.Add.Name = "Add"

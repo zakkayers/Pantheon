@@ -83,7 +83,7 @@ Partial Class Steel
         '
         'RakeAngle
         '
-        Me.RakeAngle.Image = Global.Pantheon_Advanced.My.Resources.Resources.RakeAngle
+        Me.RakeAngle.Image = Global.Pantheon.My.Resources.Resources.RakeAngle
         Me.RakeAngle.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.RakeAngle.Location = New System.Drawing.Point(96, 238)
         Me.RakeAngle.Name = "RakeAngle"
@@ -94,7 +94,7 @@ Partial Class Steel
         '
         'CornerAngle
         '
-        Me.CornerAngle.Image = Global.Pantheon_Advanced.My.Resources.Resources.CornerAngle
+        Me.CornerAngle.Image = Global.Pantheon.My.Resources.Resources.CornerAngle
         Me.CornerAngle.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.CornerAngle.Location = New System.Drawing.Point(50, 238)
         Me.CornerAngle.Name = "CornerAngle"
@@ -105,7 +105,7 @@ Partial Class Steel
         '
         'BaseAngle
         '
-        Me.BaseAngle.Image = Global.Pantheon_Advanced.My.Resources.Resources.BaseAngle
+        Me.BaseAngle.Image = Global.Pantheon.My.Resources.Resources.BaseAngle
         Me.BaseAngle.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.BaseAngle.Location = New System.Drawing.Point(4, 238)
         Me.BaseAngle.Name = "BaseAngle"
@@ -125,7 +125,7 @@ Partial Class Steel
         '
         'EaveDown
         '
-        Me.EaveDown.Image = Global.Pantheon_Advanced.My.Resources.Resources.Eave_DSD
+        Me.EaveDown.Image = Global.Pantheon.My.Resources.Resources.Eave_DSD
         Me.EaveDown.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.EaveDown.Location = New System.Drawing.Point(50, 168)
         Me.EaveDown.Name = "EaveDown"
@@ -145,7 +145,7 @@ Partial Class Steel
         '
         'EaveUp
         '
-        Me.EaveUp.Image = Global.Pantheon_Advanced.My.Resources.Resources.Eave_DSU
+        Me.EaveUp.Image = Global.Pantheon.My.Resources.Resources.Eave_DSU
         Me.EaveUp.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.EaveUp.Location = New System.Drawing.Point(4, 168)
         Me.EaveUp.Name = "EaveUp"
@@ -156,7 +156,7 @@ Partial Class Steel
         '
         'CeeBase
         '
-        Me.CeeBase.Image = Global.Pantheon_Advanced.My.Resources.Resources.Cee_Base
+        Me.CeeBase.Image = Global.Pantheon.My.Resources.Resources.Cee_Base
         Me.CeeBase.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.CeeBase.Location = New System.Drawing.Point(50, 98)
         Me.CeeBase.Name = "CeeBase"
@@ -167,7 +167,7 @@ Partial Class Steel
         '
         'CeeGirt
         '
-        Me.CeeGirt.Image = Global.Pantheon_Advanced.My.Resources.Resources.Cee_Girt
+        Me.CeeGirt.Image = Global.Pantheon.My.Resources.Resources.Cee_Girt
         Me.CeeGirt.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.CeeGirt.Location = New System.Drawing.Point(4, 98)
         Me.CeeGirt.Name = "CeeGirt"
@@ -187,7 +187,7 @@ Partial Class Steel
         '
         'ZeeGirt
         '
-        Me.ZeeGirt.Image = Global.Pantheon_Advanced.My.Resources.Resources.Zee_Girt
+        Me.ZeeGirt.Image = Global.Pantheon.My.Resources.Resources.Zee_Girt
         Me.ZeeGirt.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ZeeGirt.Location = New System.Drawing.Point(50, 28)
         Me.ZeeGirt.Name = "ZeeGirt"
@@ -198,7 +198,7 @@ Partial Class Steel
         '
         'ZeePurlin
         '
-        Me.ZeePurlin.Image = Global.Pantheon_Advanced.My.Resources.Resources.Zee_Purlin
+        Me.ZeePurlin.Image = Global.Pantheon.My.Resources.Resources.Zee_Purlin
         Me.ZeePurlin.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ZeePurlin.Location = New System.Drawing.Point(4, 28)
         Me.ZeePurlin.Name = "ZeePurlin"

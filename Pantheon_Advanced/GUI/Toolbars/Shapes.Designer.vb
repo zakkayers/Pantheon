@@ -75,7 +75,7 @@ Partial Class Shapes
         '
         'Cee
         '
-        Me.Cee.Image = Global.Pantheon_Advanced.My.Resources.Resources.Cee
+        Me.Cee.Image = Global.Pantheon.My.Resources.Resources.Cee
         Me.Cee.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Cee.Location = New System.Drawing.Point(72, 381)
         Me.Cee.Name = "Cee"
@@ -86,7 +86,7 @@ Partial Class Shapes
         '
         'RolledI
         '
-        Me.RolledI.Image = Global.Pantheon_Advanced.My.Resources.Resources.RolledI
+        Me.RolledI.Image = Global.Pantheon.My.Resources.Resources.RolledI
         Me.RolledI.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.RolledI.Location = New System.Drawing.Point(25, 381)
         Me.RolledI.Name = "RolledI"
@@ -97,7 +97,7 @@ Partial Class Shapes
         '
         'Tube
         '
-        Me.Tube.Image = Global.Pantheon_Advanced.My.Resources.Resources.Tube
+        Me.Tube.Image = Global.Pantheon.My.Resources.Resources.Tube
         Me.Tube.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Tube.Location = New System.Drawing.Point(72, 475)
         Me.Tube.Name = "Tube"
@@ -108,7 +108,7 @@ Partial Class Shapes
         '
         'T
         '
-        Me.T.Image = Global.Pantheon_Advanced.My.Resources.Resources.T1
+        Me.T.Image = Global.Pantheon.My.Resources.Resources.T1
         Me.T.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.T.Location = New System.Drawing.Point(25, 475)
         Me.T.Name = "T"
@@ -119,7 +119,7 @@ Partial Class Shapes
         '
         'Angle
         '
-        Me.Angle.Image = Global.Pantheon_Advanced.My.Resources.Resources.Angle
+        Me.Angle.Image = Global.Pantheon.My.Resources.Resources.Angle
         Me.Angle.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Angle.Location = New System.Drawing.Point(72, 428)
         Me.Angle.Name = "Angle"
@@ -130,7 +130,7 @@ Partial Class Shapes
         '
         'SSD
         '
-        Me.SSD.Image = Global.Pantheon_Advanced.My.Resources.Resources.EaveSSD
+        Me.SSD.Image = Global.Pantheon.My.Resources.Resources.EaveSSD
         Me.SSD.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.SSD.Location = New System.Drawing.Point(72, 310)
         Me.SSD.Name = "SSD"
@@ -141,7 +141,7 @@ Partial Class Shapes
         '
         'Channel
         '
-        Me.Channel.Image = Global.Pantheon_Advanced.My.Resources.Resources.Channel
+        Me.Channel.Image = Global.Pantheon.My.Resources.Resources.Channel
         Me.Channel.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Channel.Location = New System.Drawing.Point(25, 428)
         Me.Channel.Name = "Channel"
@@ -152,7 +152,7 @@ Partial Class Shapes
         '
         'DSD
         '
-        Me.DSD.Image = Global.Pantheon_Advanced.My.Resources.Resources.EaveDSD
+        Me.DSD.Image = Global.Pantheon.My.Resources.Resources.EaveDSD
         Me.DSD.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.DSD.Location = New System.Drawing.Point(25, 310)
         Me.DSD.Name = "DSD"
@@ -163,7 +163,7 @@ Partial Class Shapes
         '
         'SSU
         '
-        Me.SSU.Image = Global.Pantheon_Advanced.My.Resources.Resources.EaveSSU
+        Me.SSU.Image = Global.Pantheon.My.Resources.Resources.EaveSSU
         Me.SSU.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.SSU.Location = New System.Drawing.Point(72, 263)
         Me.SSU.Name = "SSU"
@@ -174,7 +174,7 @@ Partial Class Shapes
         '
         'DSU
         '
-        Me.DSU.Image = Global.Pantheon_Advanced.My.Resources.Resources.EaveDSU
+        Me.DSU.Image = Global.Pantheon.My.Resources.Resources.EaveDSU
         Me.DSU.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.DSU.Location = New System.Drawing.Point(25, 263)
         Me.DSU.Name = "DSU"
@@ -185,7 +185,7 @@ Partial Class Shapes
         '
         'JambHor
         '
-        Me.JambHor.Image = Global.Pantheon_Advanced.My.Resources.Resources.JambHor
+        Me.JambHor.Image = Global.Pantheon.My.Resources.Resources.JambHor
         Me.JambHor.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.JambHor.Location = New System.Drawing.Point(72, 192)
         Me.JambHor.Name = "JambHor"
@@ -196,7 +196,7 @@ Partial Class Shapes
         '
         'JambVert
         '
-        Me.JambVert.Image = Global.Pantheon_Advanced.My.Resources.Resources.JambVert
+        Me.JambVert.Image = Global.Pantheon.My.Resources.Resources.JambVert
         Me.JambVert.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.JambVert.Location = New System.Drawing.Point(25, 192)
         Me.JambVert.Name = "JambVert"
@@ -207,7 +207,7 @@ Partial Class Shapes
         '
         'PostHor
         '
-        Me.PostHor.Image = Global.Pantheon_Advanced.My.Resources.Resources.PostHor
+        Me.PostHor.Image = Global.Pantheon.My.Resources.Resources.PostHor
         Me.PostHor.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.PostHor.Location = New System.Drawing.Point(72, 145)
         Me.PostHor.Name = "PostHor"
@@ -218,7 +218,7 @@ Partial Class Shapes
         '
         'PostVert
         '
-        Me.PostVert.Image = Global.Pantheon_Advanced.My.Resources.Resources.PostVert
+        Me.PostVert.Image = Global.Pantheon.My.Resources.Resources.PostVert
         Me.PostVert.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.PostVert.Location = New System.Drawing.Point(25, 145)
         Me.PostVert.Name = "PostVert"
@@ -229,7 +229,7 @@ Partial Class Shapes
         '
         'GirtRight
         '
-        Me.GirtRight.Image = Global.Pantheon_Advanced.My.Resources.Resources.GirtRight
+        Me.GirtRight.Image = Global.Pantheon.My.Resources.Resources.GirtRight
         Me.GirtRight.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.GirtRight.Location = New System.Drawing.Point(72, 74)
         Me.GirtRight.Name = "GirtRight"
@@ -240,7 +240,7 @@ Partial Class Shapes
         '
         'GirtLeft
         '
-        Me.GirtLeft.Image = Global.Pantheon_Advanced.My.Resources.Resources.GirtLeft
+        Me.GirtLeft.Image = Global.Pantheon.My.Resources.Resources.GirtLeft
         Me.GirtLeft.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.GirtLeft.Location = New System.Drawing.Point(25, 74)
         Me.GirtLeft.Name = "GirtLeft"
@@ -251,7 +251,7 @@ Partial Class Shapes
         '
         'PurlinRight
         '
-        Me.PurlinRight.Image = Global.Pantheon_Advanced.My.Resources.Resources.PurlinRight
+        Me.PurlinRight.Image = Global.Pantheon.My.Resources.Resources.PurlinRight
         Me.PurlinRight.ImageAlignment = System.Drawing.ContentAlignment.TopCenter
         Me.PurlinRight.Location = New System.Drawing.Point(72, 27)
         Me.PurlinRight.Name = "PurlinRight"
@@ -262,7 +262,7 @@ Partial Class Shapes
         '
         'PurlinLeft
         '
-        Me.PurlinLeft.Image = Global.Pantheon_Advanced.My.Resources.Resources.PurlinLeft
+        Me.PurlinLeft.Image = Global.Pantheon.My.Resources.Resources.PurlinLeft
         Me.PurlinLeft.ImageAlignment = System.Drawing.ContentAlignment.TopCenter
         Me.PurlinLeft.Location = New System.Drawing.Point(25, 27)
         Me.PurlinLeft.Name = "PurlinLeft"

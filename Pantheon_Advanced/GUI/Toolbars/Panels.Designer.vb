@@ -70,7 +70,7 @@ Partial Class Panels
         '
         'Monarch
         '
-        Me.Monarch.Image = Global.Pantheon_Advanced.My.Resources.Resources.Monarch
+        Me.Monarch.Image = Global.Pantheon.My.Resources.Resources.Monarch
         Me.Monarch.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Monarch.Location = New System.Drawing.Point(5, 249)
         Me.Monarch.Name = "Monarch"
@@ -82,7 +82,7 @@ Partial Class Panels
         '
         'MultiRib
         '
-        Me.MultiRib.Image = Global.Pantheon_Advanced.My.Resources.Resources.MultiRib
+        Me.MultiRib.Image = Global.Pantheon.My.Resources.Resources.MultiRib
         Me.MultiRib.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.MultiRib.Location = New System.Drawing.Point(5, 211)
         Me.MultiRib.Name = "MultiRib"
@@ -94,7 +94,7 @@ Partial Class Panels
         '
         'MaxRib
         '
-        Me.MaxRib.Image = Global.Pantheon_Advanced.My.Resources.Resources.MaxRib
+        Me.MaxRib.Image = Global.Pantheon.My.Resources.Resources.MaxRib
         Me.MaxRib.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.MaxRib.Location = New System.Drawing.Point(5, 173)
         Me.MaxRib.Name = "MaxRib"
@@ -106,7 +106,7 @@ Partial Class Panels
         '
         'UPanel
         '
-        Me.UPanel.Image = Global.Pantheon_Advanced.My.Resources.Resources.uPanel
+        Me.UPanel.Image = Global.Pantheon.My.Resources.Resources.uPanel
         Me.UPanel.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.UPanel.Location = New System.Drawing.Point(5, 135)
         Me.UPanel.Name = "UPanel"
@@ -118,7 +118,7 @@ Partial Class Panels
         '
         'SheetArea
         '
-        Me.SheetArea.Image = Global.Pantheon_Advanced.My.Resources.Resources.SheetArea
+        Me.SheetArea.Image = Global.Pantheon.My.Resources.Resources.SheetArea
         Me.SheetArea.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.SheetArea.Location = New System.Drawing.Point(5, 27)
         Me.SheetArea.Name = "SheetArea"
@@ -139,7 +139,7 @@ Partial Class Panels
         '
         'RPanel
         '
-        Me.RPanel.Image = Global.Pantheon_Advanced.My.Resources.Resources.RPanel
+        Me.RPanel.Image = Global.Pantheon.My.Resources.Resources.RPanel
         Me.RPanel.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.RPanel.Location = New System.Drawing.Point(5, 97)
         Me.RPanel.Name = "RPanel"

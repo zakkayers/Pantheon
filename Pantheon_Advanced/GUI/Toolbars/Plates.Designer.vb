@@ -138,7 +138,7 @@ Partial Class Plates
         '
         'P27
         '
-        Me.P27.Image = Global.Pantheon_Advanced.My.Resources.Resources.P27
+        Me.P27.Image = Global.Pantheon.My.Resources.Resources.P27
         Me.P27.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P27.Location = New System.Drawing.Point(96, 396)
         Me.P27.Name = "P27"
@@ -150,7 +150,7 @@ Partial Class Plates
         '
         'P26
         '
-        Me.P26.Image = Global.Pantheon_Advanced.My.Resources.Resources.P26
+        Me.P26.Image = Global.Pantheon.My.Resources.Resources.P26
         Me.P26.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P26.Location = New System.Drawing.Point(50, 396)
         Me.P26.Name = "P26"
@@ -162,7 +162,7 @@ Partial Class Plates
         '
         'P25
         '
-        Me.P25.Image = Global.Pantheon_Advanced.My.Resources.Resources.P25
+        Me.P25.Image = Global.Pantheon.My.Resources.Resources.P25
         Me.P25.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P25.Location = New System.Drawing.Point(4, 396)
         Me.P25.Name = "P25"
@@ -174,7 +174,7 @@ Partial Class Plates
         '
         'P24
         '
-        Me.P24.Image = Global.Pantheon_Advanced.My.Resources.Resources.P24
+        Me.P24.Image = Global.Pantheon.My.Resources.Resources.P24
         Me.P24.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P24.Location = New System.Drawing.Point(96, 350)
         Me.P24.Name = "P24"
@@ -186,7 +186,7 @@ Partial Class Plates
         '
         'P23
         '
-        Me.P23.Image = Global.Pantheon_Advanced.My.Resources.Resources.P23
+        Me.P23.Image = Global.Pantheon.My.Resources.Resources.P23
         Me.P23.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P23.Location = New System.Drawing.Point(50, 350)
         Me.P23.Name = "P23"
@@ -198,7 +198,7 @@ Partial Class Plates
         '
         'P22
         '
-        Me.P22.Image = Global.Pantheon_Advanced.My.Resources.Resources.P22
+        Me.P22.Image = Global.Pantheon.My.Resources.Resources.P22
         Me.P22.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P22.Location = New System.Drawing.Point(4, 350)
         Me.P22.Name = "P22"
@@ -210,7 +210,7 @@ Partial Class Plates
         '
         'P21
         '
-        Me.P21.Image = Global.Pantheon_Advanced.My.Resources.Resources.P21
+        Me.P21.Image = Global.Pantheon.My.Resources.Resources.P21
         Me.P21.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P21.Location = New System.Drawing.Point(96, 304)
         Me.P21.Name = "P21"
@@ -222,7 +222,7 @@ Partial Class Plates
         '
         'P20
         '
-        Me.P20.Image = Global.Pantheon_Advanced.My.Resources.Resources.P20
+        Me.P20.Image = Global.Pantheon.My.Resources.Resources.P20
         Me.P20.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P20.Location = New System.Drawing.Point(50, 304)
         Me.P20.Name = "P20"
@@ -234,7 +234,7 @@ Partial Class Plates
         '
         'P19
         '
-        Me.P19.Image = Global.Pantheon_Advanced.My.Resources.Resources.P19
+        Me.P19.Image = Global.Pantheon.My.Resources.Resources.P19
         Me.P19.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P19.Location = New System.Drawing.Point(4, 304)
         Me.P19.Name = "P19"
@@ -246,7 +246,7 @@ Partial Class Plates
         '
         'P18
         '
-        Me.P18.Image = Global.Pantheon_Advanced.My.Resources.Resources.P18
+        Me.P18.Image = Global.Pantheon.My.Resources.Resources.P18
         Me.P18.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P18.Location = New System.Drawing.Point(96, 258)
         Me.P18.Name = "P18"
@@ -258,7 +258,7 @@ Partial Class Plates
         '
         'P17
         '
-        Me.P17.Image = Global.Pantheon_Advanced.My.Resources.Resources.P17
+        Me.P17.Image = Global.Pantheon.My.Resources.Resources.P17
         Me.P17.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P17.Location = New System.Drawing.Point(50, 258)
         Me.P17.Name = "P17"
@@ -270,7 +270,7 @@ Partial Class Plates
         '
         'P16
         '
-        Me.P16.Image = Global.Pantheon_Advanced.My.Resources.Resources.P16
+        Me.P16.Image = Global.Pantheon.My.Resources.Resources.P16
         Me.P16.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P16.Location = New System.Drawing.Point(4, 258)
         Me.P16.Name = "P16"
@@ -282,7 +282,7 @@ Partial Class Plates
         '
         'P15
         '
-        Me.P15.Image = Global.Pantheon_Advanced.My.Resources.Resources.P15
+        Me.P15.Image = Global.Pantheon.My.Resources.Resources.P15
         Me.P15.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P15.Location = New System.Drawing.Point(96, 212)
         Me.P15.Name = "P15"
@@ -294,7 +294,7 @@ Partial Class Plates
         '
         'P14
         '
-        Me.P14.Image = Global.Pantheon_Advanced.My.Resources.Resources.P14
+        Me.P14.Image = Global.Pantheon.My.Resources.Resources.P14
         Me.P14.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P14.Location = New System.Drawing.Point(50, 212)
         Me.P14.Name = "P14"
@@ -306,7 +306,7 @@ Partial Class Plates
         '
         'P13
         '
-        Me.P13.Image = Global.Pantheon_Advanced.My.Resources.Resources.P13
+        Me.P13.Image = Global.Pantheon.My.Resources.Resources.P13
         Me.P13.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P13.Location = New System.Drawing.Point(4, 212)
         Me.P13.Name = "P13"
@@ -318,7 +318,7 @@ Partial Class Plates
         '
         'P12
         '
-        Me.P12.Image = Global.Pantheon_Advanced.My.Resources.Resources.P12
+        Me.P12.Image = Global.Pantheon.My.Resources.Resources.P12
         Me.P12.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P12.Location = New System.Drawing.Point(96, 166)
         Me.P12.Name = "P12"
@@ -330,7 +330,7 @@ Partial Class Plates
         '
         'P11
         '
-        Me.P11.Image = Global.Pantheon_Advanced.My.Resources.Resources.P11
+        Me.P11.Image = Global.Pantheon.My.Resources.Resources.P11
         Me.P11.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P11.Location = New System.Drawing.Point(50, 166)
         Me.P11.Name = "P11"
@@ -342,7 +342,7 @@ Partial Class Plates
         '
         'P10
         '
-        Me.P10.Image = Global.Pantheon_Advanced.My.Resources.Resources.P10
+        Me.P10.Image = Global.Pantheon.My.Resources.Resources.P10
         Me.P10.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P10.Location = New System.Drawing.Point(4, 166)
         Me.P10.Name = "P10"
@@ -354,7 +354,7 @@ Partial Class Plates
         '
         'P9
         '
-        Me.P9.Image = Global.Pantheon_Advanced.My.Resources.Resources.P9
+        Me.P9.Image = Global.Pantheon.My.Resources.Resources.P9
         Me.P9.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P9.Location = New System.Drawing.Point(96, 120)
         Me.P9.Name = "P9"
@@ -366,7 +366,7 @@ Partial Class Plates
         '
         'P8
         '
-        Me.P8.Image = Global.Pantheon_Advanced.My.Resources.Resources.P8
+        Me.P8.Image = Global.Pantheon.My.Resources.Resources.P8
         Me.P8.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P8.Location = New System.Drawing.Point(50, 120)
         Me.P8.Name = "P8"
@@ -378,7 +378,7 @@ Partial Class Plates
         '
         'P7
         '
-        Me.P7.Image = Global.Pantheon_Advanced.My.Resources.Resources.P7
+        Me.P7.Image = Global.Pantheon.My.Resources.Resources.P7
         Me.P7.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P7.Location = New System.Drawing.Point(4, 120)
         Me.P7.Name = "P7"
@@ -390,7 +390,7 @@ Partial Class Plates
         '
         'P6
         '
-        Me.P6.Image = Global.Pantheon_Advanced.My.Resources.Resources.P6
+        Me.P6.Image = Global.Pantheon.My.Resources.Resources.P6
         Me.P6.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P6.Location = New System.Drawing.Point(96, 74)
         Me.P6.Name = "P6"
@@ -402,7 +402,7 @@ Partial Class Plates
         '
         'P5
         '
-        Me.P5.Image = Global.Pantheon_Advanced.My.Resources.Resources.P5
+        Me.P5.Image = Global.Pantheon.My.Resources.Resources.P5
         Me.P5.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P5.Location = New System.Drawing.Point(50, 74)
         Me.P5.Name = "P5"
@@ -414,7 +414,7 @@ Partial Class Plates
         '
         'P4
         '
-        Me.P4.Image = Global.Pantheon_Advanced.My.Resources.Resources.P4
+        Me.P4.Image = Global.Pantheon.My.Resources.Resources.P4
         Me.P4.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P4.Location = New System.Drawing.Point(4, 74)
         Me.P4.Name = "P4"
@@ -426,7 +426,7 @@ Partial Class Plates
         '
         'P3
         '
-        Me.P3.Image = Global.Pantheon_Advanced.My.Resources.Resources.P3
+        Me.P3.Image = Global.Pantheon.My.Resources.Resources.P3
         Me.P3.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P3.Location = New System.Drawing.Point(96, 28)
         Me.P3.Name = "P3"
@@ -438,7 +438,7 @@ Partial Class Plates
         '
         'P2
         '
-        Me.P2.Image = Global.Pantheon_Advanced.My.Resources.Resources.P2
+        Me.P2.Image = Global.Pantheon.My.Resources.Resources.P2
         Me.P2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P2.Location = New System.Drawing.Point(50, 28)
         Me.P2.Name = "P2"
@@ -450,7 +450,7 @@ Partial Class Plates
         '
         'P1
         '
-        Me.P1.Image = Global.Pantheon_Advanced.My.Resources.Resources.P1
+        Me.P1.Image = Global.Pantheon.My.Resources.Resources.P1
         Me.P1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.P1.Location = New System.Drawing.Point(4, 28)
         Me.P1.Name = "P1"

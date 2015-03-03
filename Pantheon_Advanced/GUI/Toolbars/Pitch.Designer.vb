@@ -24,45 +24,46 @@ Partial Class Pitch
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.RadPanel1 = New Telerik.WinControls.UI.RadPanel()
-        Me.RadLabel3 = New Telerik.WinControls.UI.RadLabel()
-        Me.Pitch1 = New Telerik.WinControls.UI.RadToggleButton()
-        Me.PitchWorld = New Telerik.WinControls.UI.RadToggleButton()
-        Me.Pitch2 = New Telerik.WinControls.UI.RadToggleButton()
-        Me.Pitch3 = New Telerik.WinControls.UI.RadToggleButton()
-        Me.Pitch4 = New Telerik.WinControls.UI.RadToggleButton()
-        Me.Pitch5 = New Telerik.WinControls.UI.RadToggleButton()
-        Me.Pitch6 = New Telerik.WinControls.UI.RadToggleButton()
+        Me.PitchPrevious = New Telerik.WinControls.UI.RadToggleButton()
+        Me.PitchObject = New Telerik.WinControls.UI.RadToggleButton()
+        Me.PitchCustom = New Telerik.WinControls.UI.RadToggleButton()
+        Me.CustomField = New Telerik.WinControls.UI.RadTextBox()
         Me.PitchNeg6 = New Telerik.WinControls.UI.RadToggleButton()
         Me.PitchNeg5 = New Telerik.WinControls.UI.RadToggleButton()
         Me.PitchNeg4 = New Telerik.WinControls.UI.RadToggleButton()
         Me.PitchNeg3 = New Telerik.WinControls.UI.RadToggleButton()
         Me.PitchNeg2 = New Telerik.WinControls.UI.RadToggleButton()
         Me.PitchNeg1 = New Telerik.WinControls.UI.RadToggleButton()
-        Me.CustomField = New Telerik.WinControls.UI.RadTextBox()
-        Me.PitchCustom = New Telerik.WinControls.UI.RadToggleButton()
-        Me.PitchObject = New Telerik.WinControls.UI.RadToggleButton()
-        Me.PitchPrevious = New Telerik.WinControls.UI.RadToggleButton()
+        Me.Pitch6 = New Telerik.WinControls.UI.RadToggleButton()
+        Me.Pitch5 = New Telerik.WinControls.UI.RadToggleButton()
+        Me.Pitch4 = New Telerik.WinControls.UI.RadToggleButton()
+        Me.Pitch3 = New Telerik.WinControls.UI.RadToggleButton()
+        Me.Pitch2 = New Telerik.WinControls.UI.RadToggleButton()
+        Me.PitchWorld = New Telerik.WinControls.UI.RadToggleButton()
+        Me.Pitch1 = New Telerik.WinControls.UI.RadToggleButton()
+        Me.RadLabel3 = New Telerik.WinControls.UI.RadLabel()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.VisualStudio2012DarkTheme1 = New Telerik.WinControls.Themes.VisualStudio2012DarkTheme()
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadPanel1.SuspendLayout()
-        CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Pitch1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PitchWorld, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Pitch2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Pitch3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Pitch4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Pitch5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Pitch6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PitchPrevious, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PitchObject, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PitchCustom, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CustomField, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PitchNeg6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PitchNeg5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PitchNeg4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PitchNeg3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PitchNeg2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PitchNeg1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CustomField, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PitchCustom, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PitchObject, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PitchPrevious, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pitch6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pitch5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pitch4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pitch3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pitch2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PitchWorld, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Pitch1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RadPanel1
@@ -99,85 +100,43 @@ Partial Class Pitch
         Me.RadPanel1.Size = New System.Drawing.Size(160, 550)
         Me.RadPanel1.TabIndex = 0
         '
-        'RadLabel3
+        'PitchPrevious
         '
-        Me.RadLabel3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadLabel3.Location = New System.Drawing.Point(3, 3)
-        Me.RadLabel3.Name = "RadLabel3"
-        Me.RadLabel3.Size = New System.Drawing.Size(33, 18)
-        Me.RadLabel3.TabIndex = 82
-        Me.RadLabel3.Text = "Pitch"
-        Me.RadLabel3.ThemeName = "VisualStudio2012Dark"
+        Me.PitchPrevious.Location = New System.Drawing.Point(4, 298)
+        Me.PitchPrevious.Name = "PitchPrevious"
+        Me.PitchPrevious.Size = New System.Drawing.Size(136, 24)
+        Me.PitchPrevious.TabIndex = 99
+        Me.PitchPrevious.Text = "Previous"
+        Me.PitchPrevious.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.PitchPrevious, "Set UCS To Previous Pitch")
         '
-        'Pitch1
+        'PitchObject
         '
-        Me.Pitch1.Location = New System.Drawing.Point(3, 57)
-        Me.Pitch1.Name = "Pitch1"
-        Me.Pitch1.Size = New System.Drawing.Size(65, 24)
-        Me.Pitch1.TabIndex = 83
-        Me.Pitch1.Text = "1/12"
-        Me.Pitch1.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.Pitch1, "Set UCS To 1/12 Pitch")
+        Me.PitchObject.Location = New System.Drawing.Point(4, 268)
+        Me.PitchObject.Name = "PitchObject"
+        Me.PitchObject.Size = New System.Drawing.Size(136, 24)
+        Me.PitchObject.TabIndex = 98
+        Me.PitchObject.Text = "Object"
+        Me.PitchObject.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.PitchObject, "Set UCS To An Object")
         '
-        'PitchWorld
+        'PitchCustom
         '
-        Me.PitchWorld.Location = New System.Drawing.Point(3, 27)
-        Me.PitchWorld.Name = "PitchWorld"
-        Me.PitchWorld.Size = New System.Drawing.Size(136, 24)
-        Me.PitchWorld.TabIndex = 84
-        Me.PitchWorld.Text = "World"
-        Me.PitchWorld.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.PitchWorld, "Set UCS To World")
+        Me.PitchCustom.Location = New System.Drawing.Point(74, 238)
+        Me.PitchCustom.Name = "PitchCustom"
+        Me.PitchCustom.Size = New System.Drawing.Size(65, 24)
+        Me.PitchCustom.TabIndex = 97
+        Me.PitchCustom.Text = "Custom"
+        Me.PitchCustom.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.PitchCustom, "Set UCS To A Custom Pitch")
         '
-        'Pitch2
+        'CustomField
         '
-        Me.Pitch2.Location = New System.Drawing.Point(3, 87)
-        Me.Pitch2.Name = "Pitch2"
-        Me.Pitch2.Size = New System.Drawing.Size(65, 24)
-        Me.Pitch2.TabIndex = 85
-        Me.Pitch2.Text = "2/12"
-        Me.Pitch2.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.Pitch2, "Set UCS To 2/12 Pitch")
-        '
-        'Pitch3
-        '
-        Me.Pitch3.Location = New System.Drawing.Point(3, 117)
-        Me.Pitch3.Name = "Pitch3"
-        Me.Pitch3.Size = New System.Drawing.Size(65, 24)
-        Me.Pitch3.TabIndex = 86
-        Me.Pitch3.Text = "3/12"
-        Me.Pitch3.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.Pitch3, "Set UCS To 3/12 Pitch")
-        '
-        'Pitch4
-        '
-        Me.Pitch4.Location = New System.Drawing.Point(3, 147)
-        Me.Pitch4.Name = "Pitch4"
-        Me.Pitch4.Size = New System.Drawing.Size(65, 24)
-        Me.Pitch4.TabIndex = 87
-        Me.Pitch4.Text = "4/12"
-        Me.Pitch4.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.Pitch4, "Set UCS To 4/12 Pitch")
-        '
-        'Pitch5
-        '
-        Me.Pitch5.Location = New System.Drawing.Point(3, 177)
-        Me.Pitch5.Name = "Pitch5"
-        Me.Pitch5.Size = New System.Drawing.Size(65, 24)
-        Me.Pitch5.TabIndex = 88
-        Me.Pitch5.Text = "5/12"
-        Me.Pitch5.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.Pitch5, "Set UCS To 5/12 Pitch")
-        '
-        'Pitch6
-        '
-        Me.Pitch6.Location = New System.Drawing.Point(3, 207)
-        Me.Pitch6.Name = "Pitch6"
-        Me.Pitch6.Size = New System.Drawing.Size(65, 24)
-        Me.Pitch6.TabIndex = 89
-        Me.Pitch6.Text = "6/12"
-        Me.Pitch6.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.Pitch6, "Set UCS To 6/12 Pitch")
+        Me.CustomField.Location = New System.Drawing.Point(4, 238)
+        Me.CustomField.Name = "CustomField"
+        Me.CustomField.Size = New System.Drawing.Size(64, 21)
+        Me.CustomField.TabIndex = 96
+        Me.CustomField.ThemeName = "VisualStudio2012Dark"
         '
         'PitchNeg6
         '
@@ -239,43 +198,85 @@ Partial Class Pitch
         Me.PitchNeg1.ThemeName = "VisualStudio2012Dark"
         Me.ToolTip1.SetToolTip(Me.PitchNeg1, "Set UCS To -1/12 Pitch")
         '
-        'CustomField
+        'Pitch6
         '
-        Me.CustomField.Location = New System.Drawing.Point(4, 238)
-        Me.CustomField.Name = "CustomField"
-        Me.CustomField.Size = New System.Drawing.Size(64, 21)
-        Me.CustomField.TabIndex = 96
-        Me.CustomField.ThemeName = "VisualStudio2012Dark"
+        Me.Pitch6.Location = New System.Drawing.Point(3, 207)
+        Me.Pitch6.Name = "Pitch6"
+        Me.Pitch6.Size = New System.Drawing.Size(65, 24)
+        Me.Pitch6.TabIndex = 89
+        Me.Pitch6.Text = "6/12"
+        Me.Pitch6.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Pitch6, "Set UCS To 6/12 Pitch")
         '
-        'PitchCustom
+        'Pitch5
         '
-        Me.PitchCustom.Location = New System.Drawing.Point(74, 238)
-        Me.PitchCustom.Name = "PitchCustom"
-        Me.PitchCustom.Size = New System.Drawing.Size(65, 24)
-        Me.PitchCustom.TabIndex = 97
-        Me.PitchCustom.Text = "Custom"
-        Me.PitchCustom.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.PitchCustom, "Set UCS To A Custom Pitch")
+        Me.Pitch5.Location = New System.Drawing.Point(3, 177)
+        Me.Pitch5.Name = "Pitch5"
+        Me.Pitch5.Size = New System.Drawing.Size(65, 24)
+        Me.Pitch5.TabIndex = 88
+        Me.Pitch5.Text = "5/12"
+        Me.Pitch5.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Pitch5, "Set UCS To 5/12 Pitch")
         '
-        'PitchObject
+        'Pitch4
         '
-        Me.PitchObject.Location = New System.Drawing.Point(4, 268)
-        Me.PitchObject.Name = "PitchObject"
-        Me.PitchObject.Size = New System.Drawing.Size(136, 24)
-        Me.PitchObject.TabIndex = 98
-        Me.PitchObject.Text = "Object"
-        Me.PitchObject.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.PitchObject, "Set UCS To An Object")
+        Me.Pitch4.Location = New System.Drawing.Point(3, 147)
+        Me.Pitch4.Name = "Pitch4"
+        Me.Pitch4.Size = New System.Drawing.Size(65, 24)
+        Me.Pitch4.TabIndex = 87
+        Me.Pitch4.Text = "4/12"
+        Me.Pitch4.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Pitch4, "Set UCS To 4/12 Pitch")
         '
-        'PitchPrevious
+        'Pitch3
         '
-        Me.PitchPrevious.Location = New System.Drawing.Point(4, 298)
-        Me.PitchPrevious.Name = "PitchPrevious"
-        Me.PitchPrevious.Size = New System.Drawing.Size(136, 24)
-        Me.PitchPrevious.TabIndex = 99
-        Me.PitchPrevious.Text = "Previous"
-        Me.PitchPrevious.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.PitchPrevious, "Set UCS To Previous Pitch")
+        Me.Pitch3.Location = New System.Drawing.Point(3, 117)
+        Me.Pitch3.Name = "Pitch3"
+        Me.Pitch3.Size = New System.Drawing.Size(65, 24)
+        Me.Pitch3.TabIndex = 86
+        Me.Pitch3.Text = "3/12"
+        Me.Pitch3.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Pitch3, "Set UCS To 3/12 Pitch")
+        '
+        'Pitch2
+        '
+        Me.Pitch2.Location = New System.Drawing.Point(3, 87)
+        Me.Pitch2.Name = "Pitch2"
+        Me.Pitch2.Size = New System.Drawing.Size(65, 24)
+        Me.Pitch2.TabIndex = 85
+        Me.Pitch2.Text = "2/12"
+        Me.Pitch2.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Pitch2, "Set UCS To 2/12 Pitch")
+        '
+        'PitchWorld
+        '
+        Me.PitchWorld.Location = New System.Drawing.Point(3, 27)
+        Me.PitchWorld.Name = "PitchWorld"
+        Me.PitchWorld.Size = New System.Drawing.Size(136, 24)
+        Me.PitchWorld.TabIndex = 84
+        Me.PitchWorld.Text = "World"
+        Me.PitchWorld.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.PitchWorld, "Set UCS To World")
+        '
+        'Pitch1
+        '
+        Me.Pitch1.Location = New System.Drawing.Point(3, 57)
+        Me.Pitch1.Name = "Pitch1"
+        Me.Pitch1.Size = New System.Drawing.Size(65, 24)
+        Me.Pitch1.TabIndex = 83
+        Me.Pitch1.Text = "1/12"
+        Me.Pitch1.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Pitch1, "Set UCS To 1/12 Pitch")
+        '
+        'RadLabel3
+        '
+        Me.RadLabel3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadLabel3.Location = New System.Drawing.Point(3, 3)
+        Me.RadLabel3.Name = "RadLabel3"
+        Me.RadLabel3.Size = New System.Drawing.Size(33, 18)
+        Me.RadLabel3.TabIndex = 82
+        Me.RadLabel3.Text = "Pitch"
+        Me.RadLabel3.ThemeName = "VisualStudio2012Dark"
         '
         'Pitch
         '
@@ -287,24 +288,24 @@ Partial Class Pitch
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadPanel1.ResumeLayout(False)
         Me.RadPanel1.PerformLayout()
-        CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Pitch1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PitchWorld, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Pitch2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Pitch3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Pitch4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Pitch5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Pitch6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PitchPrevious, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PitchObject, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PitchCustom, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CustomField, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PitchNeg6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PitchNeg5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PitchNeg4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PitchNeg3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PitchNeg2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PitchNeg1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CustomField, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PitchCustom, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PitchObject, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PitchPrevious, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pitch6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pitch5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pitch4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pitch3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pitch2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PitchWorld, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Pitch1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -328,5 +329,6 @@ Partial Class Pitch
     Friend WithEvents PitchPrevious As Telerik.WinControls.UI.RadToggleButton
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
     Friend WithEvents PitchObject As Telerik.WinControls.UI.RadToggleButton
+    Friend WithEvents VisualStudio2012DarkTheme1 As Telerik.WinControls.Themes.VisualStudio2012DarkTheme
 
 End Class

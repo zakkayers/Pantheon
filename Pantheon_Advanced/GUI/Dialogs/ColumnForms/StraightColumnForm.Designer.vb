@@ -703,7 +703,7 @@ Partial Class StraightColumnForm
         '
         'RadToggleButton8
         '
-        Me.RadToggleButton8.Image = Global.Pantheon_Advanced.My.Resources.Resources.Flange_Button
+        Me.RadToggleButton8.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.RadToggleButton8.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.RadToggleButton8.Location = New System.Drawing.Point(262, 23)
         Me.RadToggleButton8.Name = "RadToggleButton8"
@@ -733,7 +733,7 @@ Partial Class StraightColumnForm
         '
         'RadToggleButton9
         '
-        Me.RadToggleButton9.Image = Global.Pantheon_Advanced.My.Resources.Resources.Flange_Button
+        Me.RadToggleButton9.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.RadToggleButton9.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.RadToggleButton9.Location = New System.Drawing.Point(262, 50)
         Me.RadToggleButton9.Name = "RadToggleButton9"
@@ -743,7 +743,7 @@ Partial Class StraightColumnForm
         '
         'RadToggleButton10
         '
-        Me.RadToggleButton10.Image = Global.Pantheon_Advanced.My.Resources.Resources.Flange_Button
+        Me.RadToggleButton10.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.RadToggleButton10.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.RadToggleButton10.Location = New System.Drawing.Point(262, 77)
         Me.RadToggleButton10.Name = "RadToggleButton10"
@@ -753,7 +753,7 @@ Partial Class StraightColumnForm
         '
         'RadToggleButton11
         '
-        Me.RadToggleButton11.Image = Global.Pantheon_Advanced.My.Resources.Resources.Flange_Button
+        Me.RadToggleButton11.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.RadToggleButton11.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.RadToggleButton11.Location = New System.Drawing.Point(262, 104)
         Me.RadToggleButton11.Name = "RadToggleButton11"
@@ -763,7 +763,7 @@ Partial Class StraightColumnForm
         '
         'RadToggleButton12
         '
-        Me.RadToggleButton12.Image = Global.Pantheon_Advanced.My.Resources.Resources.Flange_Button
+        Me.RadToggleButton12.Image = Global.Pantheon.My.Resources.Resources.Flange_Button
         Me.RadToggleButton12.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.RadToggleButton12.Location = New System.Drawing.Point(262, 130)
         Me.RadToggleButton12.Name = "RadToggleButton12"
@@ -1020,7 +1020,7 @@ Partial Class StraightColumnForm
         'Copy
         '
         Me.Copy.Enabled = False
-        Me.Copy.Image = Global.Pantheon_Advanced.My.Resources.Resources.EditName
+        Me.Copy.Image = Global.Pantheon.My.Resources.Resources.EditName
         Me.Copy.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Copy.Location = New System.Drawing.Point(43, 54)
         Me.Copy.Name = "Copy"
@@ -1030,7 +1030,7 @@ Partial Class StraightColumnForm
         '
         'Add
         '
-        Me.Add.Image = Global.Pantheon_Advanced.My.Resources.Resources.Add
+        Me.Add.Image = Global.Pantheon.My.Resources.Resources.Add
         Me.Add.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Add.Location = New System.Drawing.Point(12, 54)
         Me.Add.Name = "Add"

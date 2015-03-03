@@ -279,7 +279,7 @@ Partial Class SymWorkFrameForm
         '
         'Add
         '
-        Me.Add.Image = Global.Pantheon_Advanced.My.Resources.Resources.Add
+        Me.Add.Image = Global.Pantheon.My.Resources.Resources.Add
         Me.Add.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Add.Location = New System.Drawing.Point(5, 56)
         Me.Add.Name = "Add"
@@ -291,7 +291,7 @@ Partial Class SymWorkFrameForm
         'Copy
         '
         Me.Copy.Enabled = False
-        Me.Copy.Image = Global.Pantheon_Advanced.My.Resources.Resources.EditName
+        Me.Copy.Image = Global.Pantheon.My.Resources.Resources.EditName
         Me.Copy.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Copy.Location = New System.Drawing.Point(36, 56)
         Me.Copy.Name = "Copy"
