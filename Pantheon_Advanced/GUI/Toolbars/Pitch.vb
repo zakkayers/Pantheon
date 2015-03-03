@@ -147,7 +147,7 @@ Public Class Pitch
 
     Private Sub PitchPrevious_ToggleStateChanged(sender As Object, args As StateChangedEventArgs) Handles PitchPrevious.ToggleStateChanged
         If PitchPrevious.IsChecked Then
-            Const command As String = "_ucs _p "
+            Const command As String = "_ucs _previous "
             Send(command)
             ToggleCheck(15)
         End If
