@@ -1,0 +1,1216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AdditionStudio_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Additions\AdditionStudio_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AdditionStudio_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Additions\AdditionStudio_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blank_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Customer\Blank_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blank_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Customer\Blank_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brick_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\Brick_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brick_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\Brick_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeRaf_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\CeeRaf_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeRaf_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\CeeRaf_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cowell_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Customer\Cowell_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cowell_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Customer\Cowell_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Load_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\QuickAccess\Load_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Load_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\QuickAccess\Load_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillRaf_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\MillRaf_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillRaf_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\MillRaf_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MixRaf_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\MixRaf_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MixRaf_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\MixRaf_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OffCenWork_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\WorkFrames\OffCenWork_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OffCenWork_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\WorkFrames\OffCenWork_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortalCol_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\PortalCol_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortalCol_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\PortalCol_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortalRaf_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\PortalRaf_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortalRaf_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\PortalRaf_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortFrame_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\SteelFrames\PortFrame_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PortFrame_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\SteelFrames\PortFrame_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuirkSearch_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Quirks\QuirkSearch_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuirkSearch_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Quirks\QuirkSearch_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RailRoad_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Customer\RailRoad_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RailRoad_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Customer\RailRoad_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\QuickAccess\Save_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\QuickAccess\Save_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SingFrame_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\SteelFrames\SingFrame_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SingFrame_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\SteelFrames\SingFrame_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SingleWork_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\WorkFrames\SingleWork_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SingleWork_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\WorkFrames\SingleWork_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slab_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\Slab_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slab_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\Slab_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SlopedSlab_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\SlopedSlab_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SlopedSlab_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\SlopedSlab_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stem_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\Stem_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stem_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\Stem_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StraightCol_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\StraightCol_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StraightCol_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\StraightCol_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StraightRaf_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\StraightRaf_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StraightRaf_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\StraightRaf_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Studio_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Colors\Studio_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Studio_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Colors\Studio_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SupportCol_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\SupportCol_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SupportCol_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\SupportCol_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymFrame_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\SteelFrames\SymFrame_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymFrame_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\SteelFrames\SymFrame_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymWork_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\WorkFrames\SymWork_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymWork_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\WorkFrames\SymWork_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaperCol_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\TaperCol_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaperCol_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\TaperCol_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaperRaf_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\TaperRaf_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaperRaf_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Rafters\TaperRaf_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TestLarge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestLarge.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TextImage.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TubeCol_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\TubeCol_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TubeCol_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\TubeCol_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Customer\White_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="White_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Information\Customer\White_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WindCol_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\WindCol_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WindCol_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Columns\WindCol_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wood_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\Wood_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wood_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Foundation\Wood_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Angles\A1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Angles\A2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Angles\A3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Angles\A4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Angles\A5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Angles\A6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="About_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\About_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="About_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\About_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anchor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Anchor1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anchor2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Anchor2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anchor3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Anchor3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anchor4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Anchor4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anchor5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Anchor5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anchor6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Anchor6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AngleSect_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\AngleSect_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AngleSect_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\AngleSect_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AngleShape_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\AngleShape_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AngleShape_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\AngleShape_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseAngle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Steel\BaseAngle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Bolt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolt2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Bolt2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolt3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Bolt3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolt4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Bolt4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolt5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Bolt5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolt6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Bolt6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolt7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Bolt7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bolt8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Bolt8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BoltCount_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\BoltCount_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BoltCount_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\BoltCount_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cable_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Braces\Cable_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cable_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Braces\Cable_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeAngle_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeAngle_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeAngle_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeAngle_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeBr1_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeBr1_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeBr1_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeBr1_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeCenter_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeCenter_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeCenter_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeCenter_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeClip_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeClip_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeClip_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeClip_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeOver_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\OverHangs\CeeOver_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeOver_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\OverHangs\CeeOver_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeSect_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\CeeSect_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeSect_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\CeeSect_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeShape_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\CeeShape_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeShape_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\CeeShape_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cee_Base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Steel\Cee_Base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cee_Girt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Steel\Cee_Girt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChannelSect_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\ChannelSect_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChannelSect_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\ChannelSect_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChannelShape_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\ChannelShape_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChannelShape_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\ChannelShape_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CornerAngle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Steel\CornerAngle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cripples_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Braces\Cripples_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cripples_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Braces\Cripples_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DetailAll_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\DetailAll_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DetailAll_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\DetailAll_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DetailMult_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\DetailMult_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DetailMult_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\DetailMult_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DetailSingle_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\DetailSingle_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DetailSingle_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\DetailSingle_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DetailView_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\DetailView_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DetailView_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\DetailView_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoorEndwall_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\DoorEndwall_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoorEndwall_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\DoorEndwall_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoorGirt_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\DoorGirt_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoorGirt_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\DoorGirt_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoorSidewall_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\DoorSidewall_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoorSidewall_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\DoorSidewall_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DrivePin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\DrivePin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eave_DSD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Steel\Eave_DSD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eave_DSU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Steel\Eave_DSU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elbow_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\Elbow_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elbow_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\Elbow_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eSheetAll_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\eSheets\eSheetAll_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eSheetAll_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\eSheets\eSheetAll_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eSheetMult_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\eSheets\eSheetMult_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eSheetMult_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\eSheets\eSheetMult_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eSheetSingle_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\eSheets\eSheetSingle_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eSheetSingle_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\eSheets\eSheetSingle_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eSheetView_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\eSheetView_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eSheetView_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\eSheetView_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="F" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\F.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flange_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Braces\Flange_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flange_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Braces\Flange_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GutCap_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\GutCap_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GutCap_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\GutCap_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hip_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\Hip_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hip_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\Hip_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="I" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\I.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="J" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\J.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jobber_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\Jobber_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jobber_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\Jobber_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="K" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\K.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LapTek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\LapTek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="M" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\M.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manual_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\Manual_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manual_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\Manual_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaxRib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Panels\MaxRib.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberList_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\MemberList_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MemberList_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Details\MemberList_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillAngle_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillAngle_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillAngle_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillAngle_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillBr1_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillBr1_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillBr1_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillBr1_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillCenter_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillCenter_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillCenter_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillCenter_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillClip_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillClip_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillClip_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillClip_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillOver_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\OverHangs\MillOver_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillOver_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\OverHangs\MillOver_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monarch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Panels\Monarch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MultiRib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Panels\MultiRib.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="N" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\N.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="O" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\O.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\P.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="P9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Plates\P9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlotAll_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Plotting\PlotAll_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlotAll_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Plotting\PlotAll_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlotMult_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Plotting\PlotMult_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlotMult_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Plotting\PlotMult_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlotSingle_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Plotting\PlotSingle_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlotSingle_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Plotting\PlotSingle_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plotter_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Plotting\Plotter_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plotter_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Plotting\Plotter_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Q" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\Q.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RakeAngle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Steel\RakeAngle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RolledISect_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\RolledISect_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RolledISect_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\RolledISect_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RolledIShape_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\RolledIShape_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RolledIShape_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\RolledIShape_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Panels\RPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScrewCount_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\ScrewCount_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScrewCount_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\ScrewCount_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionAll_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionAll_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionAll_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionAll_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionBox_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionBox_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionBox_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionBox_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionMult_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionMult_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionMult_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionMult_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionSingle_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionSingle_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionSingle_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionSingle_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionStudio_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionStudio_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionStudio_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Sections\SectionStudio_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\Settings_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\Settings_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SheetArea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Panels\SheetArea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipAll_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Orders\ShipAll_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipAll_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Orders\ShipAll_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipList_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Orders\ShipList_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipList_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Orders\ShipList_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipMult_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Orders\ShipMult_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipMult_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Orders\ShipMult_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipSingle_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Orders\ShipSingle_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShipSingle_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Generate\Orders\ShipSingle_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stiffener_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Braces\Stiffener_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stiffener_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Braces\Stiffener_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\T.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Tek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tek5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\Tek5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TekNoWasher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\TekNoWasher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThreeD_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\ThreeD_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThreeD_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\ThreeD_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TriSolv_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\TriSolv_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TriSolv_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\TriSolv_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Troubleshoot_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\Troubleshoot_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Troubleshoot_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\Troubleshoot_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TSect_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\TSect_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TSect_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\TSect_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TShape_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\TShape_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TShape_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\TShape_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TubeSect_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\TubeSect_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TubeSect_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\TubeSect_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TubeShape_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\TubeShape_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TubeShape_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Beams\TubeShape_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TwoD_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\TwoD_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TwoD_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Options\TwoD_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="U" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\U.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="uPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Panels\uPanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="V" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\V.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Valley_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\Valley_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Valley_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Tools\Calculate\Valley_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="W" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\W.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WindowBetweenGirt_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\WindowBetweenGirt_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WindowBetweenGirt_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\WindowBetweenGirt_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WindowGirt_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\WindowGirt_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WindowGirt_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Openings\WindowGirt_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WoodScrew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Fasteners\WoodScrew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Z" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\Z.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zee_Girt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Steel\Zee_Girt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zee_Purlin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Steel\Zee_Purlin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Dialogs\Standard Buttons\Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaseTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\BaseTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CapTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\CapTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CornerBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\CornerBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CornerTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\CornerTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Dialogs\Standard Buttons\Delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Detail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\Detail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Downspout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\Downspout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EaveTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\EaveTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Dialogs\Standard Buttons\EditName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elevation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\Elevation1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elevation2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\Elevation2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flashing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\Flashing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gutter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\Gutter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JambTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\JambTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LinerTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\LinerTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PartitioNTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\PartitioNTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PeakBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\PeakBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RakeTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\RakeTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Dialogs\Standard Buttons\SaveName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SectionVert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\SectionVert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoffitTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\SoffitTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TermTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\TermTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TransitionTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\TransitionTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrimStudio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\TrimStudio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WainsTrim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Trim\WainsTrim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="x12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\x12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xDeg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Symbols\xDeg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SheetView_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Views\SheetView_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SheetView_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Views\SheetView_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Steelview_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Views\Steelview_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Steelview_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Views\Steelview_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WorkframeView_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Views\WorkframeView_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WorkframeView_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Views\WorkframeView_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\Angle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\Cee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeTurned_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeTurned_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CeeTurned_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\CeeTurned_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Channel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\Channel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EaveDSD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\EaveDSD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EaveDSU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\EaveDSU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EaveSSD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\EaveSSD.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EaveSSU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\EaveSSU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GirtLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\GirtLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GirtRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\GirtRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JambHor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\JambHor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JambVert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\JambVert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillPortal_L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillPortal_L.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MillPortal_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Posts\MillPortal_S.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PostHor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\PostHor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PostVert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\PostVert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurlinLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\PurlinLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurlinRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\PurlinRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RolledI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\RolledI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\T.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tube" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Toolbars\Shapes\Tube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Base1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormDetails\Posts\Base1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Base2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormDetails\Posts\Base2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flange_Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\Design\Braces\Flange_Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StraightColumn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormDetails\Columns\StraightColumn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StraightColumn_Base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormDetails\Columns\StraightColumn_Base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

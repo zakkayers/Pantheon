@@ -1,0 +1,1647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{ED84F25E-7C27-43CB-8CA1-F89283157E5B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Pantheon_Advanced</RootNamespace>
+    <AssemblyName>Pantheon_Advanced</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Pantheon_Advanced.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Pantheon_Advanced.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--AutoCAD References-->
+    <!--Map 3D References-->
+    <!--Civil 3D Refernces-->
+    <!--ACA References Begin-->
+    <!--ACA Refences End-->
+    <!--AME Referebces Begin-->
+    <!--AME Reference End-->
+    <Reference Include="AcCoreMgd">
+      <HintPath>C:\Autodesk\ObjectARX\inc\AcCoreMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcDbMgd">
+      <HintPath>C:\Autodesk\ObjectARX\inc\AcDbMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcMgd">
+      <HintPath>C:\Autodesk\ObjectARX\inc\AcMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AdWindows">
+      <HintPath>C:\Autodesk\ObjectARX\inc\AdWindows.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="Telerik.WinControls, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Aqua, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Breeze, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Dark, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2014.2.715.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Dialogs\Standard Buttons\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calculators\TriSolv.vb" />
+    <Compile Include="Constructors\FoundationObjects\StandardSlabObject.vb" />
+    <Compile Include="Constructors\WorkframeObjects\OffCenWorkFrameObject.vb" />
+    <Compile Include="Constructors\WorkframeObjects\SingWorkFrameObject.vb" />
+    <Compile Include="Constructors\WorkframeObjects\SymWorkFrameObject.vb" />
+    <Compile Include="Data\Databases.vb" />
+    <Compile Include="Data\Lists.vb" />
+    <Compile Include="GUI\Dialogs\ColumnForms\StraightColumnForm.Designer.vb">
+      <DependentUpon>StraightColumnForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dialogs\ColumnForms\StraightColumnForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Dialogs\FoundationForms\StandardSlabForm.Designer.vb">
+      <DependentUpon>StandardSlabForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dialogs\FoundationForms\StandardSlabForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Dialogs\FoundationForms\WallForm.Designer.vb">
+      <DependentUpon>WallForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dialogs\FoundationForms\WallForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WorkframeForms\OffCenWorkFrameForm.Designer.vb">
+      <DependentUpon>OffCenWorkFrameForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WorkframeForms\OffCenWorkFrameForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WorkframeForms\SingWorkFrameForm.Designer.vb">
+      <DependentUpon>SingWorkFrameForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WorkframeForms\SingWorkFrameForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WorkframeForms\SymWorkFrameForm.Designer.vb">
+      <DependentUpon>SymWorkFrameForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dialogs\WorkframeForms\SymWorkFrameForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Popups\AddPiece.Designer.vb" />
+    <Compile Include="GUI\Popups\AddPiece.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Popups\SaveOver.Designer.vb" />
+    <Compile Include="GUI\Popups\SaveOver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Angles.Designer.vb">
+      <DependentUpon>Angles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Angles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Toolbars\MemberList.Designer.vb" />
+    <Compile Include="GUI\Toolbars\Panels.Designer.vb">
+      <DependentUpon>Panels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Panels.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Pitch.Designer.vb">
+      <DependentUpon>Pitch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Pitch.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Plates.Designer.vb">
+      <DependentUpon>Plates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Plates.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Toolbars\QuickAccess.vb" />
+    <Compile Include="GUI\Toolbars\Fasteners.Designer.vb">
+      <DependentUpon>Fasteners.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Fasteners.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Shapes.Designer.vb">
+      <DependentUpon>Shapes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Shapes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Steel.Designer.vb">
+      <DependentUpon>Steel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Steel.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Symbols.Designer.vb">
+      <DependentUpon>Symbols.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Symbols.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Trim.Designer.vb">
+      <DependentUpon>Trim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Toolbars\Trim.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="myCommands.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>myCommands.resx</DependentUpon>
+    </Compile>
+    <Compile Include="myPlugin.vb" />
+    <Compile Include="myCommands.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GUI\Ribbon\Information.vb" />
+    <Compile Include="GUI\Ribbon\Design.vb" />
+    <Compile Include="GUI\Ribbon\Generate.vb" />
+    <Compile Include="GUI\Ribbon\Options.vb" />
+    <Compile Include="GUI\Ribbon\Tools.vb" />
+    <Compile Include="Sirius\Action.vb" />
+    <Compile Include="Sirius\Calculate.vb" />
+    <Compile Include="Sirius\Clean.vb" />
+    <Compile Include="Sirius\Sculpt.vb" />
+    <Compile Include="Sirius\Mind.vb" />
+    <Compile Include="Sirius\Read.vb" />
+    <Compile Include="Sirius\Say.vb" />
+    <Compile Include="Sirius\Solve.vb" />
+    <Compile Include="Sirius\Write.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GUI\Dialogs\ColumnForms\StraightColumnForm.resx">
+      <DependentUpon>StraightColumnForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Dialogs\FoundationForms\StandardSlabForm.resx">
+      <DependentUpon>StandardSlabForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Dialogs\FoundationForms\WallForm.resx">
+      <DependentUpon>WallForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Dialogs\WorkframeForms\OffCenWorkFrameForm.resx">
+      <DependentUpon>OffCenWorkFrameForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Dialogs\WorkframeForms\SingWorkFrameForm.resx">
+      <DependentUpon>SingWorkFrameForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Dialogs\WorkframeForms\SymWorkFrameForm.resx">
+      <DependentUpon>SymWorkFrameForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Popups\AddPiece.resx">
+      <DependentUpon>AddPiece.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Popups\SaveOver.resx" />
+    <EmbeddedResource Include="GUI\Toolbars\Angles.resx">
+      <DependentUpon>Angles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Toolbars\Fasteners.resx">
+      <DependentUpon>Fasteners.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Toolbars\MemberList.resx" />
+    <EmbeddedResource Include="GUI\Toolbars\Panels.resx">
+      <DependentUpon>Panels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Toolbars\Pitch.resx">
+      <DependentUpon>Pitch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Toolbars\Plates.resx">
+      <DependentUpon>Plates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Toolbars\Shapes.resx">
+      <DependentUpon>Shapes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Toolbars\Steel.resx">
+      <DependentUpon>Steel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Toolbars\Symbols.resx">
+      <DependentUpon>Symbols.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Toolbars\Trim.resx">
+      <DependentUpon>Trim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="myCommands.resx">
+      <DependentUpon>myCommands.vb</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>myCommands.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TestLarge.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\Cowell_Large.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\Cowell_Small.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Test2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cowell_Large.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\Cowell_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\Cowell_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\RailRoad_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\RailRoad_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\White_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\White_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\Blank_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Customer\Blank_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\QuickAccess\Load_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\QuickAccess\Load_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\QuickAccess\Save_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\QuickAccess\Save_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Colors\Studio_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Colors\Studio_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Additions\AdditionStudio_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Additions\AdditionStudio_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Quirks\QuirkSearch_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Information\Quirks\QuirkSearch_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\WorkFrames\OffCenWork_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\WorkFrames\OffCenWork_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\WorkFrames\SingleWork_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\WorkFrames\SingleWork_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\WorkFrames\SymWork_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\WorkFrames\SymWork_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\Slab_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\Slab_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\SlopedSlab_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\SlopedSlab_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\Brick_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\Brick_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\Stem_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\Stem_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\Wood_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Foundation\Wood_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\SteelFrames\PortFrame_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\SteelFrames\PortFrame_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\SteelFrames\SingFrame_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\SteelFrames\SingFrame_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\SteelFrames\SymFrame_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\SteelFrames\SymFrame_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\StraightCol_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\StraightCol_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\PortalCol_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\PortalCol_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\SupportCol_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\SupportCol_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\TaperCol_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\TaperCol_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\TubeCol_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\TubeCol_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\WindCol_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Columns\WindCol_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\CeeRaf_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\CeeRaf_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\MillRaf_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\MillRaf_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\MixRaf_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\MixRaf_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\PortalRaf_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\PortalRaf_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\StraightRaf_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\StraightRaf_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\TaperRaf_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Rafters\TaperRaf_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeAngle_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeAngle_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeBr1_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeBr1_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeCenter_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeCenter_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeClip_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeClip_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillAngle_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillAngle_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillBr1_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillBr1_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillCenter_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillCenter_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillClip_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillClip_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\AngleSect_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\AngleSect_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\AngleShape_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\AngleShape_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\CeeSect_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\CeeSect_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\CeeShape_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\CeeShape_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\ChannelSect_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\ChannelSect_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\ChannelShape_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\ChannelShape_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\RolledISect_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\RolledISect_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\RolledIShape_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\RolledIShape_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\TSect_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\TSect_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\TShape_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\TShape_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\TubeSect_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\TubeSect_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\TubeShape_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Beams\TubeShape_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\DoorEndwall_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\DoorEndwall_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\DoorGirt_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\DoorGirt_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\DoorSidewall_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\DoorSidewall_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\WindowBetweenGirt_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\WindowBetweenGirt_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\WindowGirt_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Openings\WindowGirt_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Braces\Cable_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Braces\Cable_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Braces\Cripples_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Braces\Cripples_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Braces\Flange_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Braces\Flange_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Braces\Stiffener_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Braces\Stiffener_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailAll_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailAll_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailMult_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailMult_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailSingle_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailSingle_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailView_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailView_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\eSheetView_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\eSheetView_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\MemberList_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\MemberList_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\eSheets\eSheetAll_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\eSheets\eSheetAll_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\eSheets\eSheetMult_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\eSheets\eSheetMult_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\eSheets\eSheetSingle_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\eSheets\eSheetSingle_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Orders\ShipAll_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Orders\ShipAll_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Orders\ShipList_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Orders\ShipList_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Orders\ShipMult_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Orders\ShipMult_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Orders\ShipSingle_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Orders\ShipSingle_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Plotting\PlotAll_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Plotting\PlotAll_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Plotting\PlotMult_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Plotting\PlotMult_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Plotting\PlotSingle_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Plotting\PlotSingle_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Plotting\Plotter_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Plotting\Plotter_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionAll_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionAll_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionBox_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionBox_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionMult_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionMult_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionSingle_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionSingle_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailStudio_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Details\DetailStudio_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionStudio_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Generate\Sections\SectionStudio_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\BoltCount_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\BoltCount_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\Elbow_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\Elbow_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\GutCap_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\GutCap_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\Hip_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\Hip_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\Jobber_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\Jobber_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\ScrewCount_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\ScrewCount_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\TriSolv_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\TriSolv_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\Valley_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Tools\Calculate\Valley_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\About_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\About_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\Manual_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\Manual_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\Settings_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\Settings_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\ThreeD_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\ThreeD_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\Troubleshoot_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\Troubleshoot_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\TwoD_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Options\TwoD_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Steel\Cee_Base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Steel\Cee_Girt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Steel\Eave_DSD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Steel\Eave_DSU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Steel\Zee_Girt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Steel\Zee_Purlin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Steel\BaseAngle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Steel\CornerAngle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Steel\RakeAngle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\OverHangs\CeeOver_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\OverHangs\CeeOver_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\OverHangs\MillOver_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\OverHangs\MillOver_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Angles\A1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Angles\A2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Angles\A3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Angles\A4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Angles\A5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Angles\A6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\DrivePin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\LapTek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Tek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\TekNoWasher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Tek5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\WoodScrew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Bolt1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Bolt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Bolt3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Bolt4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Bolt5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Bolt6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Bolt7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Bolt8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Anchor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Anchor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Anchor3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Anchor4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Anchor5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Fasteners\Anchor6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Panels\SheetArea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Panels\uPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Panels\RPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Panels\MaxRib.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Panels\MultiRib.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Panels\Monarch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Plates\P27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\E.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\H.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\I.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\P.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\Q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\T.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\U.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\V.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\W.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\Y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\Z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\Detail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\Elevation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\Elevation2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\SectionVert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\x12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Symbols\xDeg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\TrimStudio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\EaveTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\RakeTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\CornerTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\JambTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\BaseTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\CapTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\CornerBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\Downspout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\Flashing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\Gutter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\LinerTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\PartitioNTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\PeakBox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\SoffitTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\TransitionTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\WainsTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Trim\TermTrim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Dialogs\Standard Buttons\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Dialogs\Standard Buttons\EditName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Dialogs\Standard Buttons\SaveName.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Views\SheetView_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Views\SheetView_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Views\Steelview_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Views\Steelview_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Views\WorkframeView_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Views\WorkframeView_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeTurned_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\CeeTurned_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillPortal_L.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Posts\MillPortal_S.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\Angle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\Cee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\Channel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\EaveDSD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\EaveDSU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\EaveSSD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\EaveSSU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\GirtLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\GirtRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\JambHor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\JambVert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\PostHor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\PostVert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\PurlinLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\PurlinRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\RolledI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\T.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Toolbars\Shapes\Tube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Columns\PortalColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Columns\StraightColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Columns\StraightColumn_Base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Columns\TaperColumn_Base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Columns\TaperColumn_Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Openings\Cripple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Openings\Door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Openings\Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Base1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Base2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Cee12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Mill1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Mill2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\MIll3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Mill4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Mill5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Posts\Mill6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\Cee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveBot1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveBot2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveBot3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveRaf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveRaf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveRaf4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveRaf5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveRaf6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveRaf7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveRaf8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveRaf9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveTop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveTop2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EaveTop3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\EavRaf3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\MillBeam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\Raf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\Raf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\Raf3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\Raf4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\StraightRafter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDetails\Rafters\TaperRaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Design\Braces\Flange_Button.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
