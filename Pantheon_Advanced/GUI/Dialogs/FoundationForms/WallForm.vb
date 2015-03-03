@@ -6,11 +6,11 @@ Public Class WallForm
 
         Clean.Populate = True
 
-        If Lists.StandardSlabList.Count <> 0 Then
+        If Lists.WallList.Count <> 0 Then
 
-            For i = 0 To Lists.StandardSlabList.Count - 1
+            For i = 0 To Lists.WallList.Count - 1
 
-                MarkCombo.Items.Add(Lists.StandardSlabList.Item(i).Mark)
+                MarkCombo.Items.Add(Lists.WallList.Item(i).Mark)
 
             Next
             Copy.Enabled = True

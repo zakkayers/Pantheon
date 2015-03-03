@@ -138,7 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calculators\TriSolv.vb" />
+    <Compile Include="Constructors\ColumnObjects\StraightColumnObject.vb" />
     <Compile Include="Constructors\FoundationObjects\StandardSlabObject.vb" />
+    <Compile Include="Constructors\FoundationObjects\WallObject.vb" />
     <Compile Include="Constructors\WorkframeObjects\OffCenWorkFrameObject.vb" />
     <Compile Include="Constructors\WorkframeObjects\SingWorkFrameObject.vb" />
     <Compile Include="Constructors\WorkframeObjects\SymWorkFrameObject.vb" />

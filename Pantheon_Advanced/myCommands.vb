@@ -194,6 +194,54 @@ Namespace Pantheon_Advanced
             End If
         End Sub
 
+        ' COMMAND: COLUMN
+        ' Initializes Selected Column Window & Draws The Specified Column
+        <CommandMethod("COLUMN")>
+        Public Shared Sub Column()
+
+            Dim editor As Editor =
+                    Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor
+
+
+            Dim keywordOptions As PromptKeywordOptions = New PromptKeywordOptions(ControlChars.Lf + "Enter Column Type [Portal/Straight/SUPport/Tapered/TUbe/Wind]", "Portal Straight Support Tapered Tube Wind")
+            Dim keywordResult As PromptResult = editor.GetKeywords(keywordOptions)
+
+            If (keywordResult.Status = PromptStatus.OK) Then
+
+                Select Case keywordResult.StringResult
+
+                    Case "Portal"
+
+                        ' Dim form As New PortalColumnForm()
+
+
+                    Case "Straight"
+
+                        Dim form As New StraightColumnForm()
+                        form.Jolt()
+
+                    Case "Support"
+
+                        ' TODO
+
+                    Case "Tapered"
+
+                        'Dim form As New TaperColumnForm()
+
+
+                    Case "Tube"
+
+                        ' TODO
+
+                    Case "Wind"
+
+                        ' TODO
+
+                End Select
+
+            End If
+
+        End Sub
 
     End Class
 End Namespace
