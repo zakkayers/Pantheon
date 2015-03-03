@@ -109,6 +109,8 @@ Partial Class StraightColumnForm
         Me.Add = New Telerik.WinControls.UI.RadButton()
         Me.MarkCombo = New System.Windows.Forms.ComboBox()
         Me.RadLabel23 = New Telerik.WinControls.UI.RadLabel()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Block = New Telerik.WinControls.UI.RadToggleButton()
         CType(Me.RadTitleBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EaveThickness, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EaveWidth, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -191,6 +193,7 @@ Partial Class StraightColumnForm
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Add, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Block, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RoundRectShapeTitle
@@ -569,6 +572,7 @@ Partial Class StraightColumnForm
         'RadGroupBox7
         '
         Me.RadGroupBox7.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me.RadGroupBox7.Controls.Add(Me.Block)
         Me.RadGroupBox7.Controls.Add(Me.LeanToHoles)
         Me.RadGroupBox7.HeaderText = "Lean To Connections"
         Me.RadGroupBox7.Location = New System.Drawing.Point(5, 510)
@@ -582,10 +586,11 @@ Partial Class StraightColumnForm
         '
         Me.LeanToHoles.Location = New System.Drawing.Point(5, 21)
         Me.LeanToHoles.Name = "LeanToHoles"
-        Me.LeanToHoles.Size = New System.Drawing.Size(278, 24)
+        Me.LeanToHoles.Size = New System.Drawing.Size(135, 24)
         Me.LeanToHoles.TabIndex = 1
-        Me.LeanToHoles.Text = "Add Lean To Flange Holes"
+        Me.LeanToHoles.Text = "Flange Holes"
         Me.LeanToHoles.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.LeanToHoles, "Add Flange Holes")
         '
         'RadGroupBox6
         '
@@ -778,6 +783,7 @@ Partial Class StraightColumnForm
         Me.AddGirt5.TabIndex = 33
         Me.AddGirt5.Text = "Add"
         Me.AddGirt5.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.AddGirt5, "Add Girt")
         '
         'ElevGirt4
         '
@@ -809,6 +815,7 @@ Partial Class StraightColumnForm
         Me.AddGirt4.TabIndex = 30
         Me.AddGirt4.Text = "Add"
         Me.AddGirt4.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.AddGirt4, "Add Girt")
         '
         'ElevGirt3
         '
@@ -840,6 +847,7 @@ Partial Class StraightColumnForm
         Me.AddGirt3.TabIndex = 27
         Me.AddGirt3.Text = "Add"
         Me.AddGirt3.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.AddGirt3, "Add Girt")
         '
         'ElevGirt2
         '
@@ -871,6 +879,7 @@ Partial Class StraightColumnForm
         Me.AddGirt2.TabIndex = 24
         Me.AddGirt2.Text = "Add"
         Me.AddGirt2.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.AddGirt2, "Add Girt")
         '
         'ElevGirt1
         '
@@ -902,6 +911,7 @@ Partial Class StraightColumnForm
         Me.AddGirt1.TabIndex = 0
         Me.AddGirt1.Text = "Add"
         Me.AddGirt1.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.AddGirt1, "Add Girt")
         '
         'RadGroupBox5
         '
@@ -1013,6 +1023,7 @@ Partial Class StraightColumnForm
         Me.CableCheck.TabIndex = 0
         Me.CableCheck.Text = "Sidewall Cable Slots  "
         Me.CableCheck.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.CableCheck, "Enable Cable Slots")
         '
         'RadGroupBox3
         '
@@ -1037,6 +1048,7 @@ Partial Class StraightColumnForm
         Me.Flush.Text = "Flush"
         Me.Flush.ThemeName = "VisualStudio2012Dark"
         Me.Flush.ToggleState = Telerik.WinControls.Enumerations.ToggleState.[On]
+        Me.ToolTip1.SetToolTip(Me.Flush, "Flush Girts")
         '
         'Bypass
         '
@@ -1046,6 +1058,7 @@ Partial Class StraightColumnForm
         Me.Bypass.TabIndex = 2
         Me.Bypass.Text = "Bypass"
         Me.Bypass.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Bypass, "Bypass Girts")
         '
         'Create
         '
@@ -1066,6 +1079,7 @@ Partial Class StraightColumnForm
         Me.Copy.Size = New System.Drawing.Size(25, 25)
         Me.Copy.TabIndex = 65
         Me.Copy.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Copy, "Copy Current Member")
         '
         'Add
         '
@@ -1076,6 +1090,7 @@ Partial Class StraightColumnForm
         Me.Add.Size = New System.Drawing.Size(25, 25)
         Me.Add.TabIndex = 63
         Me.Add.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Add, "Add New Member")
         '
         'MarkCombo
         '
@@ -1095,6 +1110,16 @@ Partial Class StraightColumnForm
         Me.RadLabel23.TabIndex = 66
         Me.RadLabel23.Text = "Straight Column"
         Me.RadLabel23.ThemeName = "VisualStudio2012Dark"
+        '
+        'Block
+        '
+        Me.Block.Location = New System.Drawing.Point(146, 21)
+        Me.Block.Name = "Block"
+        Me.Block.Size = New System.Drawing.Size(135, 24)
+        Me.Block.TabIndex = 2
+        Me.Block.Text = "Block"
+        Me.Block.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Block, "Add Block")
         '
         'StraightColumnForm
         '
@@ -1200,6 +1225,7 @@ Partial Class StraightColumnForm
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Add, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Block, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1289,5 +1315,7 @@ Partial Class StraightColumnForm
     Friend WithEvents Add As Telerik.WinControls.UI.RadButton
     Friend WithEvents MarkCombo As System.Windows.Forms.ComboBox
     Friend WithEvents RadLabel23 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents Block As Telerik.WinControls.UI.RadToggleButton
 End Class
 

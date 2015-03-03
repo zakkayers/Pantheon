@@ -184,6 +184,7 @@ Public Class StraightColumnForm
                                                                               girtList, cableObj,
                                                                               anchorObj,
                                                                               LeanToHoles.IsChecked,
+                                                                              Block.IsChecked,
                                                                               Converter.StringToDistance(EaveThickness.Text),
                                                                               Converter.StringToDistance(EaveWidth.Text),
                                                                               Converter.StringToDistance(StiffenerThickness.Text),
@@ -246,6 +247,7 @@ Public Class StraightColumnForm
                         Flush.IsChecked = True
                         Bypass.IsChecked = False
                         LeanToHoles.IsChecked = False
+                        Block.IsChecked = False
 
                         ' Girt Group
                         AddGirt1.IsChecked = False
@@ -316,6 +318,7 @@ Public Class StraightColumnForm
                         Flush.IsChecked = Lists.StraightColumnList.Item(obj).Flush
                         Bypass.IsChecked = Lists.StraightColumnList.Item(obj).Bypass
                         LeanToHoles.IsChecked = Lists.StraightColumnList.Item(obj).FlangeHoles
+                        LeanToHoles.IsChecked = Lists.StraightColumnList.Item(obj).Block
 
                         ' Girt Group
                         AddGirt1.IsChecked = Lists.StraightColumnList.Item(obj).GirtList.Item(0).Add
