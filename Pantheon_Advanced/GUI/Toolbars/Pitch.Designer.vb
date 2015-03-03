@@ -44,6 +44,7 @@ Partial Class Pitch
         Me.RadLabel3 = New Telerik.WinControls.UI.RadLabel()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.VisualStudio2012DarkTheme1 = New Telerik.WinControls.Themes.VisualStudio2012DarkTheme()
+        Me.Calculator = New Telerik.WinControls.UI.RadCalculatorDropDown()
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadPanel1.SuspendLayout()
         CType(Me.PitchPrevious, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +65,7 @@ Partial Class Pitch
         CType(Me.PitchWorld, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Pitch1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Calculator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RadPanel1
@@ -72,6 +74,7 @@ Partial Class Pitch
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.RadPanel1.Controls.Add(Me.Calculator)
         Me.RadPanel1.Controls.Add(Me.PitchPrevious)
         Me.RadPanel1.Controls.Add(Me.PitchObject)
         Me.RadPanel1.Controls.Add(Me.PitchCustom)
@@ -99,6 +102,7 @@ Partial Class Pitch
         Me.RadPanel1.RootElement.MinSize = New System.Drawing.Size(160, 550)
         Me.RadPanel1.Size = New System.Drawing.Size(160, 550)
         Me.RadPanel1.TabIndex = 0
+        Me.RadPanel1.ThemeName = "VisualStudio2012Dark"
         '
         'PitchPrevious
         '
@@ -278,6 +282,17 @@ Partial Class Pitch
         Me.RadLabel3.Text = "Pitch"
         Me.RadLabel3.ThemeName = "VisualStudio2012Dark"
         '
+        'Calculator
+        '
+        Me.Calculator.Location = New System.Drawing.Point(4, 329)
+        Me.Calculator.Name = "Calculator"
+        Me.Calculator.Size = New System.Drawing.Size(136, 21)
+        Me.Calculator.TabIndex = 100
+        Me.Calculator.TabStop = False
+        Me.Calculator.Text = "RadCalculatorDropDown1"
+        Me.Calculator.ThemeName = "VisualStudio2012Dark"
+        Me.Calculator.Value = "0"
+        '
         'Pitch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -306,6 +321,7 @@ Partial Class Pitch
         CType(Me.PitchWorld, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Pitch1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Calculator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -330,5 +346,6 @@ Partial Class Pitch
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
     Friend WithEvents PitchObject As Telerik.WinControls.UI.RadToggleButton
     Friend WithEvents VisualStudio2012DarkTheme1 As Telerik.WinControls.Themes.VisualStudio2012DarkTheme
+    Friend WithEvents Calculator As Telerik.WinControls.UI.RadCalculatorDropDown
 
 End Class

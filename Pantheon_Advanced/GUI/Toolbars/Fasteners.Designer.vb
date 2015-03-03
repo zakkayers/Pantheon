@@ -171,7 +171,7 @@ Partial Class Fasteners
         '
         'Anchor6
         '
-        Me.Anchor6.Image = Global.Pantheon_Advanced.My.Resources.Resources.Anchor6
+        Me.Anchor6.Image = Global.Pantheon.My.Resources.Resources.Anchor6
         Me.Anchor6.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anchor6.Location = New System.Drawing.Point(96, 491)
         Me.Anchor6.Name = "Anchor6"
@@ -182,7 +182,7 @@ Partial Class Fasteners
         '
         'Anchor4
         '
-        Me.Anchor4.Image = Global.Pantheon_Advanced.My.Resources.Resources.Anchor4
+        Me.Anchor4.Image = Global.Pantheon.My.Resources.Resources.Anchor4
         Me.Anchor4.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anchor4.Location = New System.Drawing.Point(4, 491)
         Me.Anchor4.Name = "Anchor4"
@@ -193,7 +193,7 @@ Partial Class Fasteners
         '
         'Anchor5
         '
-        Me.Anchor5.Image = Global.Pantheon_Advanced.My.Resources.Resources.Anchor5
+        Me.Anchor5.Image = Global.Pantheon.My.Resources.Resources.Anchor5
         Me.Anchor5.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anchor5.Location = New System.Drawing.Point(50, 491)
         Me.Anchor5.Name = "Anchor5"
@@ -204,7 +204,7 @@ Partial Class Fasteners
         '
         'Anchor3
         '
-        Me.Anchor3.Image = Global.Pantheon_Advanced.My.Resources.Resources.Anchor3
+        Me.Anchor3.Image = Global.Pantheon.My.Resources.Resources.Anchor3
         Me.Anchor3.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anchor3.Location = New System.Drawing.Point(96, 430)
         Me.Anchor3.Name = "Anchor3"
@@ -215,7 +215,7 @@ Partial Class Fasteners
         '
         'Anchor1
         '
-        Me.Anchor1.Image = Global.Pantheon_Advanced.My.Resources.Resources.Anchor1
+        Me.Anchor1.Image = Global.Pantheon.My.Resources.Resources.Anchor1
         Me.Anchor1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anchor1.Location = New System.Drawing.Point(4, 430)
         Me.Anchor1.Name = "Anchor1"
@@ -226,7 +226,7 @@ Partial Class Fasteners
         '
         'Anchor2
         '
-        Me.Anchor2.Image = Global.Pantheon_Advanced.My.Resources.Resources.Anchor2
+        Me.Anchor2.Image = Global.Pantheon.My.Resources.Resources.Anchor2
         Me.Anchor2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Anchor2.Location = New System.Drawing.Point(50, 430)
         Me.Anchor2.Name = "Anchor2"
@@ -237,7 +237,7 @@ Partial Class Fasteners
         '
         'ThreeFourth6
         '
-        Me.ThreeFourth6.Image = Global.Pantheon_Advanced.My.Resources.Resources.Bolt8
+        Me.ThreeFourth6.Image = Global.Pantheon.My.Resources.Resources.Bolt8
         Me.ThreeFourth6.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ThreeFourth6.Location = New System.Drawing.Point(96, 345)
         Me.ThreeFourth6.Name = "ThreeFourth6"
@@ -248,7 +248,7 @@ Partial Class Fasteners
         '
         'ThreeFourth4
         '
-        Me.ThreeFourth4.Image = Global.Pantheon_Advanced.My.Resources.Resources.Bolt6
+        Me.ThreeFourth4.Image = Global.Pantheon.My.Resources.Resources.Bolt6
         Me.ThreeFourth4.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ThreeFourth4.Location = New System.Drawing.Point(4, 345)
         Me.ThreeFourth4.Name = "ThreeFourth4"
@@ -259,7 +259,7 @@ Partial Class Fasteners
         '
         'ThreeFourth5
         '
-        Me.ThreeFourth5.Image = Global.Pantheon_Advanced.My.Resources.Resources.Bolt7
+        Me.ThreeFourth5.Image = Global.Pantheon.My.Resources.Resources.Bolt7
         Me.ThreeFourth5.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ThreeFourth5.Location = New System.Drawing.Point(50, 345)
         Me.ThreeFourth5.Name = "ThreeFourth5"
@@ -270,7 +270,7 @@ Partial Class Fasteners
         '
         'ThreeFourth3
         '
-        Me.ThreeFourth3.Image = Global.Pantheon_Advanced.My.Resources.Resources.Bolt5
+        Me.ThreeFourth3.Image = Global.Pantheon.My.Resources.Resources.Bolt5
         Me.ThreeFourth3.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ThreeFourth3.Location = New System.Drawing.Point(96, 284)
         Me.ThreeFourth3.Name = "ThreeFourth3"
@@ -281,7 +281,7 @@ Partial Class Fasteners
         '
         'ThreeFourth1
         '
-        Me.ThreeFourth1.Image = Global.Pantheon_Advanced.My.Resources.Resources.Bolt3
+        Me.ThreeFourth1.Image = Global.Pantheon.My.Resources.Resources.Bolt3
         Me.ThreeFourth1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ThreeFourth1.Location = New System.Drawing.Point(4, 284)
         Me.ThreeFourth1.Name = "ThreeFourth1"
@@ -292,7 +292,7 @@ Partial Class Fasteners
         '
         'ThreeFourth2
         '
-        Me.ThreeFourth2.Image = Global.Pantheon_Advanced.My.Resources.Resources.Bolt4
+        Me.ThreeFourth2.Image = Global.Pantheon.My.Resources.Resources.Bolt4
         Me.ThreeFourth2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.ThreeFourth2.Location = New System.Drawing.Point(50, 284)
         Me.ThreeFourth2.Name = "ThreeFourth2"
@@ -303,7 +303,7 @@ Partial Class Fasteners
         '
         'OneHalStandard
         '
-        Me.OneHalStandard.Image = Global.Pantheon_Advanced.My.Resources.Resources.Bolt1
+        Me.OneHalStandard.Image = Global.Pantheon.My.Resources.Resources.Bolt1
         Me.OneHalStandard.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.OneHalStandard.Location = New System.Drawing.Point(4, 199)
         Me.OneHalStandard.Name = "OneHalStandard"
@@ -314,7 +314,7 @@ Partial Class Fasteners
         '
         'OneHalfFlat
         '
-        Me.OneHalfFlat.Image = Global.Pantheon_Advanced.My.Resources.Resources.Bolt2
+        Me.OneHalfFlat.Image = Global.Pantheon.My.Resources.Resources.Bolt2
         Me.OneHalfFlat.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.OneHalfFlat.Location = New System.Drawing.Point(50, 199)
         Me.OneHalfFlat.Name = "OneHalfFlat"
@@ -325,7 +325,7 @@ Partial Class Fasteners
         '
         'DrivePin
         '
-        Me.DrivePin.Image = Global.Pantheon_Advanced.My.Resources.Resources.DrivePin
+        Me.DrivePin.Image = Global.Pantheon.My.Resources.Resources.DrivePin
         Me.DrivePin.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.DrivePin.Location = New System.Drawing.Point(96, 90)
         Me.DrivePin.Name = "DrivePin"
@@ -336,7 +336,7 @@ Partial Class Fasteners
         '
         'Tek
         '
-        Me.Tek.Image = Global.Pantheon_Advanced.My.Resources.Resources.Tek
+        Me.Tek.Image = Global.Pantheon.My.Resources.Resources.Tek
         Me.Tek.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Tek.Location = New System.Drawing.Point(4, 29)
         Me.Tek.Name = "Tek"
@@ -347,7 +347,7 @@ Partial Class Fasteners
         '
         'TekNoW
         '
-        Me.TekNoW.Image = Global.Pantheon_Advanced.My.Resources.Resources.TekNoWasher
+        Me.TekNoW.Image = Global.Pantheon.My.Resources.Resources.TekNoWasher
         Me.TekNoW.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.TekNoW.Location = New System.Drawing.Point(50, 29)
         Me.TekNoW.Name = "TekNoW"
@@ -358,7 +358,7 @@ Partial Class Fasteners
         '
         'Tek5
         '
-        Me.Tek5.Image = Global.Pantheon_Advanced.My.Resources.Resources.Tek5
+        Me.Tek5.Image = Global.Pantheon.My.Resources.Resources.Tek5
         Me.Tek5.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Tek5.Location = New System.Drawing.Point(96, 29)
         Me.Tek5.Name = "Tek5"
@@ -369,7 +369,7 @@ Partial Class Fasteners
         '
         'Laptek
         '
-        Me.Laptek.Image = Global.Pantheon_Advanced.My.Resources.Resources.LapTek
+        Me.Laptek.Image = Global.Pantheon.My.Resources.Resources.LapTek
         Me.Laptek.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.Laptek.Location = New System.Drawing.Point(4, 90)
         Me.Laptek.Name = "Laptek"
@@ -380,7 +380,7 @@ Partial Class Fasteners
         '
         'WoodScrew
         '
-        Me.WoodScrew.Image = Global.Pantheon_Advanced.My.Resources.Resources.WoodScrew
+        Me.WoodScrew.Image = Global.Pantheon.My.Resources.Resources.WoodScrew
         Me.WoodScrew.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.WoodScrew.Location = New System.Drawing.Point(50, 90)
         Me.WoodScrew.Name = "WoodScrew"

@@ -1,30 +1,28 @@
 ﻿'      - PANTHEON -
 ' (C) Copyright 2015 by  
 '     Zachariah Ayers  
-
-Imports Autodesk.AutoCAD.Runtime
 Imports Autodesk.AutoCAD.ApplicationServices
 Imports Autodesk.AutoCAD.DatabaseServices
-Imports Autodesk.AutoCAD.Geometry
 Imports Autodesk.AutoCAD.EditorInput
+Imports Autodesk.AutoCAD.Geometry
+Imports Autodesk.AutoCAD.Runtime
 Imports Autodesk.AutoCAD.Windows
 Imports Autodesk.Windows
 
 ' This line is not mandatory, but improves loading performances
 <Assembly: CommandClass(GetType(Pantheon_Advanced.MyCommands))> 
-Namespace Pantheon_Advanced
 
+Namespace Pantheon_Advanced
     ' This class is instantiated by AutoCAD for each document when
     ' a command is called by the user the first time in the context
     ' of a given document. In other words, non static data in this class
     ' is implicitly per-document!
     Public Class MyCommands
-
         ' ------------------ INTERFACE ------------------ '
 
-        ' COMMAND: PANTHEON_TEST
-        ' Tests Functionality And Initializes Pantheon Ribbon
-        <CommandMethod("PANTHEON_TEST")> _
+        ' COMMAND: PANTHEON
+        ' Initializes Pantheon Ribbon, Palette Set, & Functions
+        <CommandMethod("PANTHEON")>
         Public Sub Pantheon()
 
             ' Create Ribbon
@@ -56,15 +54,14 @@ Namespace Pantheon_Advanced
                 PantheonPalette()
 
             End If
-
         End Sub
 
-        ' COMMAND: PANTHEONPALETTE_TEST
-        ' Tests Functionality And Initializes Pantheon Palette
+        ' COMMAND: PANTHEONPALETTE
+        ' Initializes Pantheon Palette Set
 
         Friend Shared PaletteSet As PaletteSet = Nothing
 
-        <CommandMethod("PANTHEONPALETTE_TEST")> _
+        <CommandMethod("PANTHEONPALETT")>
         Public Sub PantheonPalette()
 
             If PaletteSet Is Nothing Then
@@ -111,81 +108,18 @@ Namespace Pantheon_Advanced
             End If
 
             PaletteSet.Visible = True
-
-        End Sub
-
-        ' ------------------ TESTS ------------------ '
-
-        ' Pantheon Test Solids
-        <CommandMethod("PANTHEONBOX")> _
-        Public Sub BoxTest()
-
-            Dim doc As Document = Application.DocumentManager.MdiActiveDocument
-            Dim editor As Editor = Application.DocumentManager.MdiActiveDocument.Editor
-            Dim dwg As Database = editor.Document.Database
-
-            ' Start Transaction
-
-            Using doc.LockDocument()
-                Dim transaction As Transaction = dwg.TransactionManager.StartTransaction()
-                Try
-
-                    Using sol As Solid3d = New Solid3d()
-
-                        sol.CreateBox(1, 10, 30)
-
-                        '' Position the center of the 3D solid at (5,5,0) 
-                        sol.TransformBy(Matrix3d.Displacement(New Point3d(0, 0, 15) - Point3d.Origin))
-
-                        Dim btr As BlockTableRecord = transaction.GetObject(dwg.CurrentSpaceId, OpenMode.ForWrite)
-
-                        '' Add the new object to the block table record and the transaction
-                        btr.AppendEntity(sol)
-                        transaction.AddNewlyCreatedDBObject(sol, True)
-
-                    End Using
-
-                    Using sol As Solid3d = New Solid3d()
-
-                        sol.CreateBox(1, 10, 25)
-
-                        '' Position the center of the 3D solid at (5,5,0) 
-                        sol.TransformBy(Matrix3d.Displacement(New Point3d(20, 0, 15) - Point3d.Origin))
-
-                        Dim btr As BlockTableRecord = transaction.GetObject(dwg.CurrentSpaceId, OpenMode.ForWrite)
-
-                        '' Add the new object to the block table record and the transaction
-                        btr.AppendEntity(sol)
-                        transaction.AddNewlyCreatedDBObject(sol, True)
-
-                    End Using
-
-
-                    transaction.Commit()
-
-                Catch ex As Autodesk.AutoCAD.Runtime.Exception
-
-                Finally
-                    transaction.Dispose()
-                End Try
-            End Using
-
-            ' End Transaction
-
         End Sub
 
         ' ------------------ COMMANDS ------------------ '
 
+        ' COMMAND: WORKFRAME
+        ' Initializes Selected Workframe Window & Draws Specified Workframe
         <CommandMethod("WORKFRAME")>
         Public Shared Sub WorkFrame()
 
-            Dim editor As Editor =
-                    Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.Editor
+            Dim editor As Editor = Application.DocumentManager.MdiActiveDocument.Editor
 
-            Dim keywordOptions As PromptKeywordOptions =
-                    New PromptKeywordOptions(
-                        ControlChars.Lf + "Enter WorkFrame Type [SYMmetrical/SINgleslope/Offcenter]",
-                        "Symmetrical Singleslope Offcenter")
+            Dim keywordOptions As PromptKeywordOptions = New PromptKeywordOptions(ControlChars.Lf + "Enter WorkFrame Type [SYMmetrical/SINgleslope/Offcenter]", "Symmetrical Singleslope Offcenter")
             Dim keywordResult As PromptResult = editor.GetKeywords(keywordOptions)
             If (keywordResult.Status = PromptStatus.OK) Then
 
@@ -214,15 +148,52 @@ Namespace Pantheon_Advanced
             End If
         End Sub
 
-        <CommandMethod("SLAB")> _
+        ' COMMAND: SLAB
+        ' Initializes The Slab Windows & Draws A Slab
+        <CommandMethod("SLAB")>
         Public Shared Sub Slab()
 
             Dim form As New StandardSlabForm
 
             form.Jolt()
-
         End Sub
 
-    End Class
+        ' COMMAND: WALL
+        ' Initializes Selected Wall Window & Draws The Specified Wall
+        <CommandMethod("WALL")>
+        Public Shared Sub Wall()
 
+            Dim editor As Editor = Application.DocumentManager.MdiActiveDocument.Editor
+
+            Dim keywordOptions As PromptKeywordOptions = New PromptKeywordOptions(ControlChars.Lf + "Enter Wall Type [Brick/Stem/Wood]", "Brick Stem Wood")
+            Dim keywordResult As PromptResult = editor.GetKeywords(keywordOptions)
+            If (keywordResult.Status = PromptStatus.OK) Then
+
+                Select Case keywordResult.StringResult
+
+                    Case "Brick"
+
+                        Dim form As New WallForm
+
+                        form.Jolt("Brick Wall")
+
+                    Case "Stem"
+
+                        Dim form As New WallForm
+
+                        form.Jolt("Stem Wall")
+
+                    Case "Wood"
+
+                        Dim form As New WallForm
+
+                        form.Jolt("Wood Wall")
+
+                End Select
+
+            End If
+        End Sub
+
+
+    End Class
 End Namespace
