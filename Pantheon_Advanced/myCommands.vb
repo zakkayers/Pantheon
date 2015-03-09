@@ -110,7 +110,15 @@ Namespace Pantheon_Advanced
             PaletteSet.Visible = True
         End Sub
 
+        ' ------------------ INITIALIZERS ------------------ '
+
+        Shared ReadOnly ZeeShape As ZeeShape = New ZeeShape()
+        Shared ReadOnly CeeShape As CeeShape = New CeeShape()
+        Shared ReadOnly ECee As EaveShape = New EaveShape()
+
         ' ------------------ COMMANDS ------------------ '
+
+        ' --- WORKFRAMES --- ' 
 
         ' COMMAND: WORKFRAME
         ' Initializes Selected Workframe Window & Draws Specified Workframe
@@ -147,6 +155,8 @@ Namespace Pantheon_Advanced
 
             End If
         End Sub
+
+        ' --- FOUNDATION --- '
 
         ' COMMAND: SLAB
         ' Initializes The Slab Windows & Draws A Slab
@@ -193,6 +203,8 @@ Namespace Pantheon_Advanced
 
             End If
         End Sub
+
+        ' --- COLUMNS --- ' 
 
         ' COMMAND: COLUMN
         ' Initializes Selected Column Window & Draws The Specified Column
@@ -241,6 +253,30 @@ Namespace Pantheon_Advanced
 
             End If
 
+        End Sub
+
+
+        ' --- SHAPES --- '
+
+        ' COMMAND: ZEE
+        ' Creates A Zee Shape In AutoCAD
+        <CommandMethod("ZEE")>
+        Public Shared Sub Zee()
+            ZeeShape.Draw()
+        End Sub
+
+        ' COMMAND: CEE
+        ' Creates A Cee Shape In AutoCAD
+        <CommandMethod("Cee")>
+        Public Shared Sub Cee()
+            CeeShape.Draw()
+        End Sub
+
+        ' COMMAND: EAVECEE
+        ' Creates An Eave Strut Cee Shape In AutoCAD
+        <CommandMethod("EAVECEE")>
+        Public Shared Sub EaveCee()
+            eCee.Draw()
         End Sub
 
     End Class

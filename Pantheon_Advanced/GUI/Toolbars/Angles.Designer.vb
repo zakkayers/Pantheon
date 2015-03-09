@@ -24,24 +24,28 @@ Partial Class Angles
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.RadPanel1 = New Telerik.WinControls.UI.RadPanel()
-        Me.RadLabel1 = New Telerik.WinControls.UI.RadLabel()
-        Me.VisualStudio2012DarkTheme1 = New Telerik.WinControls.Themes.VisualStudio2012DarkTheme()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.A6 = New Telerik.WinControls.UI.RadButton()
         Me.A5 = New Telerik.WinControls.UI.RadButton()
         Me.A4 = New Telerik.WinControls.UI.RadButton()
         Me.A3 = New Telerik.WinControls.UI.RadButton()
         Me.A2 = New Telerik.WinControls.UI.RadButton()
         Me.A1 = New Telerik.WinControls.UI.RadButton()
+        Me.RadLabel1 = New Telerik.WinControls.UI.RadLabel()
+        Me.VisualStudio2012DarkTheme1 = New Telerik.WinControls.Themes.VisualStudio2012DarkTheme()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Profile = New Telerik.WinControls.UI.RadToggleButton()
+        Me.TopView = New Telerik.WinControls.UI.RadToggleButton()
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadPanel1.SuspendLayout()
-        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.A6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.A5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.A4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.A3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.A2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.A1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Profile, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TopView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RadPanel1
@@ -50,6 +54,8 @@ Partial Class Angles
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.RadPanel1.Controls.Add(Me.Profile)
+        Me.RadPanel1.Controls.Add(Me.TopView)
         Me.RadPanel1.Controls.Add(Me.A6)
         Me.RadPanel1.Controls.Add(Me.A5)
         Me.RadPanel1.Controls.Add(Me.A4)
@@ -63,23 +69,13 @@ Partial Class Angles
         Me.RadPanel1.TabIndex = 0
         Me.RadPanel1.ThemeName = "VisualStudio2012Dark"
         '
-        'RadLabel1
-        '
-        Me.RadLabel1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadLabel1.Location = New System.Drawing.Point(3, 3)
-        Me.RadLabel1.Name = "RadLabel1"
-        Me.RadLabel1.Size = New System.Drawing.Size(42, 18)
-        Me.RadLabel1.TabIndex = 0
-        Me.RadLabel1.Text = "Angles"
-        Me.RadLabel1.ThemeName = "VisualStudio2012Dark"
-        '
         'A6
         '
         Me.A6.Image = Global.Pantheon.My.Resources.Resources.A6
         Me.A6.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.A6.Location = New System.Drawing.Point(3, 457)
+        Me.A6.Location = New System.Drawing.Point(3, 437)
         Me.A6.Name = "A6"
-        Me.A6.Size = New System.Drawing.Size(120, 80)
+        Me.A6.Size = New System.Drawing.Size(132, 70)
         Me.A6.TabIndex = 5
         Me.A6.Text = " "
         Me.A6.ThemeName = "VisualStudio2012Dark"
@@ -89,9 +85,9 @@ Partial Class Angles
         '
         Me.A5.Image = Global.Pantheon.My.Resources.Resources.A5
         Me.A5.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.A5.Location = New System.Drawing.Point(3, 371)
+        Me.A5.Location = New System.Drawing.Point(3, 361)
         Me.A5.Name = "A5"
-        Me.A5.Size = New System.Drawing.Size(120, 80)
+        Me.A5.Size = New System.Drawing.Size(132, 70)
         Me.A5.TabIndex = 4
         Me.A5.Text = " "
         Me.A5.ThemeName = "VisualStudio2012Dark"
@@ -103,7 +99,7 @@ Partial Class Angles
         Me.A4.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
         Me.A4.Location = New System.Drawing.Point(3, 285)
         Me.A4.Name = "A4"
-        Me.A4.Size = New System.Drawing.Size(120, 80)
+        Me.A4.Size = New System.Drawing.Size(132, 70)
         Me.A4.TabIndex = 3
         Me.A4.Text = " "
         Me.A4.ThemeName = "VisualStudio2012Dark"
@@ -113,9 +109,9 @@ Partial Class Angles
         '
         Me.A3.Image = Global.Pantheon.My.Resources.Resources.A3
         Me.A3.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.A3.Location = New System.Drawing.Point(3, 199)
+        Me.A3.Location = New System.Drawing.Point(3, 209)
         Me.A3.Name = "A3"
-        Me.A3.Size = New System.Drawing.Size(120, 80)
+        Me.A3.Size = New System.Drawing.Size(132, 70)
         Me.A3.TabIndex = 2
         Me.A3.Text = " "
         Me.A3.ThemeName = "VisualStudio2012Dark"
@@ -125,9 +121,9 @@ Partial Class Angles
         '
         Me.A2.Image = Global.Pantheon.My.Resources.Resources.A2
         Me.A2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.A2.Location = New System.Drawing.Point(3, 113)
+        Me.A2.Location = New System.Drawing.Point(3, 133)
         Me.A2.Name = "A2"
-        Me.A2.Size = New System.Drawing.Size(120, 80)
+        Me.A2.Size = New System.Drawing.Size(132, 70)
         Me.A2.TabIndex = 1
         Me.A2.Text = " "
         Me.A2.ThemeName = "VisualStudio2012Dark"
@@ -137,13 +133,43 @@ Partial Class Angles
         '
         Me.A1.Image = Global.Pantheon.My.Resources.Resources.A1
         Me.A1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.A1.Location = New System.Drawing.Point(3, 27)
+        Me.A1.Location = New System.Drawing.Point(3, 57)
         Me.A1.Name = "A1"
-        Me.A1.Size = New System.Drawing.Size(120, 80)
+        Me.A1.Size = New System.Drawing.Size(132, 70)
         Me.A1.TabIndex = 0
         Me.A1.Text = " "
         Me.A1.ThemeName = "VisualStudio2012Dark"
         Me.ToolTip1.SetToolTip(Me.A1, "Angle - A1")
+        '
+        'RadLabel1
+        '
+        Me.RadLabel1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadLabel1.Location = New System.Drawing.Point(3, 3)
+        Me.RadLabel1.Name = "RadLabel1"
+        Me.RadLabel1.Size = New System.Drawing.Size(42, 18)
+        Me.RadLabel1.TabIndex = 0
+        Me.RadLabel1.Text = "Angles"
+        Me.RadLabel1.ThemeName = "VisualStudio2012Dark"
+        '
+        'Profile
+        '
+        Me.Profile.Location = New System.Drawing.Point(73, 27)
+        Me.Profile.Name = "Profile"
+        Me.Profile.Size = New System.Drawing.Size(62, 24)
+        Me.Profile.TabIndex = 30
+        Me.Profile.Text = "Profile"
+        Me.Profile.ThemeName = "VisualStudio2012Dark"
+        '
+        'TopView
+        '
+        Me.TopView.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.TopView.Location = New System.Drawing.Point(3, 27)
+        Me.TopView.Name = "TopView"
+        Me.TopView.Size = New System.Drawing.Size(62, 24)
+        Me.TopView.TabIndex = 29
+        Me.TopView.Text = "Top View"
+        Me.TopView.ThemeName = "VisualStudio2012Dark"
+        Me.TopView.ToggleState = Telerik.WinControls.Enumerations.ToggleState.[On]
         '
         'Angles
         '
@@ -157,13 +183,15 @@ Partial Class Angles
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadPanel1.ResumeLayout(False)
         Me.RadPanel1.PerformLayout()
-        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.A6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.A5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.A4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.A3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.A2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.A1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Profile, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TopView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -177,5 +205,7 @@ Partial Class Angles
     Friend WithEvents A1 As Telerik.WinControls.UI.RadButton
     Friend WithEvents RadLabel1 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents Profile As Telerik.WinControls.UI.RadToggleButton
+    Friend WithEvents TopView As Telerik.WinControls.UI.RadToggleButton
 
 End Class

@@ -15,4 +15,8 @@
     ' Columns
 
     Public Shared StraightColumnList As List(Of StraightColumnObject) = New List(Of StraightColumnObject)()
+
+    ' Shapes
+
+    Public Shared WShapeList As List(Of WShape) = New List(Of WShape)()
 End Class

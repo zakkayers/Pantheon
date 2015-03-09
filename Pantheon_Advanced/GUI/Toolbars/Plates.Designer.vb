@@ -25,8 +25,6 @@ Partial Class Plates
         Me.components = New System.ComponentModel.Container()
         Me.VisualStudio2012DarkTheme1 = New Telerik.WinControls.Themes.VisualStudio2012DarkTheme()
         Me.RadPanel1 = New Telerik.WinControls.UI.RadPanel()
-        Me.RadLabel1 = New Telerik.WinControls.UI.RadLabel()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.P27 = New Telerik.WinControls.UI.RadButton()
         Me.P26 = New Telerik.WinControls.UI.RadButton()
         Me.P25 = New Telerik.WinControls.UI.RadButton()
@@ -54,9 +52,12 @@ Partial Class Plates
         Me.P3 = New Telerik.WinControls.UI.RadButton()
         Me.P2 = New Telerik.WinControls.UI.RadButton()
         Me.P1 = New Telerik.WinControls.UI.RadButton()
+        Me.RadLabel1 = New Telerik.WinControls.UI.RadLabel()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.TopView = New Telerik.WinControls.UI.RadToggleButton()
+        Me.Profile = New Telerik.WinControls.UI.RadToggleButton()
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadPanel1.SuspendLayout()
-        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.P27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.P26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.P25, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,6 +85,9 @@ Partial Class Plates
         CType(Me.P3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.P2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.P1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TopView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Profile, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RadPanel1
@@ -92,6 +96,8 @@ Partial Class Plates
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RadPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.RadPanel1.Controls.Add(Me.Profile)
+        Me.RadPanel1.Controls.Add(Me.TopView)
         Me.RadPanel1.Controls.Add(Me.P27)
         Me.RadPanel1.Controls.Add(Me.P26)
         Me.RadPanel1.Controls.Add(Me.P25)
@@ -126,21 +132,11 @@ Partial Class Plates
         Me.RadPanel1.TabIndex = 0
         Me.RadPanel1.ThemeName = "VisualStudio2012Dark"
         '
-        'RadLabel1
-        '
-        Me.RadLabel1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadLabel1.Location = New System.Drawing.Point(4, 4)
-        Me.RadLabel1.Name = "RadLabel1"
-        Me.RadLabel1.Size = New System.Drawing.Size(38, 18)
-        Me.RadLabel1.TabIndex = 0
-        Me.RadLabel1.Text = "Plates"
-        Me.RadLabel1.ThemeName = "VisualStudio2012Dark"
-        '
         'P27
         '
         Me.P27.Image = Global.Pantheon.My.Resources.Resources.P27
         Me.P27.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P27.Location = New System.Drawing.Point(96, 396)
+        Me.P27.Location = New System.Drawing.Point(96, 424)
         Me.P27.Name = "P27"
         Me.P27.Size = New System.Drawing.Size(40, 40)
         Me.P27.TabIndex = 26
@@ -152,7 +148,7 @@ Partial Class Plates
         '
         Me.P26.Image = Global.Pantheon.My.Resources.Resources.P26
         Me.P26.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P26.Location = New System.Drawing.Point(50, 396)
+        Me.P26.Location = New System.Drawing.Point(50, 424)
         Me.P26.Name = "P26"
         Me.P26.Size = New System.Drawing.Size(40, 40)
         Me.P26.TabIndex = 25
@@ -164,7 +160,7 @@ Partial Class Plates
         '
         Me.P25.Image = Global.Pantheon.My.Resources.Resources.P25
         Me.P25.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P25.Location = New System.Drawing.Point(4, 396)
+        Me.P25.Location = New System.Drawing.Point(4, 424)
         Me.P25.Name = "P25"
         Me.P25.Size = New System.Drawing.Size(40, 40)
         Me.P25.TabIndex = 24
@@ -176,7 +172,7 @@ Partial Class Plates
         '
         Me.P24.Image = Global.Pantheon.My.Resources.Resources.P24
         Me.P24.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P24.Location = New System.Drawing.Point(96, 350)
+        Me.P24.Location = New System.Drawing.Point(96, 378)
         Me.P24.Name = "P24"
         Me.P24.Size = New System.Drawing.Size(40, 40)
         Me.P24.TabIndex = 23
@@ -188,7 +184,7 @@ Partial Class Plates
         '
         Me.P23.Image = Global.Pantheon.My.Resources.Resources.P23
         Me.P23.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P23.Location = New System.Drawing.Point(50, 350)
+        Me.P23.Location = New System.Drawing.Point(50, 378)
         Me.P23.Name = "P23"
         Me.P23.Size = New System.Drawing.Size(40, 40)
         Me.P23.TabIndex = 22
@@ -200,7 +196,7 @@ Partial Class Plates
         '
         Me.P22.Image = Global.Pantheon.My.Resources.Resources.P22
         Me.P22.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P22.Location = New System.Drawing.Point(4, 350)
+        Me.P22.Location = New System.Drawing.Point(4, 378)
         Me.P22.Name = "P22"
         Me.P22.Size = New System.Drawing.Size(40, 40)
         Me.P22.TabIndex = 21
@@ -212,7 +208,7 @@ Partial Class Plates
         '
         Me.P21.Image = Global.Pantheon.My.Resources.Resources.P21
         Me.P21.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P21.Location = New System.Drawing.Point(96, 304)
+        Me.P21.Location = New System.Drawing.Point(96, 332)
         Me.P21.Name = "P21"
         Me.P21.Size = New System.Drawing.Size(40, 40)
         Me.P21.TabIndex = 20
@@ -224,7 +220,7 @@ Partial Class Plates
         '
         Me.P20.Image = Global.Pantheon.My.Resources.Resources.P20
         Me.P20.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P20.Location = New System.Drawing.Point(50, 304)
+        Me.P20.Location = New System.Drawing.Point(50, 332)
         Me.P20.Name = "P20"
         Me.P20.Size = New System.Drawing.Size(40, 40)
         Me.P20.TabIndex = 19
@@ -236,7 +232,7 @@ Partial Class Plates
         '
         Me.P19.Image = Global.Pantheon.My.Resources.Resources.P19
         Me.P19.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P19.Location = New System.Drawing.Point(4, 304)
+        Me.P19.Location = New System.Drawing.Point(4, 332)
         Me.P19.Name = "P19"
         Me.P19.Size = New System.Drawing.Size(40, 40)
         Me.P19.TabIndex = 18
@@ -248,7 +244,7 @@ Partial Class Plates
         '
         Me.P18.Image = Global.Pantheon.My.Resources.Resources.P18
         Me.P18.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P18.Location = New System.Drawing.Point(96, 258)
+        Me.P18.Location = New System.Drawing.Point(96, 286)
         Me.P18.Name = "P18"
         Me.P18.Size = New System.Drawing.Size(40, 40)
         Me.P18.TabIndex = 17
@@ -260,7 +256,7 @@ Partial Class Plates
         '
         Me.P17.Image = Global.Pantheon.My.Resources.Resources.P17
         Me.P17.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P17.Location = New System.Drawing.Point(50, 258)
+        Me.P17.Location = New System.Drawing.Point(50, 286)
         Me.P17.Name = "P17"
         Me.P17.Size = New System.Drawing.Size(40, 40)
         Me.P17.TabIndex = 16
@@ -272,7 +268,7 @@ Partial Class Plates
         '
         Me.P16.Image = Global.Pantheon.My.Resources.Resources.P16
         Me.P16.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P16.Location = New System.Drawing.Point(4, 258)
+        Me.P16.Location = New System.Drawing.Point(4, 286)
         Me.P16.Name = "P16"
         Me.P16.Size = New System.Drawing.Size(40, 40)
         Me.P16.TabIndex = 15
@@ -284,7 +280,7 @@ Partial Class Plates
         '
         Me.P15.Image = Global.Pantheon.My.Resources.Resources.P15
         Me.P15.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P15.Location = New System.Drawing.Point(96, 212)
+        Me.P15.Location = New System.Drawing.Point(96, 240)
         Me.P15.Name = "P15"
         Me.P15.Size = New System.Drawing.Size(40, 40)
         Me.P15.TabIndex = 14
@@ -296,7 +292,7 @@ Partial Class Plates
         '
         Me.P14.Image = Global.Pantheon.My.Resources.Resources.P14
         Me.P14.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P14.Location = New System.Drawing.Point(50, 212)
+        Me.P14.Location = New System.Drawing.Point(50, 240)
         Me.P14.Name = "P14"
         Me.P14.Size = New System.Drawing.Size(40, 40)
         Me.P14.TabIndex = 13
@@ -308,7 +304,7 @@ Partial Class Plates
         '
         Me.P13.Image = Global.Pantheon.My.Resources.Resources.P13
         Me.P13.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P13.Location = New System.Drawing.Point(4, 212)
+        Me.P13.Location = New System.Drawing.Point(4, 240)
         Me.P13.Name = "P13"
         Me.P13.Size = New System.Drawing.Size(40, 40)
         Me.P13.TabIndex = 12
@@ -320,7 +316,7 @@ Partial Class Plates
         '
         Me.P12.Image = Global.Pantheon.My.Resources.Resources.P12
         Me.P12.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P12.Location = New System.Drawing.Point(96, 166)
+        Me.P12.Location = New System.Drawing.Point(96, 194)
         Me.P12.Name = "P12"
         Me.P12.Size = New System.Drawing.Size(40, 40)
         Me.P12.TabIndex = 11
@@ -332,7 +328,7 @@ Partial Class Plates
         '
         Me.P11.Image = Global.Pantheon.My.Resources.Resources.P11
         Me.P11.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P11.Location = New System.Drawing.Point(50, 166)
+        Me.P11.Location = New System.Drawing.Point(50, 194)
         Me.P11.Name = "P11"
         Me.P11.Size = New System.Drawing.Size(40, 40)
         Me.P11.TabIndex = 10
@@ -344,7 +340,7 @@ Partial Class Plates
         '
         Me.P10.Image = Global.Pantheon.My.Resources.Resources.P10
         Me.P10.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P10.Location = New System.Drawing.Point(4, 166)
+        Me.P10.Location = New System.Drawing.Point(4, 194)
         Me.P10.Name = "P10"
         Me.P10.Size = New System.Drawing.Size(40, 40)
         Me.P10.TabIndex = 9
@@ -356,7 +352,7 @@ Partial Class Plates
         '
         Me.P9.Image = Global.Pantheon.My.Resources.Resources.P9
         Me.P9.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P9.Location = New System.Drawing.Point(96, 120)
+        Me.P9.Location = New System.Drawing.Point(96, 148)
         Me.P9.Name = "P9"
         Me.P9.Size = New System.Drawing.Size(40, 40)
         Me.P9.TabIndex = 8
@@ -368,7 +364,7 @@ Partial Class Plates
         '
         Me.P8.Image = Global.Pantheon.My.Resources.Resources.P8
         Me.P8.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P8.Location = New System.Drawing.Point(50, 120)
+        Me.P8.Location = New System.Drawing.Point(50, 148)
         Me.P8.Name = "P8"
         Me.P8.Size = New System.Drawing.Size(40, 40)
         Me.P8.TabIndex = 7
@@ -380,7 +376,7 @@ Partial Class Plates
         '
         Me.P7.Image = Global.Pantheon.My.Resources.Resources.P7
         Me.P7.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P7.Location = New System.Drawing.Point(4, 120)
+        Me.P7.Location = New System.Drawing.Point(4, 148)
         Me.P7.Name = "P7"
         Me.P7.Size = New System.Drawing.Size(40, 40)
         Me.P7.TabIndex = 6
@@ -392,7 +388,7 @@ Partial Class Plates
         '
         Me.P6.Image = Global.Pantheon.My.Resources.Resources.P6
         Me.P6.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P6.Location = New System.Drawing.Point(96, 74)
+        Me.P6.Location = New System.Drawing.Point(96, 102)
         Me.P6.Name = "P6"
         Me.P6.Size = New System.Drawing.Size(40, 40)
         Me.P6.TabIndex = 5
@@ -404,7 +400,7 @@ Partial Class Plates
         '
         Me.P5.Image = Global.Pantheon.My.Resources.Resources.P5
         Me.P5.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P5.Location = New System.Drawing.Point(50, 74)
+        Me.P5.Location = New System.Drawing.Point(50, 102)
         Me.P5.Name = "P5"
         Me.P5.Size = New System.Drawing.Size(40, 40)
         Me.P5.TabIndex = 4
@@ -416,7 +412,7 @@ Partial Class Plates
         '
         Me.P4.Image = Global.Pantheon.My.Resources.Resources.P4
         Me.P4.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P4.Location = New System.Drawing.Point(4, 74)
+        Me.P4.Location = New System.Drawing.Point(4, 102)
         Me.P4.Name = "P4"
         Me.P4.Size = New System.Drawing.Size(40, 40)
         Me.P4.TabIndex = 3
@@ -428,7 +424,7 @@ Partial Class Plates
         '
         Me.P3.Image = Global.Pantheon.My.Resources.Resources.P3
         Me.P3.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P3.Location = New System.Drawing.Point(96, 28)
+        Me.P3.Location = New System.Drawing.Point(96, 56)
         Me.P3.Name = "P3"
         Me.P3.Size = New System.Drawing.Size(40, 40)
         Me.P3.TabIndex = 2
@@ -440,7 +436,7 @@ Partial Class Plates
         '
         Me.P2.Image = Global.Pantheon.My.Resources.Resources.P2
         Me.P2.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P2.Location = New System.Drawing.Point(50, 28)
+        Me.P2.Location = New System.Drawing.Point(50, 56)
         Me.P2.Name = "P2"
         Me.P2.Size = New System.Drawing.Size(40, 40)
         Me.P2.TabIndex = 1
@@ -452,13 +448,43 @@ Partial Class Plates
         '
         Me.P1.Image = Global.Pantheon.My.Resources.Resources.P1
         Me.P1.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter
-        Me.P1.Location = New System.Drawing.Point(4, 28)
+        Me.P1.Location = New System.Drawing.Point(4, 56)
         Me.P1.Name = "P1"
         Me.P1.Size = New System.Drawing.Size(40, 40)
         Me.P1.TabIndex = 0
         Me.P1.Text = " "
         Me.P1.ThemeName = "VisualStudio2012Dark"
         Me.ToolTip1.SetToolTip(Me.P1, "Plate - P1")
+        '
+        'RadLabel1
+        '
+        Me.RadLabel1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadLabel1.Location = New System.Drawing.Point(4, 4)
+        Me.RadLabel1.Name = "RadLabel1"
+        Me.RadLabel1.Size = New System.Drawing.Size(38, 18)
+        Me.RadLabel1.TabIndex = 0
+        Me.RadLabel1.Text = "Plates"
+        Me.RadLabel1.ThemeName = "VisualStudio2012Dark"
+        '
+        'TopView
+        '
+        Me.TopView.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.TopView.Location = New System.Drawing.Point(4, 26)
+        Me.TopView.Name = "TopView"
+        Me.TopView.Size = New System.Drawing.Size(62, 24)
+        Me.TopView.TabIndex = 27
+        Me.TopView.Text = "Top View"
+        Me.TopView.ThemeName = "VisualStudio2012Dark"
+        Me.TopView.ToggleState = Telerik.WinControls.Enumerations.ToggleState.[On]
+        '
+        'Profile
+        '
+        Me.Profile.Location = New System.Drawing.Point(74, 26)
+        Me.Profile.Name = "Profile"
+        Me.Profile.Size = New System.Drawing.Size(62, 24)
+        Me.Profile.TabIndex = 28
+        Me.Profile.Text = "Profile"
+        Me.Profile.ThemeName = "VisualStudio2012Dark"
         '
         'Plates
         '
@@ -472,7 +498,6 @@ Partial Class Plates
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadPanel1.ResumeLayout(False)
         Me.RadPanel1.PerformLayout()
-        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.P27, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.P26, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.P25, System.ComponentModel.ISupportInitialize).EndInit()
@@ -500,6 +525,9 @@ Partial Class Plates
         CType(Me.P3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.P2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.P1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TopView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Profile, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -534,5 +562,7 @@ Partial Class Plates
     Friend WithEvents P2 As Telerik.WinControls.UI.RadButton
     Friend WithEvents P1 As Telerik.WinControls.UI.RadButton
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents Profile As Telerik.WinControls.UI.RadToggleButton
+    Friend WithEvents TopView As Telerik.WinControls.UI.RadToggleButton
 
 End Class
