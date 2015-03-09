@@ -22,16 +22,18 @@ Public Class StraightColumnForm
             MarkCombo.Enabled = True
             MarkCombo.SelectedIndex = MarkCombo.Items.Count - 1
 
+        Else
+
+            ComboGirt1.SelectedIndex = 0
+            ComboGirt2.SelectedIndex = 0
+            ComboGirt3.SelectedIndex = 0
+            ComboGirt4.SelectedIndex = 0
+            ComboGirt5.SelectedIndex = 0
+
+            CableCombo.SelectedIndex = 0
+            AnchorCombo.SelectedIndex = 0
+
         End If
-
-        ComboGirt1.SelectedIndex = 0
-        ComboGirt2.SelectedIndex = 0
-        ComboGirt3.SelectedIndex = 0
-        ComboGirt4.SelectedIndex = 0
-        ComboGirt5.SelectedIndex = 0
-
-        CableCombo.SelectedIndex = 0
-        AnchorCombo.SelectedIndex = 0
 
         Application.ShowModelessDialog(Me)
     End Sub
@@ -48,12 +50,15 @@ Public Class StraightColumnForm
 
     Private Sub Flush_ToggleStateChanged(sender As Object, args As StateChangedEventArgs) Handles Flush.ToggleStateChanged
         If Flush.IsChecked Then
+            Block.IsChecked = False
+            Block.Enabled = False
             Bypass.IsChecked = False
         End If
     End Sub
 
     Private Sub Bypass_ToggleStateChanged(sender As Object, args As StateChangedEventArgs) Handles Bypass.ToggleStateChanged
         If Bypass.IsChecked Then
+            Block.Enabled = True
             Flush.IsChecked = False
         End If
     End Sub
@@ -256,11 +261,11 @@ Public Class StraightColumnForm
                         AddGirt4.IsChecked = False
                         AddGirt5.IsChecked = False
 
-                        ComboGirt1.SelectedText = "8"" Zee Girt"
-                        ComboGirt2.SelectedText = "8"" Zee Girt"
-                        ComboGirt3.SelectedText = "8"" Zee Girt"
-                        ComboGirt4.SelectedText = "8"" Zee Girt"
-                        ComboGirt5.SelectedText = "8"" Zee Girt"
+                        ComboGirt1.SelectedIndex = 0
+                        ComboGirt2.SelectedIndex = 0
+                        ComboGirt3.SelectedIndex = 0
+                        ComboGirt4.SelectedIndex = 0
+                        ComboGirt5.SelectedIndex = 0
 
                         ElevGirt1.Text = ""
                         ElevGirt2.Text = ""
@@ -277,14 +282,14 @@ Public Class StraightColumnForm
                         ' Cable Group
 
                         CableCheck.IsChecked = False
-                        CableCombo.SelectedText = "1/4"""
+                        CableCombo.SelectedIndex = 0
                         CableFromFlange.Text = "3"""
                         CableFromTop.Text = "6"""
                         CableFromBottom.Text = "6"""
 
                         ' Anchor Bolt Group
 
-                        AnchorCombo.SelectedText = "5/8"" x 12"""
+                        AnchorCombo.SelectedIndex = 0
                         AnchorFromFlange.Text = "4"""
                         AnchorBetween.Text = "4"""
 
@@ -318,7 +323,7 @@ Public Class StraightColumnForm
                         Flush.IsChecked = Lists.StraightColumnList.Item(obj).Flush
                         Bypass.IsChecked = Lists.StraightColumnList.Item(obj).Bypass
                         LeanToHoles.IsChecked = Lists.StraightColumnList.Item(obj).FlangeHoles
-                        LeanToHoles.IsChecked = Lists.StraightColumnList.Item(obj).Block
+                        Block.IsChecked = Lists.StraightColumnList.Item(obj).Block
 
                         ' Girt Group
                         AddGirt1.IsChecked = Lists.StraightColumnList.Item(obj).GirtList.Item(0).Add
@@ -331,13 +336,14 @@ Public Class StraightColumnForm
 
                         If Lists.StraightColumnList.Item(obj).GirtList.Item(0).Add Then
 
-                            ComboGirt1.SelectedText = Lists.StraightColumnList.Item(obj).GirtList.Item(0).Type
+                            Dim point As Integer = ComboGirt1.Items.IndexOf(Lists.StraightColumnList.Item(obj).GirtList.Item(0).Type)
+                            ComboGirt1.SelectedIndex = point
                             ElevGirt1.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).GirtList.Item(0).Elevation)
                             BraceGirt1.IsChecked = Lists.StraightColumnList.Item(obj).GirtList.Item(0).Brace
 
                         Else
 
-                            ComboGirt1.SelectedText = "8"" Zee Girt"
+                            ComboGirt1.SelectedIndex = 0
                             ElevGirt1.Text = ""
                             BraceGirt1.IsChecked = False
 
@@ -347,13 +353,14 @@ Public Class StraightColumnForm
 
                         If Lists.StraightColumnList.Item(obj).GirtList.Item(1).Add Then
 
-                            ComboGirt2.SelectedText = Lists.StraightColumnList.Item(obj).GirtList.Item(1).Type
+                            Dim point As Integer = ComboGirt2.Items.IndexOf(Lists.StraightColumnList.Item(obj).GirtList.Item(1).Type)
+                            ComboGirt2.SelectedIndex = point
                             ElevGirt2.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).GirtList.Item(1).Elevation)
                             BraceGirt2.IsChecked = Lists.StraightColumnList.Item(obj).GirtList.Item(1).Brace
 
                         Else
 
-                            ComboGirt2.SelectedText = "8"" Zee Girt"
+                            ComboGirt2.SelectedIndex = 0
                             ElevGirt2.Text = ""
                             BraceGirt2.IsChecked = False
 
@@ -363,13 +370,14 @@ Public Class StraightColumnForm
 
                         If Lists.StraightColumnList.Item(obj).GirtList.Item(2).Add Then
 
-                            ComboGirt3.SelectedText = Lists.StraightColumnList.Item(obj).GirtList.Item(2).Type
+                            Dim point As Integer = ComboGirt3.Items.IndexOf(Lists.StraightColumnList.Item(obj).GirtList.Item(2).Type)
+                            ComboGirt3.SelectedIndex = point
                             ElevGirt3.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).GirtList.Item(2).Elevation)
                             BraceGirt3.IsChecked = Lists.StraightColumnList.Item(obj).GirtList.Item(2).Brace
 
                         Else
 
-                            ComboGirt3.SelectedText = "8"" Zee Girt"
+                            ComboGirt3.SelectedIndex = 0
                             ElevGirt3.Text = ""
                             BraceGirt3.IsChecked = False
 
@@ -379,13 +387,14 @@ Public Class StraightColumnForm
 
                         If Lists.StraightColumnList.Item(obj).GirtList.Item(3).Add Then
 
-                            ComboGirt4.SelectedText = Lists.StraightColumnList.Item(obj).GirtList.Item(3).Type
+                            Dim point As Integer = ComboGirt4.Items.IndexOf(Lists.StraightColumnList.Item(obj).GirtList.Item(3).Type)
+                            ComboGirt4.SelectedIndex = point
                             ElevGirt4.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).GirtList.Item(3).Elevation)
                             BraceGirt4.IsChecked = Lists.StraightColumnList.Item(obj).GirtList.Item(3).Brace
 
                         Else
 
-                            ComboGirt4.SelectedText = "8"" Zee Girt"
+                            ComboGirt4.SelectedIndex = 0
                             ElevGirt4.Text = ""
                             BraceGirt4.IsChecked = False
 
@@ -395,13 +404,14 @@ Public Class StraightColumnForm
 
                         If Lists.StraightColumnList.Item(obj).GirtList.Item(4).Add Then
 
-                            ComboGirt5.SelectedText = Lists.StraightColumnList.Item(obj).GirtList.Item(4).Type
+                            Dim point As Integer = ComboGirt5.Items.IndexOf(Lists.StraightColumnList.Item(obj).GirtList.Item(4).Type)
+                            ComboGirt5.SelectedIndex = point
                             ElevGirt5.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).GirtList.Item(4).Elevation)
                             BraceGirt5.IsChecked = Lists.StraightColumnList.Item(obj).GirtList.Item(4).Brace
 
                         Else
 
-                            ComboGirt5.SelectedText = "8"" Zee Girt"
+                            ComboGirt5.SelectedIndex = 0
                             ElevGirt5.Text = ""
                             BraceGirt5.IsChecked = False
 
@@ -411,14 +421,20 @@ Public Class StraightColumnForm
                         ' Cable Group
 
                         CableCheck.IsChecked = Lists.StraightColumnList.Item(obj).CableObj.Check
-                        CableCombo.SelectedText = Lists.StraightColumnList.Item(obj).CableObj.Diameter
+
+                        Dim cabPoint As Integer = CableCombo.Items.IndexOf(Lists.StraightColumnList.Item(obj).CableObj.Diameter)
+                        CableCombo.SelectedIndex = cabPoint
+
                         CableFromFlange.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).CableObj.FromFlange)
                         CableFromTop.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).CableObj.FromTop)
                         CableFromBottom.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).CableObj.FromBottom)
 
                         ' Anchor Bolt Group
 
-                        AnchorCombo.SelectedText = Lists.StraightColumnList.Item(obj).AnchorObj.AnchorSize
+                        Dim aPoint As Integer = AnchorCombo.Items.IndexOf(Lists.StraightColumnList.Item(obj).AnchorObj.AnchorSize)
+                        AnchorCombo.SelectedIndex = aPoint
+
+
                         AnchorFromFlange.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).AnchorObj.FromFlange)
                         AnchorBetween.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).AnchorObj.Between)
 

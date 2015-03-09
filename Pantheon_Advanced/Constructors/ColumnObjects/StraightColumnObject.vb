@@ -564,6 +564,7 @@ Public Class StraightColumnObject
 
 
                                                 ' Base Plate
+
                                                 Dim baseBotLeft As Point2d = basePoint
                                                 Dim baseTopLeft As Point2d = New Point2d(baseBotLeft.X,
                                                                                          baseBotLeft.Y + BaseThick)
@@ -760,8 +761,14 @@ Public Class StraightColumnObject
                                                 btr.AppendEntity(rightFlange)
                                                 btr.AppendEntity(eaveCap)
                                                 btr.AppendEntity(stiffener)
-                                                btr.AppendEntity(gusset)
 
+                                                If Not Block Then
+
+                                                    btr.AppendEntity(gusset)
+                                                    transaction.AddNewlyCreatedDBObject(gusset, True)
+
+                                                End If
+                                                
                                                 transaction.AddNewlyCreatedDBObject(basePlate, True)
                                                 transaction.AddNewlyCreatedDBObject(leftFlange, True)
                                                 transaction.AddNewlyCreatedDBObject(web, True)
@@ -769,8 +776,6 @@ Public Class StraightColumnObject
                                                 transaction.AddNewlyCreatedDBObject(rightFlange, True)
                                                 transaction.AddNewlyCreatedDBObject(eaveCap, True)
                                                 transaction.AddNewlyCreatedDBObject(stiffener, True)
-                                                transaction.AddNewlyCreatedDBObject(gusset, True)
-
 
                                                 ' Girts 
 
@@ -950,12 +955,57 @@ Public Class StraightColumnObject
 
                                                 End If
 
-
                                                 ' Block
 
                                                 If Block Then
 
-                                                    ' TODO
+                                                    Dim bPlateTopLeft As Point2d = New Point2d(basePoint.X - girtOffset, eavePoint.Y - offSetRise)
+                                                    Dim bPlateTopRight As Point2d = New Point2d(bPlateTopLeft.X + 0.25, bPlateTopLeft.Y)
+                                                    Dim bPlateBotRight As Point2d = New Point2d(bPlateTopRight.X, bPlateTopRight.Y - 8)
+                                                    Dim bPlateBotLeft As Point2d = New Point2d(bPlateTopLeft.X, bPlateBotRight.Y)
+
+                                                    Dim bPlate As Polyline = New Polyline
+
+                                                    bPlate.AddVertexAt(0, bPlateTopLeft, 0, 0, 0)
+                                                    bPlate.AddVertexAt(1, bPlateTopRight, 0, 0, 0)
+                                                    bPlate.AddVertexAt(2, bPlateBotRight, 0, 0, 0)
+                                                    bPlate.AddVertexAt(3, bPlateBotLeft, 0, 0, 0)
+                                                    bPlate.AddVertexAt(4, bPlateTopLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(bPlate)
+                                                    transaction.AddNewlyCreatedDBObject(bPlate, True)
+
+                                                    Dim botPlateBotLeft As Point2d = bPlateBotRight
+                                                    Dim botPlateTopLeft As Point2d = New Point2d(botPlateBotLeft.X, botPlateBotLeft.Y + 0.25)
+                                                    Dim botPlateTopRight As Point2d = New Point2d(basePoint.X, botPlateTopLeft.Y)
+                                                    Dim botPLateBotRight As Point2d = New Point2d(botPlateTopRight.X, botPlateBotLeft.Y)
+
+                                                    Dim botPlate As Polyline = New Polyline
+
+                                                    botPlate.AddVertexAt(0, botPlateBotLeft, 0, 0, 0)
+                                                    botPlate.AddVertexAt(1, botPlateTopLeft, 0, 0, 0)
+                                                    botPlate.AddVertexAt(2, botPlateTopRight, 0, 0, 0)
+                                                    botPlate.AddVertexAt(3, botPLateBotRight, 0, 0, 0)
+                                                    botPlate.AddVertexAt(4, botPlateBotLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(botPlate)
+                                                    transaction.AddNewlyCreatedDBObject(botPlate, True)
+
+                                                    Dim bWebBotLeft As Point2d = botPlateTopLeft
+                                                    Dim bWebTopRight As Point2d = New Point2d(botPlateTopRight.X, eavePoint.Y - eaveCapSlope)
+                                                    Dim bWebTopLeft As Point2d = New Point2d(bWebBotLeft.X, bWebTopRight.Y - offSetRise)
+                                                    Dim bWebBotRight As Point2d = botPlateTopRight
+
+                                                    Dim bWeb As Polyline = New Polyline
+
+                                                    bWeb.AddVertexAt(0, bWebBotLeft, 0, 0, 0)
+                                                    bWeb.AddVertexAt(1, bWebTopLeft, 0, 0, 0)
+                                                    bWeb.AddVertexAt(2, bWebTopRight, 0, 0, 0)
+                                                    bWeb.AddVertexAt(3, bWebBotRight, 0, 0, 0)
+                                                    bWeb.AddVertexAt(4, bWebBotLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(bWeb)
+                                                    transaction.AddNewlyCreatedDBObject(bWeb, True)
 
                                                 End If
 
@@ -1167,6 +1217,184 @@ Public Class StraightColumnObject
                                             transaction.AddNewlyCreatedDBObject(eaveCap, True)
                                             transaction.AddNewlyCreatedDBObject(stiffener, True)
 
+                                            ' Girts 
+
+                                            For i = 0 To GirtList.Count - 1
+
+                                                If GirtList.Item(i).Add Then
+
+                                                    Select Case GirtList.Item(i).Type
+
+                                                        Case "8"" Zee Girt"
+
+                                                            Dim topPoint As Point2d = New Point2d(basePoint.X, GirtList.Item(i).Elevation + basePoint.Y)
+                                                            Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                            Dim topToe As Point2d = New Point2d(botRight.X - 0.6875, botRight.Y - 0.6875)
+                                                            Dim botPoint As Point2d = New Point2d(topPoint.X - 8, topPoint.Y)
+                                                            Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                            Dim botToe As Point2d = New Point2d(botLeft.X + 0.6875, botLeft.Y + 0.6875)
+
+                                                            Dim zee As Polyline = New Polyline
+
+                                                            zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                            zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                            zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                            zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                            btr.AppendEntity(zee)
+                                                            transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                        Case "10"" Zee Girt"
+
+                                                            Dim topPoint As Point2d = New Point2d(basePoint.X, GirtList.Item(i).Elevation + basePoint.Y)
+                                                            Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                            Dim topToe As Point2d = New Point2d(botRight.X - 0.6875, botRight.Y - 0.6875)
+                                                            Dim botPoint As Point2d = New Point2d(topPoint.X - 10, topPoint.Y)
+                                                            Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                            Dim botToe As Point2d = New Point2d(botLeft.X + 0.6875, botLeft.Y + 0.6875)
+
+                                                            Dim zee As Polyline = New Polyline
+
+                                                            zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                            zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                            zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                            zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                            btr.AppendEntity(zee)
+                                                            transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                        Case "8"" Cee Girt"
+
+                                                            Dim botLeft As Point2d = New Point2d(basePoint.X, basePoint.Y + GirtList.Item(i).Elevation)
+                                                            Dim botRight As Point2d = New Point2d(botLeft.X - 8, botLeft.Y)
+                                                            Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                            Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                            Dim toeLeft As Point2d = New Point2d(topLeft.X - 1, topLeft.Y)
+                                                            Dim toeRight As Point2d = New Point2d(topRight.X + 1, topRight.Y)
+
+                                                            Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                            Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X - 0.25, insideTopLeft1.Y)
+                                                            Dim insideBotLeft As Point2d = New Point2d(topLeft.X - 0.25, botLeft.Y + 0.25)
+                                                            Dim insideBotRight As Point2d = New Point2d(botRight.X + 0.25, botRight.Y + 0.25)
+                                                            Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                            Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                            Dim cee As Polyline = New Polyline
+
+                                                            cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                            cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                            cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                            cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                            cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                            cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                            cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                            cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                            cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                            btr.AppendEntity(cee)
+
+                                                            transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                        Case "10"" Cee Girt"
+
+                                                            Dim botLeft As Point2d = New Point2d(basePoint.X, basePoint.Y + GirtList.Item(i).Elevation)
+                                                            Dim botRight As Point2d = New Point2d(botLeft.X - 10, botLeft.Y)
+                                                            Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                            Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                            Dim toeLeft As Point2d = New Point2d(topLeft.X - 1, topLeft.Y)
+                                                            Dim toeRight As Point2d = New Point2d(topRight.X + 1, topRight.Y)
+
+                                                            Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                            Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X - 0.25, insideTopLeft1.Y)
+                                                            Dim insideBotLeft As Point2d = New Point2d(topLeft.X - 0.25, botLeft.Y + 0.25)
+                                                            Dim insideBotRight As Point2d = New Point2d(botRight.X + 0.25, botRight.Y + 0.25)
+                                                            Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                            Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                            Dim cee As Polyline = New Polyline
+
+                                                            cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                            cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                            cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                            cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                            cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                            cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                            cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                            cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                            cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                            btr.AppendEntity(cee)
+
+                                                            transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                    End Select
+
+
+                                                    If GirtList.Item(i).Brace Then
+
+                                                        Dim braceLeft As Point3d = New Point3d(basePoint.X - 4, basePoint.Y + GirtList.Item(i).Elevation - 1, 0)
+                                                        Dim braceRight As Point3d = New Point3d(basePoint.X - OuterThick - WebDepth, braceLeft.Y, 0)
+
+                                                        Dim brace As Line = New Line(braceLeft, braceRight)
+
+                                                        Dim text As MText = New MText()
+                                                        text.SetDatabaseDefaults()
+                                                        text.Location = New Point3d(braceRight.X - InnerThick - 1, braceRight.Y, 0)
+                                                        text.TextStyleId = dwg.Textstyle
+                                                        text.TextHeight = dwg.Dimtxt
+                                                        text.Attachment = AttachmentPoint.MiddleRight
+                                                        text.SetAttachmentMovingLocation(text.Attachment)
+                                                        text.Width = 0.0
+
+                                                        text.Contents = "FBX"
+
+                                                        btr.AppendEntity(brace)
+                                                        btr.AppendEntity(text)
+                                                        transaction.AddNewlyCreatedDBObject(brace, True)
+                                                        transaction.AddNewlyCreatedDBObject(text, True)
+
+                                                    End If
+
+                                                End If
+
+                                            Next
+
+                                            ' Cable Holes
+
+                                            If CableObj.Check Then
+
+                                                Dim topHolePoint As Point3d = New Point3d(basePoint.X - CableObj.FromFlange, eavePoint.Y - CableObj.FromTop, 0)
+                                                Dim bottomHolePoint As Point3d = New Point3d(basePoint.X - CableObj.FromFlange, basePoint.Y + CableObj.FromBottom, 0)
+
+                                                Dim topSlot As Circle = New Circle()
+                                                Dim botSlot As Circle = New Circle()
+
+                                                topSlot.Center = topHolePoint
+                                                botSlot.Center = bottomHolePoint
+
+                                                topSlot.Diameter = 1
+                                                botSlot.Diameter = 1
+
+                                                btr.AppendEntity(topSlot)
+                                                btr.AppendEntity(botSlot)
+
+                                                transaction.AddNewlyCreatedDBObject(topSlot, True)
+                                                transaction.AddNewlyCreatedDBObject(botSlot, True)
+
+                                            End If
+
                                         Else
 
                                             ' Straight Standard Bypass REVERSE
@@ -1375,6 +1603,13 @@ Public Class StraightColumnObject
                                                     New Point3d(eaveBotLeft.X, eaveBotLeft.Y, 0),
                                                     New Point3d(baseBotLeft.X, eaveBotLeft.Y - offSetRise, 0))
 
+                                                If Not Block Then
+
+                                                    btr.AppendEntity(gusset)
+                                                    transaction.AddNewlyCreatedDBObject(gusset, True)
+
+                                                End If
+
                                                 btr.AppendEntity(basePlate)
                                                 btr.AppendEntity(leftFlange)
                                                 btr.AppendEntity(web)
@@ -1382,7 +1617,6 @@ Public Class StraightColumnObject
                                                 btr.AppendEntity(rightFlange)
                                                 btr.AppendEntity(eaveCap)
                                                 btr.AppendEntity(stiffener)
-                                                btr.AppendEntity(gusset)
 
                                                 transaction.AddNewlyCreatedDBObject(basePlate, True)
                                                 transaction.AddNewlyCreatedDBObject(leftFlange, True)
@@ -1391,7 +1625,238 @@ Public Class StraightColumnObject
                                                 transaction.AddNewlyCreatedDBObject(rightFlange, True)
                                                 transaction.AddNewlyCreatedDBObject(eaveCap, True)
                                                 transaction.AddNewlyCreatedDBObject(stiffener, True)
-                                                transaction.AddNewlyCreatedDBObject(gusset, True)
+
+                                                ' Girts 
+
+                                                For i = 0 To GirtList.Count - 1
+
+                                                    If GirtList.Item(i).Add Then
+
+                                                        Select Case GirtList.Item(i).Type
+
+                                                            Case "8"" Zee Girt"
+
+                                                                Dim topPoint As Point2d = New Point2d(basePoint.X + 8, GirtList.Item(i).Elevation + basePoint.Y)
+                                                                Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                                Dim topToe As Point2d = New Point2d(botRight.X - 0.6875, botRight.Y - 0.6875)
+                                                                Dim botPoint As Point2d = New Point2d(topPoint.X - 8, topPoint.Y)
+                                                                Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                                Dim botToe As Point2d = New Point2d(botLeft.X + 0.6875, botLeft.Y + 0.6875)
+
+                                                                Dim zee As Polyline = New Polyline
+
+                                                                zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                                zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                                zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                                zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                                btr.AppendEntity(zee)
+                                                                transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                            Case "10"" Zee Girt"
+
+                                                                Dim topPoint As Point2d = New Point2d(basePoint.X + 10, GirtList.Item(i).Elevation + basePoint.Y)
+                                                                Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                                Dim topToe As Point2d = New Point2d(botRight.X - 0.6875, botRight.Y - 0.6875)
+                                                                Dim botPoint As Point2d = New Point2d(topPoint.X - 10, topPoint.Y)
+                                                                Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                                Dim botToe As Point2d = New Point2d(botLeft.X + 0.6875, botLeft.Y + 0.6875)
+
+                                                                Dim zee As Polyline = New Polyline
+
+                                                                zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                                zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                                zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                                zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                                btr.AppendEntity(zee)
+                                                                transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                            Case "8"" Cee Girt"
+
+                                                                Dim botLeft As Point2d = New Point2d(basePoint.X + 8, basePoint.Y + GirtList.Item(i).Elevation)
+                                                                Dim botRight As Point2d = New Point2d(botLeft.X - 8, botLeft.Y)
+                                                                Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                                Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                                Dim toeLeft As Point2d = New Point2d(topLeft.X - 1, topLeft.Y)
+                                                                Dim toeRight As Point2d = New Point2d(topRight.X + 1, topRight.Y)
+
+                                                                Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                                Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X - 0.25, insideTopLeft1.Y)
+                                                                Dim insideBotLeft As Point2d = New Point2d(topLeft.X - 0.25, botLeft.Y + 0.25)
+                                                                Dim insideBotRight As Point2d = New Point2d(botRight.X + 0.25, botRight.Y + 0.25)
+                                                                Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                                Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                                Dim cee As Polyline = New Polyline
+
+                                                                cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                                cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                                cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                                cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                                cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                                cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                                cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                                cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                                cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                                btr.AppendEntity(cee)
+
+                                                                transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                            Case "10"" Cee Girt"
+
+                                                                Dim botLeft As Point2d = New Point2d(basePoint.X + 10, basePoint.Y + GirtList.Item(i).Elevation)
+                                                                Dim botRight As Point2d = New Point2d(botLeft.X - 10, botLeft.Y)
+                                                                Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                                Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                                Dim toeLeft As Point2d = New Point2d(topLeft.X - 1, topLeft.Y)
+                                                                Dim toeRight As Point2d = New Point2d(topRight.X + 1, topRight.Y)
+
+                                                                Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                                Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X - 0.25, insideTopLeft1.Y)
+                                                                Dim insideBotLeft As Point2d = New Point2d(topLeft.X - 0.25, botLeft.Y + 0.25)
+                                                                Dim insideBotRight As Point2d = New Point2d(botRight.X + 0.25, botRight.Y + 0.25)
+                                                                Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                                Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                                Dim cee As Polyline = New Polyline
+
+                                                                cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                                cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                                cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                                cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                                cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                                cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                                cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                                cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                                cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                                btr.AppendEntity(cee)
+
+                                                                transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                        End Select
+
+
+                                                        If GirtList.Item(i).Brace Then
+
+                                                            Dim braceLeft As Point3d = New Point3d(basePoint.X + 2, basePoint.Y + GirtList.Item(i).Elevation - 1, 0)
+                                                            Dim braceRight As Point3d = New Point3d(basePoint.X - OuterThick - WebDepth, braceLeft.Y, 0)
+
+                                                            Dim brace As Line = New Line(braceLeft, braceRight)
+
+                                                            Dim text As MText = New MText()
+                                                            text.SetDatabaseDefaults()
+                                                            text.Location = New Point3d(braceRight.X - InnerThick - 1, braceRight.Y, 0)
+                                                            text.TextStyleId = dwg.Textstyle
+                                                            text.TextHeight = dwg.Dimtxt
+                                                            text.Attachment = AttachmentPoint.MiddleRight
+                                                            text.SetAttachmentMovingLocation(text.Attachment)
+                                                            text.Width = 0.0
+
+                                                            text.Contents = "FBX"
+
+                                                            btr.AppendEntity(brace)
+                                                            btr.AppendEntity(text)
+                                                            transaction.AddNewlyCreatedDBObject(brace, True)
+                                                            transaction.AddNewlyCreatedDBObject(text, True)
+
+                                                        End If
+
+                                                    End If
+
+                                                Next
+
+                                                ' Cable Holes
+
+                                                If CableObj.Check Then
+
+                                                    Dim topHolePoint As Point3d = New Point3d(basePoint.X - CableObj.FromFlange, eavePoint.Y - CableObj.FromTop, 0)
+                                                    Dim bottomHolePoint As Point3d = New Point3d(basePoint.X - CableObj.FromFlange, basePoint.Y + CableObj.FromBottom, 0)
+
+                                                    Dim topSlot As Circle = New Circle()
+                                                    Dim botSlot As Circle = New Circle()
+
+                                                    topSlot.Center = topHolePoint
+                                                    botSlot.Center = bottomHolePoint
+
+                                                    topSlot.Diameter = 1
+                                                    botSlot.Diameter = 1
+
+                                                    btr.AppendEntity(topSlot)
+                                                    btr.AppendEntity(botSlot)
+
+                                                    transaction.AddNewlyCreatedDBObject(topSlot, True)
+                                                    transaction.AddNewlyCreatedDBObject(botSlot, True)
+
+                                                End If
+
+                                                ' Block
+
+                                                If Block Then
+
+                                                    Dim bPlateTopLeft As Point2d = New Point2d(basePoint.X + girtOffset, eavePoint.Y - offSetRise)
+                                                    Dim bPlateTopRight As Point2d = New Point2d(bPlateTopLeft.X - 0.25, bPlateTopLeft.Y)
+                                                    Dim bPlateBotRight As Point2d = New Point2d(bPlateTopRight.X, bPlateTopRight.Y - 8)
+                                                    Dim bPlateBotLeft As Point2d = New Point2d(bPlateTopLeft.X, bPlateBotRight.Y)
+
+                                                    Dim bPlate As Polyline = New Polyline
+
+                                                    bPlate.AddVertexAt(0, bPlateTopLeft, 0, 0, 0)
+                                                    bPlate.AddVertexAt(1, bPlateTopRight, 0, 0, 0)
+                                                    bPlate.AddVertexAt(2, bPlateBotRight, 0, 0, 0)
+                                                    bPlate.AddVertexAt(3, bPlateBotLeft, 0, 0, 0)
+                                                    bPlate.AddVertexAt(4, bPlateTopLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(bPlate)
+                                                    transaction.AddNewlyCreatedDBObject(bPlate, True)
+
+                                                    Dim botPlateBotLeft As Point2d = bPlateBotRight
+                                                    Dim botPlateTopLeft As Point2d = New Point2d(botPlateBotLeft.X, botPlateBotLeft.Y + 0.25)
+                                                    Dim botPlateTopRight As Point2d = New Point2d(basePoint.X, botPlateTopLeft.Y)
+                                                    Dim botPLateBotRight As Point2d = New Point2d(botPlateTopRight.X, botPlateBotLeft.Y)
+
+                                                    Dim botPlate As Polyline = New Polyline
+
+                                                    botPlate.AddVertexAt(0, botPlateBotLeft, 0, 0, 0)
+                                                    botPlate.AddVertexAt(1, botPlateTopLeft, 0, 0, 0)
+                                                    botPlate.AddVertexAt(2, botPlateTopRight, 0, 0, 0)
+                                                    botPlate.AddVertexAt(3, botPLateBotRight, 0, 0, 0)
+                                                    botPlate.AddVertexAt(4, botPlateBotLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(botPlate)
+                                                    transaction.AddNewlyCreatedDBObject(botPlate, True)
+
+                                                    Dim bWebBotLeft As Point2d = botPlateTopLeft
+                                                    Dim bWebTopRight As Point2d = New Point2d(botPlateTopRight.X, eavePoint.Y - eaveCapSlope)
+                                                    Dim bWebTopLeft As Point2d = New Point2d(bWebBotLeft.X, bWebTopRight.Y - offSetRise)
+                                                    Dim bWebBotRight As Point2d = botPlateTopRight
+
+                                                    Dim bWeb As Polyline = New Polyline
+
+                                                    bWeb.AddVertexAt(0, bWebBotLeft, 0, 0, 0)
+                                                    bWeb.AddVertexAt(1, bWebTopLeft, 0, 0, 0)
+                                                    bWeb.AddVertexAt(2, bWebTopRight, 0, 0, 0)
+                                                    bWeb.AddVertexAt(3, bWebBotRight, 0, 0, 0)
+                                                    bWeb.AddVertexAt(4, bWebBotLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(bWeb)
+                                                    transaction.AddNewlyCreatedDBObject(bWeb, True)
+
+                                                End If
 
                                             End If
 
@@ -1606,6 +2071,184 @@ Public Class StraightColumnObject
                                             transaction.AddNewlyCreatedDBObject(rightFlange, True)
                                             transaction.AddNewlyCreatedDBObject(eaveCap, True)
                                             transaction.AddNewlyCreatedDBObject(stiffener, True)
+
+                                            ' Girts 
+
+                                            For i = 0 To GirtList.Count - 1
+
+                                                If GirtList.Item(i).Add Then
+
+                                                    Select Case GirtList.Item(i).Type
+
+                                                        Case "8"" Zee Girt"
+
+                                                            Dim topPoint As Point2d = New Point2d(basePoint.X, GirtList.Item(i).Elevation + basePoint.Y)
+                                                            Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                            Dim topToe As Point2d = New Point2d(botRight.X + 0.6875, botRight.Y - 0.6875)
+                                                            Dim botPoint As Point2d = New Point2d(topPoint.X + 8, topPoint.Y)
+                                                            Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                            Dim botToe As Point2d = New Point2d(botLeft.X - 0.6875, botLeft.Y + 0.6875)
+
+                                                            Dim zee As Polyline = New Polyline
+
+                                                            zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                            zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                            zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                            zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                            btr.AppendEntity(zee)
+                                                            transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                        Case "10"" Zee Girt"
+
+                                                            Dim topPoint As Point2d = New Point2d(basePoint.X, GirtList.Item(i).Elevation + basePoint.Y)
+                                                            Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                            Dim topToe As Point2d = New Point2d(botRight.X + 0.6875, botRight.Y - 0.6875)
+                                                            Dim botPoint As Point2d = New Point2d(topPoint.X + 10, topPoint.Y)
+                                                            Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                            Dim botToe As Point2d = New Point2d(botLeft.X - 0.6875, botLeft.Y + 0.6875)
+
+                                                            Dim zee As Polyline = New Polyline
+
+                                                            zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                            zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                            zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                            zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                            btr.AppendEntity(zee)
+                                                            transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                        Case "8"" Cee Girt"
+
+                                                            Dim botLeft As Point2d = New Point2d(basePoint.X, basePoint.Y + GirtList.Item(i).Elevation)
+                                                            Dim botRight As Point2d = New Point2d(botLeft.X + 8, botLeft.Y)
+                                                            Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                            Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                            Dim toeLeft As Point2d = New Point2d(topLeft.X + 1, topLeft.Y)
+                                                            Dim toeRight As Point2d = New Point2d(topRight.X - 1, topRight.Y)
+
+                                                            Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                            Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X + 0.25, insideTopLeft1.Y)
+                                                            Dim insideBotLeft As Point2d = New Point2d(topLeft.X + 0.25, botLeft.Y + 0.25)
+                                                            Dim insideBotRight As Point2d = New Point2d(botRight.X - 0.25, botRight.Y + 0.25)
+                                                            Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                            Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                            Dim cee As Polyline = New Polyline
+
+                                                            cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                            cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                            cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                            cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                            cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                            cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                            cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                            cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                            cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                            btr.AppendEntity(cee)
+
+                                                            transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                        Case "10"" Cee Girt"
+
+                                                            Dim botLeft As Point2d = New Point2d(basePoint.X, basePoint.Y + GirtList.Item(i).Elevation)
+                                                            Dim botRight As Point2d = New Point2d(botLeft.X + 10, botLeft.Y)
+                                                            Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                            Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                            Dim toeLeft As Point2d = New Point2d(topLeft.X + 1, topLeft.Y)
+                                                            Dim toeRight As Point2d = New Point2d(topRight.X - 1, topRight.Y)
+
+                                                            Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                            Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X + 0.25, insideTopLeft1.Y)
+                                                            Dim insideBotLeft As Point2d = New Point2d(topLeft.X + 0.25, botLeft.Y + 0.25)
+                                                            Dim insideBotRight As Point2d = New Point2d(botRight.X - 0.25, botRight.Y + 0.25)
+                                                            Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                            Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                            Dim cee As Polyline = New Polyline
+
+                                                            cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                            cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                            cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                            cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                            cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                            cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                            cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                            cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                            cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                            btr.AppendEntity(cee)
+
+                                                            transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                    End Select
+
+
+                                                    If GirtList.Item(i).Brace Then
+
+                                                        Dim braceLeft As Point3d = New Point3d(basePoint.X + 4, basePoint.Y + GirtList.Item(i).Elevation - 1, 0)
+                                                        Dim braceRight As Point3d = New Point3d(basePoint.X + OuterThick + WebDepth, braceLeft.Y, 0)
+
+                                                        Dim brace As Line = New Line(braceLeft, braceRight)
+
+                                                        Dim text As MText = New MText()
+                                                        text.SetDatabaseDefaults()
+                                                        text.Location = New Point3d(braceRight.X + InnerThick + 1, braceRight.Y, 0)
+                                                        text.TextStyleId = dwg.Textstyle
+                                                        text.TextHeight = dwg.Dimtxt
+                                                        text.Attachment = AttachmentPoint.MiddleLeft
+                                                        text.SetAttachmentMovingLocation(text.Attachment)
+                                                        text.Width = 0.0
+
+                                                        text.Contents = "FBX"
+
+                                                        btr.AppendEntity(brace)
+                                                        btr.AppendEntity(text)
+                                                        transaction.AddNewlyCreatedDBObject(brace, True)
+                                                        transaction.AddNewlyCreatedDBObject(text, True)
+
+                                                    End If
+
+                                                End If
+
+                                            Next
+
+                                            ' Cable Holes
+
+                                            If CableObj.Check Then
+
+                                                Dim topHolePoint As Point3d = New Point3d(basePoint.X + CableObj.FromFlange, eavePoint.Y - CableObj.FromTop, 0)
+                                                Dim bottomHolePoint As Point3d = New Point3d(basePoint.X + CableObj.FromFlange, basePoint.Y + CableObj.FromBottom, 0)
+
+                                                Dim topSlot As Circle = New Circle()
+                                                Dim botSlot As Circle = New Circle()
+
+                                                topSlot.Center = topHolePoint
+                                                botSlot.Center = bottomHolePoint
+
+                                                topSlot.Diameter = 1
+                                                botSlot.Diameter = 1
+
+                                                btr.AppendEntity(topSlot)
+                                                btr.AppendEntity(botSlot)
+
+                                                transaction.AddNewlyCreatedDBObject(topSlot, True)
+                                                transaction.AddNewlyCreatedDBObject(botSlot, True)
+
+                                            End If
 
                                         Else
 
@@ -1832,6 +2475,238 @@ Public Class StraightColumnObject
                                                 transaction.AddNewlyCreatedDBObject(eaveCap, True)
                                                 transaction.AddNewlyCreatedDBObject(stiffener, True)
 
+                                                ' Girts 
+
+                                                For i = 0 To GirtList.Count - 1
+
+                                                    If GirtList.Item(i).Add Then
+
+                                                        Select Case GirtList.Item(i).Type
+
+                                                            Case "8"" Zee Girt"
+
+                                                                Dim topPoint As Point2d = New Point2d(basePoint.X - 8, GirtList.Item(i).Elevation + basePoint.Y)
+                                                                Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                                Dim topToe As Point2d = New Point2d(botRight.X + 0.6875, botRight.Y - 0.6875)
+                                                                Dim botPoint As Point2d = New Point2d(topPoint.X + 8, topPoint.Y)
+                                                                Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                                Dim botToe As Point2d = New Point2d(botLeft.X - 0.6875, botLeft.Y + 0.6875)
+
+                                                                Dim zee As Polyline = New Polyline
+
+                                                                zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                                zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                                zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                                zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                                btr.AppendEntity(zee)
+                                                                transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                            Case "10"" Zee Girt"
+
+                                                                Dim topPoint As Point2d = New Point2d(basePoint.X - 10, GirtList.Item(i).Elevation + basePoint.Y)
+                                                                Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                                Dim topToe As Point2d = New Point2d(botRight.X + 0.6875, botRight.Y - 0.6875)
+                                                                Dim botPoint As Point2d = New Point2d(topPoint.X + 10, topPoint.Y)
+                                                                Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                                Dim botToe As Point2d = New Point2d(botLeft.X - 0.6875, botLeft.Y + 0.6875)
+
+                                                                Dim zee As Polyline = New Polyline
+
+                                                                zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                                zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                                zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                                zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                                btr.AppendEntity(zee)
+                                                                transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                            Case "8"" Cee Girt"
+
+                                                                Dim botLeft As Point2d = New Point2d(basePoint.X - 8, basePoint.Y + GirtList.Item(i).Elevation)
+                                                                Dim botRight As Point2d = New Point2d(botLeft.X + 8, botLeft.Y)
+                                                                Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                                Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                                Dim toeLeft As Point2d = New Point2d(topLeft.X + 1, topLeft.Y)
+                                                                Dim toeRight As Point2d = New Point2d(topRight.X - 1, topRight.Y)
+
+                                                                Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                                Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X + 0.25, insideTopLeft1.Y)
+                                                                Dim insideBotLeft As Point2d = New Point2d(topLeft.X + 0.25, botLeft.Y + 0.25)
+                                                                Dim insideBotRight As Point2d = New Point2d(botRight.X - 0.25, botRight.Y + 0.25)
+                                                                Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                                Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                                Dim cee As Polyline = New Polyline
+
+                                                                cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                                cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                                cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                                cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                                cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                                cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                                cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                                cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                                cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                                btr.AppendEntity(cee)
+
+                                                                transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                            Case "10"" Cee Girt"
+
+                                                                Dim botLeft As Point2d = New Point2d(basePoint.X - 10, basePoint.Y + GirtList.Item(i).Elevation)
+                                                                Dim botRight As Point2d = New Point2d(botLeft.X + 10, botLeft.Y)
+                                                                Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                                Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                                Dim toeLeft As Point2d = New Point2d(topLeft.X + 1, topLeft.Y)
+                                                                Dim toeRight As Point2d = New Point2d(topRight.X - 1, topRight.Y)
+
+                                                                Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                                Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X + 0.25, insideTopLeft1.Y)
+                                                                Dim insideBotLeft As Point2d = New Point2d(topLeft.X + 0.25, botLeft.Y + 0.25)
+                                                                Dim insideBotRight As Point2d = New Point2d(botRight.X - 0.25, botRight.Y + 0.25)
+                                                                Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                                Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                                Dim cee As Polyline = New Polyline
+
+                                                                cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                                cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                                cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                                cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                                cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                                cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                                cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                                cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                                cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                                btr.AppendEntity(cee)
+
+                                                                transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                        End Select
+
+
+                                                        If GirtList.Item(i).Brace Then
+
+                                                            Dim braceLeft As Point3d = New Point3d(basePoint.X - 2, basePoint.Y + GirtList.Item(i).Elevation - 1, 0)
+                                                            Dim braceRight As Point3d = New Point3d(basePoint.X + OuterThick + WebDepth, braceLeft.Y, 0)
+
+                                                            Dim brace As Line = New Line(braceLeft, braceRight)
+
+                                                            Dim text As MText = New MText()
+                                                            text.SetDatabaseDefaults()
+                                                            text.Location = New Point3d(braceRight.X + InnerThick + 1, braceRight.Y, 0)
+                                                            text.TextStyleId = dwg.Textstyle
+                                                            text.TextHeight = dwg.Dimtxt
+                                                            text.Attachment = AttachmentPoint.MiddleLeft
+                                                            text.SetAttachmentMovingLocation(text.Attachment)
+                                                            text.Width = 0.0
+
+                                                            text.Contents = "FBX"
+
+                                                            btr.AppendEntity(brace)
+                                                            btr.AppendEntity(text)
+                                                            transaction.AddNewlyCreatedDBObject(brace, True)
+                                                            transaction.AddNewlyCreatedDBObject(text, True)
+
+                                                        End If
+
+                                                    End If
+
+                                                Next
+
+                                                ' Cable Holes
+
+                                                If CableObj.Check Then
+
+                                                    Dim topHolePoint As Point3d = New Point3d(basePoint.X + CableObj.FromFlange, eavePoint.Y - CableObj.FromTop, 0)
+                                                    Dim bottomHolePoint As Point3d = New Point3d(basePoint.X + CableObj.FromFlange, basePoint.Y + CableObj.FromBottom, 0)
+
+                                                    Dim topSlot As Circle = New Circle()
+                                                    Dim botSlot As Circle = New Circle()
+
+                                                    topSlot.Center = topHolePoint
+                                                    botSlot.Center = bottomHolePoint
+
+                                                    topSlot.Diameter = 1
+                                                    botSlot.Diameter = 1
+
+                                                    btr.AppendEntity(topSlot)
+                                                    btr.AppendEntity(botSlot)
+
+                                                    transaction.AddNewlyCreatedDBObject(topSlot, True)
+                                                    transaction.AddNewlyCreatedDBObject(botSlot, True)
+
+                                                End If
+
+                                                ' Block
+
+                                                If Block Then
+
+                                                    Dim bPlateTopLeft As Point2d = New Point2d(basePoint.X - girtOffset, eavePoint.Y + offSetRise)
+                                                    Dim bPlateTopRight As Point2d = New Point2d(bPlateTopLeft.X + 0.25, bPlateTopLeft.Y)
+                                                    Dim bPlateBotRight As Point2d = New Point2d(bPlateTopRight.X, bPlateTopRight.Y - 8)
+                                                    Dim bPlateBotLeft As Point2d = New Point2d(bPlateTopLeft.X, bPlateBotRight.Y)
+
+                                                    Dim bPlate As Polyline = New Polyline
+
+                                                    bPlate.AddVertexAt(0, bPlateTopLeft, 0, 0, 0)
+                                                    bPlate.AddVertexAt(1, bPlateTopRight, 0, 0, 0)
+                                                    bPlate.AddVertexAt(2, bPlateBotRight, 0, 0, 0)
+                                                    bPlate.AddVertexAt(3, bPlateBotLeft, 0, 0, 0)
+                                                    bPlate.AddVertexAt(4, bPlateTopLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(bPlate)
+                                                    transaction.AddNewlyCreatedDBObject(bPlate, True)
+
+                                                    Dim botPlateBotLeft As Point2d = bPlateBotRight
+                                                    Dim botPlateTopLeft As Point2d = New Point2d(botPlateBotLeft.X, botPlateBotLeft.Y + 0.25)
+                                                    Dim botPlateTopRight As Point2d = New Point2d(basePoint.X, botPlateTopLeft.Y)
+                                                    Dim botPLateBotRight As Point2d = New Point2d(botPlateTopRight.X, botPlateBotLeft.Y)
+
+                                                    Dim botPlate As Polyline = New Polyline
+
+                                                    botPlate.AddVertexAt(0, botPlateBotLeft, 0, 0, 0)
+                                                    botPlate.AddVertexAt(1, botPlateTopLeft, 0, 0, 0)
+                                                    botPlate.AddVertexAt(2, botPlateTopRight, 0, 0, 0)
+                                                    botPlate.AddVertexAt(3, botPLateBotRight, 0, 0, 0)
+                                                    botPlate.AddVertexAt(4, botPlateBotLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(botPlate)
+                                                    transaction.AddNewlyCreatedDBObject(botPlate, True)
+
+                                                    Dim bWebBotLeft As Point2d = botPlateTopLeft
+                                                    Dim bWebTopRight As Point2d = New Point2d(botPlateTopRight.X, eavePoint.Y - eaveCapSlope)
+                                                    Dim bWebTopLeft As Point2d = New Point2d(bWebBotLeft.X, bWebTopRight.Y - offSetRise)
+                                                    Dim bWebBotRight As Point2d = botPlateTopRight
+
+                                                    Dim bWeb As Polyline = New Polyline
+
+                                                    bWeb.AddVertexAt(0, bWebBotLeft, 0, 0, 0)
+                                                    bWeb.AddVertexAt(1, bWebTopLeft, 0, 0, 0)
+                                                    bWeb.AddVertexAt(2, bWebTopRight, 0, 0, 0)
+                                                    bWeb.AddVertexAt(3, bWebBotRight, 0, 0, 0)
+                                                    bWeb.AddVertexAt(4, bWebBotLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(bWeb)
+                                                    transaction.AddNewlyCreatedDBObject(bWeb, True)
+
+                                                End If
+
 
                                             End If
 
@@ -2042,6 +2917,184 @@ Public Class StraightColumnObject
                                             transaction.AddNewlyCreatedDBObject(rightFlange, True)
                                             transaction.AddNewlyCreatedDBObject(eaveCap, True)
                                             transaction.AddNewlyCreatedDBObject(stiffener, True)
+
+                                            ' Girts 
+
+                                            For i = 0 To GirtList.Count - 1
+
+                                                If GirtList.Item(i).Add Then
+
+                                                    Select Case GirtList.Item(i).Type
+
+                                                        Case "8"" Zee Girt"
+
+                                                            Dim topPoint As Point2d = New Point2d(basePoint.X, GirtList.Item(i).Elevation + basePoint.Y)
+                                                            Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                            Dim topToe As Point2d = New Point2d(botRight.X - 0.6875, botRight.Y - 0.6875)
+                                                            Dim botPoint As Point2d = New Point2d(topPoint.X - 8, topPoint.Y)
+                                                            Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                            Dim botToe As Point2d = New Point2d(botLeft.X + 0.6875, botLeft.Y + 0.6875)
+
+                                                            Dim zee As Polyline = New Polyline
+
+                                                            zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                            zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                            zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                            zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                            btr.AppendEntity(zee)
+                                                            transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                        Case "10"" Zee Girt"
+
+                                                            Dim topPoint As Point2d = New Point2d(basePoint.X, GirtList.Item(i).Elevation + basePoint.Y)
+                                                            Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                            Dim topToe As Point2d = New Point2d(botRight.X - 0.6875, botRight.Y - 0.6875)
+                                                            Dim botPoint As Point2d = New Point2d(topPoint.X - 10, topPoint.Y)
+                                                            Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                            Dim botToe As Point2d = New Point2d(botLeft.X + 0.6875, botLeft.Y + 0.6875)
+
+                                                            Dim zee As Polyline = New Polyline
+
+                                                            zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                            zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                            zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                            zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                            zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                            btr.AppendEntity(zee)
+                                                            transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                        Case "8"" Cee Girt"
+
+                                                            Dim botLeft As Point2d = New Point2d(basePoint.X, basePoint.Y + GirtList.Item(i).Elevation)
+                                                            Dim botRight As Point2d = New Point2d(botLeft.X - 8, botLeft.Y)
+                                                            Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                            Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                            Dim toeLeft As Point2d = New Point2d(topLeft.X - 1, topLeft.Y)
+                                                            Dim toeRight As Point2d = New Point2d(topRight.X + 1, topRight.Y)
+
+                                                            Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                            Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X - 0.25, insideTopLeft1.Y)
+                                                            Dim insideBotLeft As Point2d = New Point2d(topLeft.X - 0.25, botLeft.Y + 0.25)
+                                                            Dim insideBotRight As Point2d = New Point2d(botRight.X + 0.25, botRight.Y + 0.25)
+                                                            Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                            Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                            Dim cee As Polyline = New Polyline
+
+                                                            cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                            cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                            cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                            cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                            cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                            cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                            cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                            cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                            cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                            btr.AppendEntity(cee)
+
+                                                            transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                        Case "10"" Cee Girt"
+
+                                                            Dim botLeft As Point2d = New Point2d(basePoint.X, basePoint.Y + GirtList.Item(i).Elevation)
+                                                            Dim botRight As Point2d = New Point2d(botLeft.X - 10, botLeft.Y)
+                                                            Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                            Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                            Dim toeLeft As Point2d = New Point2d(topLeft.X - 1, topLeft.Y)
+                                                            Dim toeRight As Point2d = New Point2d(topRight.X + 1, topRight.Y)
+
+                                                            Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                            Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X - 0.25, insideTopLeft1.Y)
+                                                            Dim insideBotLeft As Point2d = New Point2d(topLeft.X - 0.25, botLeft.Y + 0.25)
+                                                            Dim insideBotRight As Point2d = New Point2d(botRight.X + 0.25, botRight.Y + 0.25)
+                                                            Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                            Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                            Dim cee As Polyline = New Polyline
+
+                                                            cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                            cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                            cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                            cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                            cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                            cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                            cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                            cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                            cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                            cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                            btr.AppendEntity(cee)
+
+                                                            transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                    End Select
+
+
+                                                    If GirtList.Item(i).Brace Then
+
+                                                        Dim braceLeft As Point3d = New Point3d(basePoint.X - 4, basePoint.Y + GirtList.Item(i).Elevation - 1, 0)
+                                                        Dim braceRight As Point3d = New Point3d(basePoint.X - OuterThick - WebDepth, braceLeft.Y, 0)
+
+                                                        Dim brace As Line = New Line(braceLeft, braceRight)
+
+                                                        Dim text As MText = New MText()
+                                                        text.SetDatabaseDefaults()
+                                                        text.Location = New Point3d(braceRight.X - InnerThick - 1, braceRight.Y, 0)
+                                                        text.TextStyleId = dwg.Textstyle
+                                                        text.TextHeight = dwg.Dimtxt
+                                                        text.Attachment = AttachmentPoint.MiddleRight
+                                                        text.SetAttachmentMovingLocation(text.Attachment)
+                                                        text.Width = 0.0
+
+                                                        text.Contents = "FBX"
+
+                                                        btr.AppendEntity(brace)
+                                                        btr.AppendEntity(text)
+                                                        transaction.AddNewlyCreatedDBObject(brace, True)
+                                                        transaction.AddNewlyCreatedDBObject(text, True)
+
+                                                    End If
+
+                                                End If
+
+                                            Next
+
+                                            ' Cable Holes
+
+                                            If CableObj.Check Then
+
+                                                Dim topHolePoint As Point3d = New Point3d(basePoint.X - CableObj.FromFlange, eavePoint.Y - CableObj.FromTop, 0)
+                                                Dim bottomHolePoint As Point3d = New Point3d(basePoint.X - CableObj.FromFlange, basePoint.Y + CableObj.FromBottom, 0)
+
+                                                Dim topSlot As Circle = New Circle()
+                                                Dim botSlot As Circle = New Circle()
+
+                                                topSlot.Center = topHolePoint
+                                                botSlot.Center = bottomHolePoint
+
+                                                topSlot.Diameter = 1
+                                                botSlot.Diameter = 1
+
+                                                btr.AppendEntity(topSlot)
+                                                btr.AppendEntity(botSlot)
+
+                                                transaction.AddNewlyCreatedDBObject(topSlot, True)
+                                                transaction.AddNewlyCreatedDBObject(botSlot, True)
+
+                                            End If
 
                                         Else
 
@@ -2272,6 +3325,238 @@ Public Class StraightColumnObject
                                                 transaction.AddNewlyCreatedDBObject(rightFlange, True)
                                                 transaction.AddNewlyCreatedDBObject(eaveCap, True)
                                                 transaction.AddNewlyCreatedDBObject(stiffener, True)
+
+                                                ' Girts 
+
+                                                For i = 0 To GirtList.Count - 1
+
+                                                    If GirtList.Item(i).Add Then
+
+                                                        Select Case GirtList.Item(i).Type
+
+                                                            Case "8"" Zee Girt"
+
+                                                                Dim topPoint As Point2d = New Point2d(basePoint.X + 8, GirtList.Item(i).Elevation + basePoint.Y)
+                                                                Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                                Dim topToe As Point2d = New Point2d(botRight.X - 0.6875, botRight.Y - 0.6875)
+                                                                Dim botPoint As Point2d = New Point2d(topPoint.X - 8, topPoint.Y)
+                                                                Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                                Dim botToe As Point2d = New Point2d(botLeft.X + 0.6875, botLeft.Y + 0.6875)
+
+                                                                Dim zee As Polyline = New Polyline
+
+                                                                zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                                zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                                zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                                zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                                btr.AppendEntity(zee)
+                                                                transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                            Case "10"" Zee Girt"
+
+                                                                Dim topPoint As Point2d = New Point2d(basePoint.X + 10, GirtList.Item(i).Elevation + basePoint.Y)
+                                                                Dim botRight As Point2d = New Point2d(topPoint.X, topPoint.Y - 2.5)
+                                                                Dim topToe As Point2d = New Point2d(botRight.X - 0.6875, botRight.Y - 0.6875)
+                                                                Dim botPoint As Point2d = New Point2d(topPoint.X - 10, topPoint.Y)
+                                                                Dim botLeft As Point2d = New Point2d(botPoint.X, botPoint.Y + 2.5)
+                                                                Dim botToe As Point2d = New Point2d(botLeft.X + 0.6875, botLeft.Y + 0.6875)
+
+                                                                Dim zee As Polyline = New Polyline
+
+                                                                zee.AddVertexAt(0, botToe, 0, 0, 0)
+                                                                zee.AddVertexAt(1, botLeft, 0, 0, 0)
+                                                                zee.AddVertexAt(2, botPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(3, topPoint, 0, 0, 0)
+                                                                zee.AddVertexAt(4, botRight, 0, 0, 0)
+                                                                zee.AddVertexAt(5, topToe, 0, 0, 0)
+
+                                                                btr.AppendEntity(zee)
+                                                                transaction.AddNewlyCreatedDBObject(zee, True)
+
+                                                            Case "8"" Cee Girt"
+
+                                                                Dim botLeft As Point2d = New Point2d(basePoint.X + 8, basePoint.Y + GirtList.Item(i).Elevation)
+                                                                Dim botRight As Point2d = New Point2d(botLeft.X - 8, botLeft.Y)
+                                                                Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                                Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                                Dim toeLeft As Point2d = New Point2d(topLeft.X - 1, topLeft.Y)
+                                                                Dim toeRight As Point2d = New Point2d(topRight.X + 1, topRight.Y)
+
+                                                                Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                                Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X - 0.25, insideTopLeft1.Y)
+                                                                Dim insideBotLeft As Point2d = New Point2d(topLeft.X - 0.25, botLeft.Y + 0.25)
+                                                                Dim insideBotRight As Point2d = New Point2d(botRight.X + 0.25, botRight.Y + 0.25)
+                                                                Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                                Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                                Dim cee As Polyline = New Polyline
+
+                                                                cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                                cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                                cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                                cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                                cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                                cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                                cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                                cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                                cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                                btr.AppendEntity(cee)
+
+                                                                transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                            Case "10"" Cee Girt"
+
+                                                                Dim botLeft As Point2d = New Point2d(basePoint.X + 10, basePoint.Y + GirtList.Item(i).Elevation)
+                                                                Dim botRight As Point2d = New Point2d(botLeft.X - 10, botLeft.Y)
+                                                                Dim topLeft As Point2d = New Point2d(botLeft.X, botLeft.Y + 2.5)
+                                                                Dim topRight As Point2d = New Point2d(botRight.X, topLeft.Y)
+                                                                Dim toeLeft As Point2d = New Point2d(topLeft.X - 1, topLeft.Y)
+                                                                Dim toeRight As Point2d = New Point2d(topRight.X + 1, topRight.Y)
+
+                                                                Dim insideTopLeft1 As Point2d = New Point2d(toeLeft.X, toeLeft.Y - 0.25)
+                                                                Dim insideTopLeft2 As Point2d = New Point2d(topLeft.X - 0.25, insideTopLeft1.Y)
+                                                                Dim insideBotLeft As Point2d = New Point2d(topLeft.X - 0.25, botLeft.Y + 0.25)
+                                                                Dim insideBotRight As Point2d = New Point2d(botRight.X + 0.25, botRight.Y + 0.25)
+                                                                Dim insideTopRight2 As Point2d = New Point2d(insideBotRight.X, topRight.Y - 0.25)
+                                                                Dim insideTopRight1 As Point2d = New Point2d(toeRight.X, toeRight.Y - 0.25)
+
+                                                                Dim cee As Polyline = New Polyline
+
+                                                                cee.AddVertexAt(0, toeLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(1, topLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(2, botLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(3, botRight, 0, 0, 0)
+                                                                cee.AddVertexAt(4, topRight, 0, 0, 0)
+                                                                cee.AddVertexAt(5, toeRight, 0, 0, 0)
+                                                                cee.AddVertexAt(6, insideTopRight1, 0, 0, 0)
+                                                                cee.AddVertexAt(7, insideTopRight2, 0, 0, 0)
+                                                                cee.AddVertexAt(8, insideBotRight, 0, 0, 0)
+                                                                cee.AddVertexAt(9, insideBotLeft, 0, 0, 0)
+                                                                cee.AddVertexAt(10, insideTopLeft2, 0, 0, 0)
+                                                                cee.AddVertexAt(11, insideTopLeft1, 0, 0, 0)
+                                                                cee.AddVertexAt(12, toeLeft, 0, 0, 0)
+
+                                                                btr.AppendEntity(cee)
+
+                                                                transaction.AddNewlyCreatedDBObject(cee, True)
+
+                                                        End Select
+
+
+                                                        If GirtList.Item(i).Brace Then
+
+                                                            Dim braceLeft As Point3d = New Point3d(basePoint.X + 2, basePoint.Y + GirtList.Item(i).Elevation - 1, 0)
+                                                            Dim braceRight As Point3d = New Point3d(basePoint.X - OuterThick - WebDepth, braceLeft.Y, 0)
+
+                                                            Dim brace As Line = New Line(braceLeft, braceRight)
+
+                                                            Dim text As MText = New MText()
+                                                            text.SetDatabaseDefaults()
+                                                            text.Location = New Point3d(braceRight.X - InnerThick - 1, braceRight.Y, 0)
+                                                            text.TextStyleId = dwg.Textstyle
+                                                            text.TextHeight = dwg.Dimtxt
+                                                            text.Attachment = AttachmentPoint.MiddleRight
+                                                            text.SetAttachmentMovingLocation(text.Attachment)
+                                                            text.Width = 0.0
+
+                                                            text.Contents = "FBX"
+
+                                                            btr.AppendEntity(brace)
+                                                            btr.AppendEntity(text)
+                                                            transaction.AddNewlyCreatedDBObject(brace, True)
+                                                            transaction.AddNewlyCreatedDBObject(text, True)
+
+                                                        End If
+
+                                                    End If
+
+                                                Next
+
+                                                ' Cable Holes
+
+                                                If CableObj.Check Then
+
+                                                    Dim topHolePoint As Point3d = New Point3d(basePoint.X - CableObj.FromFlange, eavePoint.Y - CableObj.FromTop, 0)
+                                                    Dim bottomHolePoint As Point3d = New Point3d(basePoint.X - CableObj.FromFlange, basePoint.Y + CableObj.FromBottom, 0)
+
+                                                    Dim topSlot As Circle = New Circle()
+                                                    Dim botSlot As Circle = New Circle()
+
+                                                    topSlot.Center = topHolePoint
+                                                    botSlot.Center = bottomHolePoint
+
+                                                    topSlot.Diameter = 1
+                                                    botSlot.Diameter = 1
+
+                                                    btr.AppendEntity(topSlot)
+                                                    btr.AppendEntity(botSlot)
+
+                                                    transaction.AddNewlyCreatedDBObject(topSlot, True)
+                                                    transaction.AddNewlyCreatedDBObject(botSlot, True)
+
+                                                End If
+
+                                                ' Block
+
+                                                If Block Then
+
+                                                    Dim bPlateTopLeft As Point2d = New Point2d(basePoint.X + girtOffset, eavePoint.Y + offSetRise)
+                                                    Dim bPlateTopRight As Point2d = New Point2d(bPlateTopLeft.X - 0.25, bPlateTopLeft.Y)
+                                                    Dim bPlateBotRight As Point2d = New Point2d(bPlateTopRight.X, bPlateTopRight.Y - 8)
+                                                    Dim bPlateBotLeft As Point2d = New Point2d(bPlateTopLeft.X, bPlateBotRight.Y)
+
+                                                    Dim bPlate As Polyline = New Polyline
+
+                                                    bPlate.AddVertexAt(0, bPlateTopLeft, 0, 0, 0)
+                                                    bPlate.AddVertexAt(1, bPlateTopRight, 0, 0, 0)
+                                                    bPlate.AddVertexAt(2, bPlateBotRight, 0, 0, 0)
+                                                    bPlate.AddVertexAt(3, bPlateBotLeft, 0, 0, 0)
+                                                    bPlate.AddVertexAt(4, bPlateTopLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(bPlate)
+                                                    transaction.AddNewlyCreatedDBObject(bPlate, True)
+
+                                                    Dim botPlateBotLeft As Point2d = bPlateBotRight
+                                                    Dim botPlateTopLeft As Point2d = New Point2d(botPlateBotLeft.X, botPlateBotLeft.Y + 0.25)
+                                                    Dim botPlateTopRight As Point2d = New Point2d(basePoint.X, botPlateTopLeft.Y)
+                                                    Dim botPLateBotRight As Point2d = New Point2d(botPlateTopRight.X, botPlateBotLeft.Y)
+
+                                                    Dim botPlate As Polyline = New Polyline
+
+                                                    botPlate.AddVertexAt(0, botPlateBotLeft, 0, 0, 0)
+                                                    botPlate.AddVertexAt(1, botPlateTopLeft, 0, 0, 0)
+                                                    botPlate.AddVertexAt(2, botPlateTopRight, 0, 0, 0)
+                                                    botPlate.AddVertexAt(3, botPLateBotRight, 0, 0, 0)
+                                                    botPlate.AddVertexAt(4, botPlateBotLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(botPlate)
+                                                    transaction.AddNewlyCreatedDBObject(botPlate, True)
+
+                                                    Dim bWebBotLeft As Point2d = botPlateTopLeft
+                                                    Dim bWebTopRight As Point2d = New Point2d(botPlateTopRight.X, eavePoint.Y - eaveCapSlope)
+                                                    Dim bWebTopLeft As Point2d = New Point2d(bWebBotLeft.X, bWebTopRight.Y - offSetRise)
+                                                    Dim bWebBotRight As Point2d = botPlateTopRight
+
+                                                    Dim bWeb As Polyline = New Polyline
+
+                                                    bWeb.AddVertexAt(0, bWebBotLeft, 0, 0, 0)
+                                                    bWeb.AddVertexAt(1, bWebTopLeft, 0, 0, 0)
+                                                    bWeb.AddVertexAt(2, bWebTopRight, 0, 0, 0)
+                                                    bWeb.AddVertexAt(3, bWebBotRight, 0, 0, 0)
+                                                    bWeb.AddVertexAt(4, bWebBotLeft, 0, 0, 0)
+
+                                                    btr.AppendEntity(bWeb)
+                                                    transaction.AddNewlyCreatedDBObject(bWeb, True)
+
+                                                End If
 
 
                                             End If
