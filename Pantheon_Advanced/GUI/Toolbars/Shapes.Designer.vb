@@ -47,6 +47,7 @@ Partial Class Shapes
         Me.RadLabel3 = New Telerik.WinControls.UI.RadLabel()
         Me.RadLabel2 = New Telerik.WinControls.UI.RadLabel()
         Me.RadLabel1 = New Telerik.WinControls.UI.RadLabel()
+        Me.VisualStudio2012DarkTheme1 = New Telerik.WinControls.Themes.VisualStudio2012DarkTheme()
         CType(Me.Cee, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RolledI, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Tube, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -402,5 +403,6 @@ Partial Class Shapes
     Friend WithEvents PurlinRight As Telerik.WinControls.UI.RadButton
     Friend WithEvents PurlinLeft As Telerik.WinControls.UI.RadButton
     Friend WithEvents RadLabel1 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents VisualStudio2012DarkTheme1 As Telerik.WinControls.Themes.VisualStudio2012DarkTheme
 
 End Class

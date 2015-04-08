@@ -75,6 +75,31 @@ Public Class SymWorkFrameForm
 
                         Else
 
+                            Dim sideText As String = SideBayField.Text
+                            Dim endText As String = EndBayField.Text
+
+                            sideText = sideText.Replace(" ", "")
+                            endText = endText.Replace(" ", "")
+
+                            Dim sideParts As String() = sideText.Split(New Char() {","c})
+                            Dim endParts As String() = endText.Split(New Char() {","c})
+
+                            Dim sideBays(sideParts.Count) As Double
+                            Dim endBays(endParts.Count) As Double
+
+                            If sideText <> "" Then
+
+                                For i = 0 To sideParts.Count - 1
+                                    sideBays(i) = Converter.StringToDistance(sideParts(i), DistanceUnitFormat.Architectural)
+                                Next
+                            End If
+
+                            If endText <> "" Then
+                                For i = 0 To endParts.Count - 1
+                                    endBays(i) = Converter.StringToDistance(endParts(i), DistanceUnitFormat.Architectural)
+                                Next
+                            End If
+
                             Lists.SymWorkframeList.Add(New SymWorkFrameObject(markName,
                                                                                       Converter.StringToDistance(HeightField.Text),
                                                                                       Converter.StringToDistance(WidthField.Text),
@@ -82,6 +107,8 @@ Public Class SymWorkFrameForm
                                                                                       pitchValue,
                                                                                       Converter.StringToDistance(PurlinField.Text),
                                                                                       Converter.StringToDistance(GirtField.Text),
+                                                                                      sideBays,
+                                                                                      endBays,
                                                                                       Flush.IsChecked,
                                                                                       Bypass.IsChecked))
 
@@ -158,10 +185,30 @@ Public Class SymWorkFrameForm
                         PitchField.Text = ""
                         PurlinField.Text = "8"""
                         GirtField.Text = "8"""
+                        SideBayField.Text = "0"""
+                        EndBayField.Text = "0"""
                         Flush.IsChecked = True
                         Bypass.IsChecked = False
 
                     Else
+                        Dim sideText As String = ""
+                        Dim endText As String = ""
+
+                        For i = 0 To Lists.SymWorkframeList.Item(obj).SideBays.Count() - 1
+
+                            sideText +=
+                                Converter.DistanceToString(Lists.SymWorkframeList.Item(obj).SideBays(i),
+                                                           DistanceUnitFormat.Architectural, 0) + " , "
+
+                        Next
+
+                        For i = 0 To Lists.SymWorkframeList.Item(obj).EndBays.Count() - 1
+
+                            endText +=
+                                Converter.DistanceToString(Lists.SymWorkframeList.Item(obj).EndBays(i),
+                                                           DistanceUnitFormat.Architectural, 0) + " , "
+
+                        Next
 
                         WidthField.Text = Converter.DistanceToString(Lists.SymWorkframeList.Item(obj).Width)
                         HeightField.Text = Converter.DistanceToString(Lists.SymWorkframeList.Item(obj).EaveHeight)
@@ -170,8 +217,15 @@ Public Class SymWorkFrameForm
                         PurlinField.Text = Converter.DistanceToString(Lists.SymWorkframeList.Item(obj).PurlinWeb)
                         GirtField.Text = Converter.DistanceToString(Lists.SymWorkframeList.Item(obj).GirtWeb)
 
+                        SideBayField.Text = sideText
+                        EndBayField.Text = endText
+                        Clean.CleanText(SideBayField)
+                        Clean.CleanText(EndBayField)
+
                         Flush.IsChecked = Lists.SymWorkframeList.Item(obj).Flush
                         Bypass.IsChecked = Lists.SymWorkframeList.Item(obj).Bypass
+
+
 
                     End If
 
@@ -180,5 +234,8 @@ Public Class SymWorkFrameForm
             End If
         End If
     End Sub
+
+   
+
 
 End Class
