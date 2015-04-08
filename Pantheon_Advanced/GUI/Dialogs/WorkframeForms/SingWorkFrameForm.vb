@@ -75,6 +75,74 @@ Public Class SingWorkFrameForm
 
                         Else
 
+                            Dim sideBayText As String = SideBayField.Text
+                            Dim endBayText As String = EndBayField.Text
+
+                            sideBayText = sideBayText.Replace(" ", "")
+                            endBayText = endBayText.Replace(" ", "")
+
+                            Dim sideParts As String() = sideBayText.Split(New Char() {","c})
+                            Dim endParts As String() = endBayText.Split(New Char() {","c})
+
+                            Dim sideList As List(Of String) = New List(Of String)()
+                            Dim endList As List(Of String) = New List(Of String)()
+
+                            ''Find SideMult Bays
+                            If sideBayText <> "" Then
+
+                                For i = 0 To sideParts.Count - 1
+
+                                    If sideParts(i).Contains("*") Then
+
+                                        Dim sideMult As String() = sideParts(i).Split(New Char() {"*"c})
+                                        Dim multiplier As Integer = Integer.Parse(sideMult(0))
+                                        For j = 1 To multiplier
+                                            sideList.Add(sideMult(1))
+                                        Next
+
+                                    Else
+                                        sideList.Add(sideParts(i))
+                                    End If
+                                Next
+
+                            End If
+
+                            ''Find EndMult Bays
+                            If endBayText <> "" Then
+
+                                For i = 0 To endParts.Count - 1
+
+                                    If endParts(i).Contains("*") Then
+
+                                        Dim endMult As String() = endParts(i).Split(New Char() {"*"c})
+                                        Dim multiplier As Integer = Integer.Parse(endMult(0))
+                                        For j = 0 To multiplier - 1
+                                            endList.Add(endMult(1))
+                                        Next
+
+                                    Else
+                                        endList.Add(endParts(i))
+                                    End If
+                                Next
+
+                            End If
+
+                            Dim sideBays(sideList.Count) As Double
+                            Dim endBays(endList.Count) As Double
+
+                            If sideBayText <> "" Then
+
+                                For i = 0 To sideList.Count - 1
+                                    sideBays(i) = Converter.StringToDistance(sideList(i), DistanceUnitFormat.Architectural)
+                                Next
+                            End If
+
+                            If endBayText <> "" Then
+                                For i = 0 To endList.Count - 1
+                                    endBays(i) = Converter.StringToDistance(endList(i), DistanceUnitFormat.Architectural)
+                                Next
+                            End If
+
                             Lists.SingWorkframeList.Add(New SingWorkFrameObject(MarkCombo.Text,
                                                                  Converter.StringToDistance(LowHeightField.Text),
                                                                  Converter.StringToDistance(HighHeightField.Text),
@@ -83,6 +151,10 @@ Public Class SingWorkFrameForm
                                                                  pitchValue,
                                                                  Converter.StringToDistance(PurlinField.Text),
                                                                  Converter.StringToDistance(GirtField.Text),
+                                                                 SideBayField.Text,
+                                                                 EndBayField.Text,
+                                                                 sideBays,
+                                                                 endBays,
                                                                  Flush.IsChecked,
                                                                  Bypass.IsChecked))
 
@@ -159,12 +231,12 @@ Public Class SingWorkFrameForm
                         PitchField.Text = ""
                         PurlinField.Text = "8"""
                         GirtField.Text = "8"""
+                        SideBayField.Text = ""
+                        EndBayField.Text = ""
                         Flush.IsChecked = True
                         Bypass.IsChecked = False
 
                     Else
-
-
 
                         WidthField.Text = Converter.DistanceToString(Lists.SingWorkframeList.Item(obj).Width)
                         LowHeightField.Text = Converter.DistanceToString(Lists.SingWorkframeList.Item(obj).LowHeight)
@@ -173,6 +245,9 @@ Public Class SingWorkFrameForm
                         PitchField.Text = Lists.SingWorkframeList.Item(obj).Pitch * 12
                         PurlinField.Text = Converter.DistanceToString(Lists.SingWorkframeList.Item(obj).PurlinWeb)
                         GirtField.Text = Converter.DistanceToString(Lists.SingWorkframeList.Item(obj).GirtWeb)
+
+                        SideBayField.Text = Lists.SingWorkframeList.Item(obj).SideBayText
+                        EndBayField.Text = Lists.SingWorkframeList.Item(obj).EndBayText
 
                         Flush.IsChecked = Lists.SingWorkframeList.Item(obj).Flush
                         Bypass.IsChecked = Lists.SingWorkframeList.Item(obj).Bypass

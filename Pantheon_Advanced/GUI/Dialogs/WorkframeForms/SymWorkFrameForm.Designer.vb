@@ -335,7 +335,6 @@ Partial Class SymWorkFrameForm
         Me.SideBayField.Name = "SideBayField"
         Me.SideBayField.Size = New System.Drawing.Size(147, 21)
         Me.SideBayField.TabIndex = 36
-        Me.SideBayField.Text = "0"""
         Me.SideBayField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.SideBayField.ThemeName = "VisualStudio2012Dark"
         '
@@ -345,7 +344,6 @@ Partial Class SymWorkFrameForm
         Me.EndBayField.Name = "EndBayField"
         Me.EndBayField.Size = New System.Drawing.Size(147, 21)
         Me.EndBayField.TabIndex = 38
-        Me.EndBayField.Text = "0"""
         Me.EndBayField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.EndBayField.ThemeName = "VisualStudio2012Dark"
         '

@@ -216,8 +216,8 @@ Public Class SymWorkFrameForm
                         PitchField.Text = ""
                         PurlinField.Text = "8"""
                         GirtField.Text = "8"""
-                        SideBayField.Text = "0"""
-                        EndBayField.Text = "0"""
+                        SideBayField.Text = ""
+                        EndBayField.Text = ""
                         Flush.IsChecked = True
                         Bypass.IsChecked = False
 

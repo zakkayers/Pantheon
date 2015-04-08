@@ -79,6 +79,74 @@ Public Class OffCenWorkFrameForm
 
                             Else
 
+                                Dim sideBayText As String = SideBayField.Text
+                                Dim endBayText As String = EndBayField.Text
+
+                                sideBayText = sideBayText.Replace(" ", "")
+                                endBayText = endBayText.Replace(" ", "")
+
+                                Dim sideParts As String() = sideBayText.Split(New Char() {","c})
+                                Dim endParts As String() = endBayText.Split(New Char() {","c})
+
+                                Dim sideList As List(Of String) = New List(Of String)()
+                                Dim endList As List(Of String) = New List(Of String)()
+
+                                ''Find SideMult Bays
+                                If sideBayText <> "" Then
+
+                                    For i = 0 To sideParts.Count - 1
+
+                                        If sideParts(i).Contains("*") Then
+
+                                            Dim sideMult As String() = sideParts(i).Split(New Char() {"*"c})
+                                            Dim multiplier As Integer = Integer.Parse(sideMult(0))
+                                            For j = 1 To multiplier
+                                                sideList.Add(sideMult(1))
+                                            Next
+
+                                        Else
+                                            sideList.Add(sideParts(i))
+                                        End If
+                                    Next
+
+                                End If
+
+                                ''Find EndMult Bays
+                                If endBayText <> "" Then
+
+                                    For i = 0 To endParts.Count - 1
+
+                                        If endParts(i).Contains("*") Then
+
+                                            Dim endMult As String() = endParts(i).Split(New Char() {"*"c})
+                                            Dim multiplier As Integer = Integer.Parse(endMult(0))
+                                            For j = 0 To multiplier - 1
+                                                endList.Add(endMult(1))
+                                            Next
+
+                                        Else
+                                            endList.Add(endParts(i))
+                                        End If
+                                    Next
+
+                                End If
+
+                                Dim sideBays(sideList.Count) As Double
+                                Dim endBays(endList.Count) As Double
+
+                                If sideBayText <> "" Then
+
+                                    For i = 0 To sideList.Count - 1
+                                        sideBays(i) = Converter.StringToDistance(sideList(i), DistanceUnitFormat.Architectural)
+                                    Next
+                                End If
+
+                                If endBayText <> "" Then
+                                    For i = 0 To endList.Count - 1
+                                        endBays(i) = Converter.StringToDistance(endList(i), DistanceUnitFormat.Architectural)
+                                    Next
+                                End If
+
                                 Lists.OffCenWorkframeList.Add(New OffCenWorkFrameObject(markName,
                                                                                           Converter.StringToDistance(LeftHeightField.Text),
                                                                                           Converter.StringToDistance(LeftWidthField.Text),
@@ -95,7 +163,11 @@ Public Class OffCenWorkFrameForm
                                                                                           Converter.StringToDistance(RightPurlinField.Text),
                                                                                           Converter.StringToDistance(RightGirtField.Text),
                                                                                           RightFlush.IsChecked,
-                                                                                          RightBypass.IsChecked))
+                                                                                          RightBypass.IsChecked,
+                                                                                          SideBayField.Text,
+                                                                                          EndBayField.Text,
+                                                                                          sideBays,
+                                                                                          endBays))
 
                                 transaction.Commit()
 
@@ -202,6 +274,9 @@ Public Class OffCenWorkFrameForm
                         RightFlush.IsChecked = True
                         RightBypass.IsChecked = False
 
+                        SideBayField.Text = ""
+                        EndBayField.Text = ""
+
                     Else
 
                         LeftWidthField.Text = Converter.DistanceToString(Lists.OffCenWorkframeList.Item(obj).LeftWidth)
@@ -223,6 +298,9 @@ Public Class OffCenWorkFrameForm
 
                         RightFlush.IsChecked = Lists.OffCenWorkframeList.Item(obj).RightFlush
                         RightBypass.IsChecked = Lists.OffCenWorkframeList.Item(obj).RightBypass
+
+                        SideBayField.Text = Lists.OffCenWorkframeList.Item(obj).SideBayText
+                        SideBayField.Text = Lists.OffCenWorkframeList.Item(obj).EndBayText
 
                     End If
 

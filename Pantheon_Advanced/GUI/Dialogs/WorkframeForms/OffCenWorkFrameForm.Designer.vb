@@ -69,6 +69,11 @@ Partial Class OffCenWorkFrameForm
         Me.Copy = New Telerik.WinControls.UI.RadButton()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.VisualStudio2012DarkTheme1 = New Telerik.WinControls.Themes.VisualStudio2012DarkTheme()
+        Me.EndBayField = New Telerik.WinControls.UI.RadTextBox()
+        Me.RadLabel20 = New Telerik.WinControls.UI.RadLabel()
+        Me.SideBayField = New Telerik.WinControls.UI.RadTextBox()
+        Me.RadLabel21 = New Telerik.WinControls.UI.RadLabel()
+        Me.RadLabel22 = New Telerik.WinControls.UI.RadLabel()
         CType(Me.RadTitleBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Create, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LeftPitchField, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,6 +117,11 @@ Partial Class OffCenWorkFrameForm
         CType(Me.RightHeightField, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RightPitchField, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EndBayField, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SideBayField, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel22, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RoundRectShapeTitle
@@ -130,7 +140,7 @@ Partial Class OffCenWorkFrameForm
         '
         Me.RadTitleBar1.RootElement.ApplyShapeToControl = True
         Me.RadTitleBar1.RootElement.Shape = Me.RoundRectShapeTitle
-        Me.RadTitleBar1.Size = New System.Drawing.Size(351, 23)
+        Me.RadTitleBar1.Size = New System.Drawing.Size(348, 23)
         Me.RadTitleBar1.TabIndex = 0
         Me.RadTitleBar1.TabStop = False
         Me.RadTitleBar1.ThemeName = "VisualStudio2012Dark"
@@ -138,7 +148,7 @@ Partial Class OffCenWorkFrameForm
         'Create
         '
         Me.Create.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Create.Location = New System.Drawing.Point(9, 397)
+        Me.Create.Location = New System.Drawing.Point(9, 525)
         Me.Create.Name = "Create"
         Me.Create.Size = New System.Drawing.Size(334, 40)
         Me.Create.TabIndex = 50
@@ -563,12 +573,63 @@ Partial Class OffCenWorkFrameForm
         Me.Copy.ThemeName = "VisualStudio2012Dark"
         Me.ToolTip1.SetToolTip(Me.Copy, "Copy Current Member")
         '
+        'EndBayField
+        '
+        Me.EndBayField.Location = New System.Drawing.Point(10, 496)
+        Me.EndBayField.Name = "EndBayField"
+        Me.EndBayField.Size = New System.Drawing.Size(333, 21)
+        Me.EndBayField.TabIndex = 70
+        Me.EndBayField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.EndBayField.ThemeName = "VisualStudio2012Dark"
+        '
+        'RadLabel20
+        '
+        Me.RadLabel20.Location = New System.Drawing.Point(14, 472)
+        Me.RadLabel20.Name = "RadLabel20"
+        Me.RadLabel20.Size = New System.Drawing.Size(72, 18)
+        Me.RadLabel20.TabIndex = 69
+        Me.RadLabel20.Text = "EndWall Bays"
+        Me.RadLabel20.ThemeName = "VisualStudio2012Dark"
+        '
+        'SideBayField
+        '
+        Me.SideBayField.Location = New System.Drawing.Point(10, 445)
+        Me.SideBayField.Name = "SideBayField"
+        Me.SideBayField.Size = New System.Drawing.Size(333, 21)
+        Me.SideBayField.TabIndex = 68
+        Me.SideBayField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.SideBayField.ThemeName = "VisualStudio2012Dark"
+        '
+        'RadLabel21
+        '
+        Me.RadLabel21.Location = New System.Drawing.Point(14, 421)
+        Me.RadLabel21.Name = "RadLabel21"
+        Me.RadLabel21.Size = New System.Drawing.Size(75, 18)
+        Me.RadLabel21.TabIndex = 67
+        Me.RadLabel21.Text = "SideWall Bays"
+        Me.RadLabel21.ThemeName = "VisualStudio2012Dark"
+        '
+        'RadLabel22
+        '
+        Me.RadLabel22.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadLabel22.Location = New System.Drawing.Point(10, 397)
+        Me.RadLabel22.Name = "RadLabel22"
+        Me.RadLabel22.Size = New System.Drawing.Size(31, 18)
+        Me.RadLabel22.TabIndex = 66
+        Me.RadLabel22.Text = "Bays"
+        Me.RadLabel22.ThemeName = "VisualStudio2012Dark"
+        '
         'OffCenWorkFrameForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(353, 447)
+        Me.ClientSize = New System.Drawing.Size(350, 574)
+        Me.Controls.Add(Me.EndBayField)
+        Me.Controls.Add(Me.RadLabel20)
+        Me.Controls.Add(Me.SideBayField)
+        Me.Controls.Add(Me.RadLabel21)
+        Me.Controls.Add(Me.RadLabel22)
         Me.Controls.Add(Me.Copy)
         Me.Controls.Add(Me.RadGroupBox2)
         Me.Controls.Add(Me.RadGroupBox1)
@@ -577,6 +638,8 @@ Partial Class OffCenWorkFrameForm
         Me.Controls.Add(Me.Add)
         Me.Controls.Add(Me.MarkCombo)
         Me.Controls.Add(Me.RadTitleBar1)
+        Me.MaximumSize = New System.Drawing.Size(350, 574)
+        Me.MinimumSize = New System.Drawing.Size(350, 574)
         Me.Name = "OffCenWorkFrameForm"
         Me.Shape = Me.RoundRectShapeForm
         Me.Text = ""
@@ -626,6 +689,11 @@ Partial Class OffCenWorkFrameForm
         CType(Me.RightHeightField, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RightPitchField, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EndBayField, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SideBayField, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel22, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -676,5 +744,10 @@ Partial Class OffCenWorkFrameForm
     Friend WithEvents Copy As Telerik.WinControls.UI.RadButton
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
     Friend WithEvents VisualStudio2012DarkTheme1 As Telerik.WinControls.Themes.VisualStudio2012DarkTheme
+    Friend WithEvents EndBayField As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents RadLabel20 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents SideBayField As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents RadLabel21 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents RadLabel22 As Telerik.WinControls.UI.RadLabel
 End Class
 

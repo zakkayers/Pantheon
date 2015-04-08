@@ -52,6 +52,11 @@ Partial Class SingWorkFrameForm
         Me.RadLabel14 = New Telerik.WinControls.UI.RadLabel()
         Me.Copy = New Telerik.WinControls.UI.RadButton()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.EndBayField = New Telerik.WinControls.UI.RadTextBox()
+        Me.RadLabel12 = New Telerik.WinControls.UI.RadLabel()
+        Me.SideBayField = New Telerik.WinControls.UI.RadTextBox()
+        Me.RadLabel11 = New Telerik.WinControls.UI.RadLabel()
+        Me.RadLabel10 = New Telerik.WinControls.UI.RadLabel()
         CType(Me.RadTitleBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Bypass, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Flush, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,6 +81,11 @@ Partial Class SingWorkFrameForm
         CType(Me.HighHeightField, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EndBayField, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SideBayField, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RoundRectShapeTitle
@@ -101,7 +111,7 @@ Partial Class SingWorkFrameForm
         '
         'Bypass
         '
-        Me.Bypass.Location = New System.Drawing.Point(86, 345)
+        Me.Bypass.Location = New System.Drawing.Point(86, 471)
         Me.Bypass.Name = "Bypass"
         Me.Bypass.Size = New System.Drawing.Size(71, 40)
         Me.Bypass.TabIndex = 58
@@ -111,7 +121,7 @@ Partial Class SingWorkFrameForm
         'Flush
         '
         Me.Flush.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.Flush.Location = New System.Drawing.Point(10, 345)
+        Me.Flush.Location = New System.Drawing.Point(10, 471)
         Me.Flush.Name = "Flush"
         Me.Flush.Size = New System.Drawing.Size(71, 40)
         Me.Flush.TabIndex = 57
@@ -122,7 +132,7 @@ Partial Class SingWorkFrameForm
         'RadLabel13
         '
         Me.RadLabel13.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadLabel13.Location = New System.Drawing.Point(10, 320)
+        Me.RadLabel13.Location = New System.Drawing.Point(10, 446)
         Me.RadLabel13.Name = "RadLabel13"
         Me.RadLabel13.Size = New System.Drawing.Size(91, 18)
         Me.RadLabel13.TabIndex = 56
@@ -132,7 +142,7 @@ Partial Class SingWorkFrameForm
         'Create
         '
         Me.Create.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Create.Location = New System.Drawing.Point(11, 391)
+        Me.Create.Location = New System.Drawing.Point(11, 517)
         Me.Create.Name = "Create"
         Me.Create.Size = New System.Drawing.Size(146, 40)
         Me.Create.TabIndex = 55
@@ -329,12 +339,63 @@ Partial Class SingWorkFrameForm
         Me.Copy.ThemeName = "VisualStudio2012Dark"
         Me.ToolTip1.SetToolTip(Me.Copy, "Copy Current Member")
         '
+        'EndBayField
+        '
+        Me.EndBayField.Location = New System.Drawing.Point(10, 419)
+        Me.EndBayField.Name = "EndBayField"
+        Me.EndBayField.Size = New System.Drawing.Size(147, 21)
+        Me.EndBayField.TabIndex = 65
+        Me.EndBayField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.EndBayField.ThemeName = "VisualStudio2012Dark"
+        '
+        'RadLabel12
+        '
+        Me.RadLabel12.Location = New System.Drawing.Point(14, 395)
+        Me.RadLabel12.Name = "RadLabel12"
+        Me.RadLabel12.Size = New System.Drawing.Size(72, 18)
+        Me.RadLabel12.TabIndex = 64
+        Me.RadLabel12.Text = "EndWall Bays"
+        Me.RadLabel12.ThemeName = "VisualStudio2012Dark"
+        '
+        'SideBayField
+        '
+        Me.SideBayField.Location = New System.Drawing.Point(10, 368)
+        Me.SideBayField.Name = "SideBayField"
+        Me.SideBayField.Size = New System.Drawing.Size(147, 21)
+        Me.SideBayField.TabIndex = 63
+        Me.SideBayField.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.SideBayField.ThemeName = "VisualStudio2012Dark"
+        '
+        'RadLabel11
+        '
+        Me.RadLabel11.Location = New System.Drawing.Point(14, 344)
+        Me.RadLabel11.Name = "RadLabel11"
+        Me.RadLabel11.Size = New System.Drawing.Size(75, 18)
+        Me.RadLabel11.TabIndex = 62
+        Me.RadLabel11.Text = "SideWall Bays"
+        Me.RadLabel11.ThemeName = "VisualStudio2012Dark"
+        '
+        'RadLabel10
+        '
+        Me.RadLabel10.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadLabel10.Location = New System.Drawing.Point(10, 320)
+        Me.RadLabel10.Name = "RadLabel10"
+        Me.RadLabel10.Size = New System.Drawing.Size(31, 18)
+        Me.RadLabel10.TabIndex = 61
+        Me.RadLabel10.Text = "Bays"
+        Me.RadLabel10.ThemeName = "VisualStudio2012Dark"
+        '
         'SingWorkFrameForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(92, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(167, 438)
+        Me.ClientSize = New System.Drawing.Size(167, 565)
+        Me.Controls.Add(Me.EndBayField)
+        Me.Controls.Add(Me.RadLabel12)
+        Me.Controls.Add(Me.SideBayField)
+        Me.Controls.Add(Me.RadLabel11)
+        Me.Controls.Add(Me.RadLabel10)
         Me.Controls.Add(Me.Copy)
         Me.Controls.Add(Me.HighHeightField)
         Me.Controls.Add(Me.RadLabel14)
@@ -361,9 +422,9 @@ Partial Class SingWorkFrameForm
         Me.Controls.Add(Me.MarkCombo)
         Me.Controls.Add(Me.RadTitleBar1)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(167, 438)
+        Me.MaximumSize = New System.Drawing.Size(167, 565)
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(167, 438)
+        Me.MinimumSize = New System.Drawing.Size(167, 565)
         Me.Name = "SingWorkFrameForm"
         Me.Text = ""
         Me.ThemeName = "VisualStudio2012Dark"
@@ -391,6 +452,11 @@ Partial Class SingWorkFrameForm
         CType(Me.HighHeightField, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EndBayField, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SideBayField, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -424,5 +490,10 @@ Partial Class SingWorkFrameForm
     Friend WithEvents RadLabel14 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents Copy As Telerik.WinControls.UI.RadButton
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
+    Friend WithEvents EndBayField As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents RadLabel12 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents SideBayField As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents RadLabel11 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents RadLabel10 As Telerik.WinControls.UI.RadLabel
 End Class
 
