@@ -16,6 +16,9 @@ Public Class SymWorkFrameObject
     Public Pitch As Double
     Public PurlinWeb As Double
     Public GirtWeb As Double
+
+    Public SideBayText As String
+    Public EndBayText As String
     Public SideBays As Double()
     Public EndBays As Double()
 
@@ -23,7 +26,8 @@ Public Class SymWorkFrameObject
     Public Bypass As Boolean
 
     Public Sub New(ByVal mark As String, ByVal eaveHeight As Double, ByVal width As Double, ByVal length As Double,
-                       ByVal pitch As Double, ByVal purlinWeb As Double, ByVal girtWeb As Double, ByVal sideBays As Double(), ByVal endBays As Double(),
+                       ByVal pitch As Double, ByVal purlinWeb As Double, ByVal girtWeb As Double, ByVal sideBayText As String, ByVal endBayText As String,
+                       ByVal sideBays As Double(), ByVal endBays As Double(),
                        ByVal flush As Boolean, ByVal bypass As Boolean)
 
         Me.EaveHeight = eaveHeight
@@ -35,6 +39,8 @@ Public Class SymWorkFrameObject
         Me.Flush = flush
         Me.Bypass = bypass
 
+        Me.SideBayText = sideBayText
+        Me.EndBayText = endBayText
         Me.SideBays = sideBays
         Me.EndBays = endBays
 
