@@ -43,6 +43,10 @@ Partial Class StraightColumnForm
         Me.BaseThickness = New Telerik.WinControls.UI.RadTextBox()
         Me.BaseWidth = New Telerik.WinControls.UI.RadTextBox()
         Me.RadGroupBox1 = New Telerik.WinControls.UI.RadGroupBox()
+        Me.BoltGroupBox = New Telerik.WinControls.UI.RadGroupBox()
+        Me.RadLabel24 = New Telerik.WinControls.UI.RadLabel()
+        Me.BoltCombo = New System.Windows.Forms.ComboBox()
+        Me.Bolts = New Telerik.WinControls.UI.RadCheckBox()
         Me.RadLabel22 = New Telerik.WinControls.UI.RadLabel()
         Me.RadLabel21 = New Telerik.WinControls.UI.RadLabel()
         Me.RadLabel20 = New Telerik.WinControls.UI.RadLabel()
@@ -62,6 +66,7 @@ Partial Class StraightColumnForm
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.RadGroupBox2 = New Telerik.WinControls.UI.RadGroupBox()
         Me.RadGroupBox7 = New Telerik.WinControls.UI.RadGroupBox()
+        Me.Block = New Telerik.WinControls.UI.RadToggleButton()
         Me.LeanToHoles = New Telerik.WinControls.UI.RadToggleButton()
         Me.RadGroupBox6 = New Telerik.WinControls.UI.RadGroupBox()
         Me.AnchorBetween = New Telerik.WinControls.UI.RadTextBox()
@@ -110,7 +115,6 @@ Partial Class StraightColumnForm
         Me.MarkCombo = New System.Windows.Forms.ComboBox()
         Me.RadLabel23 = New Telerik.WinControls.UI.RadLabel()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Block = New Telerik.WinControls.UI.RadToggleButton()
         CType(Me.RadTitleBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EaveThickness, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EaveWidth, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,6 +133,10 @@ Partial Class StraightColumnForm
         CType(Me.BaseWidth, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGroupBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadGroupBox1.SuspendLayout()
+        CType(Me.BoltGroupBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BoltGroupBox.SuspendLayout()
+        CType(Me.RadLabel24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Bolts, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel22, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel20, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -150,6 +158,7 @@ Partial Class StraightColumnForm
         Me.RadGroupBox2.SuspendLayout()
         CType(Me.RadGroupBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadGroupBox7.SuspendLayout()
+        CType(Me.Block, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LeanToHoles, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGroupBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadGroupBox6.SuspendLayout()
@@ -193,7 +202,6 @@ Partial Class StraightColumnForm
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Add, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Block, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RoundRectShapeTitle
@@ -358,6 +366,7 @@ Partial Class StraightColumnForm
         'RadGroupBox1
         '
         Me.RadGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me.RadGroupBox1.Controls.Add(Me.BoltGroupBox)
         Me.RadGroupBox1.Controls.Add(Me.RadLabel22)
         Me.RadGroupBox1.Controls.Add(Me.RadLabel21)
         Me.RadGroupBox1.Controls.Add(Me.RadLabel20)
@@ -397,6 +406,50 @@ Partial Class StraightColumnForm
         Me.RadGroupBox1.TabIndex = 17
         Me.RadGroupBox1.Text = "Measurements"
         Me.RadGroupBox1.ThemeName = "VisualStudio2012Dark"
+        '
+        'BoltGroupBox
+        '
+        Me.BoltGroupBox.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping
+        Me.BoltGroupBox.Controls.Add(Me.RadLabel24)
+        Me.BoltGroupBox.Controls.Add(Me.BoltCombo)
+        Me.BoltGroupBox.Controls.Add(Me.Bolts)
+        Me.BoltGroupBox.HeaderText = "Bolts"
+        Me.BoltGroupBox.Location = New System.Drawing.Point(319, 20)
+        Me.BoltGroupBox.Name = "BoltGroupBox"
+        Me.BoltGroupBox.Size = New System.Drawing.Size(164, 80)
+        Me.BoltGroupBox.TabIndex = 27
+        Me.BoltGroupBox.Text = "Bolts"
+        Me.BoltGroupBox.ThemeName = "VisualStudio2012Dark"
+        '
+        'RadLabel24
+        '
+        Me.RadLabel24.Location = New System.Drawing.Point(96, 50)
+        Me.RadLabel24.Name = "RadLabel24"
+        Me.RadLabel24.Size = New System.Drawing.Size(64, 18)
+        Me.RadLabel24.TabIndex = 2
+        Me.RadLabel24.Text = "Bolt Length"
+        Me.RadLabel24.ThemeName = "VisualStudio2012Dark"
+        '
+        'BoltCombo
+        '
+        Me.BoltCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.BoltCombo.FormattingEnabled = True
+        Me.BoltCombo.Items.AddRange(New Object() {"1-1/2""", "1-3/4""", "2""", "2-1/4""", "2-1/2""", "2-3/4""", "3"""})
+        Me.BoltCombo.Location = New System.Drawing.Point(6, 46)
+        Me.BoltCombo.Name = "BoltCombo"
+        Me.BoltCombo.Size = New System.Drawing.Size(83, 21)
+        Me.BoltCombo.TabIndex = 1
+        '
+        'Bolts
+        '
+        Me.Bolts.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.Bolts.Location = New System.Drawing.Point(5, 21)
+        Me.Bolts.Name = "Bolts"
+        Me.Bolts.Size = New System.Drawing.Size(87, 18)
+        Me.Bolts.TabIndex = 0
+        Me.Bolts.Text = "Include Bolts"
+        Me.Bolts.ThemeName = "VisualStudio2012Dark"
+        Me.Bolts.ToggleState = Telerik.WinControls.Enumerations.ToggleState.[On]
         '
         'RadLabel22
         '
@@ -581,6 +634,16 @@ Partial Class StraightColumnForm
         Me.RadGroupBox7.TabIndex = 9
         Me.RadGroupBox7.Text = "Lean To Connections"
         Me.RadGroupBox7.ThemeName = "VisualStudio2012Dark"
+        '
+        'Block
+        '
+        Me.Block.Location = New System.Drawing.Point(146, 21)
+        Me.Block.Name = "Block"
+        Me.Block.Size = New System.Drawing.Size(135, 24)
+        Me.Block.TabIndex = 2
+        Me.Block.Text = "Block"
+        Me.Block.ThemeName = "VisualStudio2012Dark"
+        Me.ToolTip1.SetToolTip(Me.Block, "Add Block")
         '
         'LeanToHoles
         '
@@ -1111,16 +1174,6 @@ Partial Class StraightColumnForm
         Me.RadLabel23.Text = "Straight Column"
         Me.RadLabel23.ThemeName = "VisualStudio2012Dark"
         '
-        'Block
-        '
-        Me.Block.Location = New System.Drawing.Point(146, 21)
-        Me.Block.Name = "Block"
-        Me.Block.Size = New System.Drawing.Size(135, 24)
-        Me.Block.TabIndex = 2
-        Me.Block.Text = "Block"
-        Me.Block.ThemeName = "VisualStudio2012Dark"
-        Me.ToolTip1.SetToolTip(Me.Block, "Add Block")
-        '
         'StraightColumnForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1158,6 +1211,11 @@ Partial Class StraightColumnForm
         CType(Me.RadGroupBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadGroupBox1.ResumeLayout(False)
         Me.RadGroupBox1.PerformLayout()
+        CType(Me.BoltGroupBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BoltGroupBox.ResumeLayout(False)
+        Me.BoltGroupBox.PerformLayout()
+        CType(Me.RadLabel24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Bolts, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel22, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel20, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1179,6 +1237,7 @@ Partial Class StraightColumnForm
         Me.RadGroupBox2.ResumeLayout(False)
         CType(Me.RadGroupBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadGroupBox7.ResumeLayout(False)
+        CType(Me.Block, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LeanToHoles, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadGroupBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadGroupBox6.ResumeLayout(False)
@@ -1225,7 +1284,6 @@ Partial Class StraightColumnForm
         CType(Me.Copy, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Add, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Block, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1317,5 +1375,9 @@ Partial Class StraightColumnForm
     Friend WithEvents RadLabel23 As Telerik.WinControls.UI.RadLabel
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
     Friend WithEvents Block As Telerik.WinControls.UI.RadToggleButton
+    Friend WithEvents BoltGroupBox As Telerik.WinControls.UI.RadGroupBox
+    Friend WithEvents RadLabel24 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents BoltCombo As System.Windows.Forms.ComboBox
+    Friend WithEvents Bolts As Telerik.WinControls.UI.RadCheckBox
 End Class
 

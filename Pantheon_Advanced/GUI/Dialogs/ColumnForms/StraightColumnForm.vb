@@ -33,6 +33,8 @@ Public Class StraightColumnForm
             CableCombo.SelectedIndex = 0
             AnchorCombo.SelectedIndex = 0
 
+            BoltCombo.SelectedIndex = 0
+
         End If
 
         Application.ShowModelessDialog(Me)
@@ -181,6 +183,8 @@ Public Class StraightColumnForm
 
                         Dim anchorObj As AnchorObject = New AnchorObject(AnchorCombo.Text, Converter.StringToDistance(AnchorFromFlange.Text), Converter.StringToDistance(AnchorBetween.Text))
 
+                        
+
                         ' Create Column Object
 
                         Lists.StraightColumnList.Add(New StraightColumnObject(MarkCombo.Text,
@@ -204,7 +208,10 @@ Public Class StraightColumnForm
                                                                               Converter.StringToDistance(HaunchWidth.Text),
                                                                               Converter.StringToDistance(HaunchLength.Text),
                                                                               Converter.StringToDistance(BaseThickness.Text),
-                                                                              Converter.StringToDistance(BaseWidth.Text)))
+                                                                              Converter.StringToDistance(BaseWidth.Text),
+                                                                              Bolts.IsChecked,
+                                                                              BoltCombo.Text,
+                                                                              Converter.StringToDistance(BoltCombo.Text)))
 
                         transaction.Commit()
 
@@ -316,6 +323,9 @@ Public Class StraightColumnForm
 
                         BaseThickness.Text = "1/2"""
                         BaseWidth.Text = "8"""
+
+                        BoltCombo.SelectedIndex = 0
+                        Bolts.IsChecked = True
 
                     Else
 
@@ -461,6 +471,13 @@ Public Class StraightColumnForm
 
                         BaseThickness.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).BaseThick)
                         BaseWidth.Text = Converter.DistanceToString(Lists.StraightColumnList.Item(obj).BaseWidth)
+
+                        ' Bolt Group
+
+                        Bolts.IsChecked = Lists.StraightColumnList.Item(obj).Bolts
+
+                        Dim boltPoint As Integer = BoltCombo.Items.IndexOf(Lists.StraightColumnList.Item(obj).BoltLengthString)
+                        BoltCombo.SelectedIndex = boltPoint
 
                     End If
 

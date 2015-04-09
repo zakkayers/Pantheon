@@ -286,6 +286,7 @@
     <Compile Include="Sirius\Action.vb" />
     <Compile Include="Sirius\Calculate.vb" />
     <Compile Include="Sirius\Clean.vb" />
+    <Compile Include="Sirius\Make.vb" />
     <Compile Include="Sirius\Sculpt.vb" />
     <Compile Include="Sirius\Mind.vb" />
     <Compile Include="Sirius\Read.vb" />
